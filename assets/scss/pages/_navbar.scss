@@ -1,0 +1,203 @@
+.header-section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(var(--n6), 1);
+    .nav-brand {
+        max-width: 265px;
+        @include maxQuery(991) {
+            max-width: 150px;
+        }
+    }
+    // Navbar Start
+    .main-navbar {
+        @include maxQuery(991) {
+            .navbar-toggle-item {
+                display: none;
+            }
+        }
+        @include minQuery(992) {
+            .navbar-toggle-item {
+                display: initial !important;
+            }
+        }
+        .custom-nav {
+            .menu-item {
+                button {
+                    &::after {
+                        position: absolute;
+                        content: "\f078";
+                        font-family: "FontAwesome";
+                        font-weight: 500;
+                        font-size: 14px;
+                        right: 0;
+                        z-index: -1;
+                        transition: all 1s ease;
+                    }
+                }
+            }
+            .menu-item,
+            .menu-link {
+                button, a {
+                    color: rgba(var(--n5), 1);
+                    border-bottom: 1px solid transparent;
+                    transition: var(--transition);
+                    &:hover, &.active{
+                        span{
+                            &::after, &::before{
+                                color: rgba(var(--p1), 1);
+                            }
+                        }
+                    }
+                }
+            }
+            @include maxQuery(991) {
+                max-height: 50vh;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                width: 100%;
+                .sub-menu {
+                    display: none;
+                    border-left: 1px solid rgba(var(--n6), 1);
+                    padding: 10px 20px;
+                    a, button{
+                        position: relative;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            background-color: rgb(var(--n6));
+                            width: 16px;
+                            height: 1px;
+                            left: -20px;
+                            top: 11px;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+            @include minQuery(992) {
+                .menu-item {
+                    button {
+                        &:hover {
+                            button {
+                                &::after {
+                                    transform: rotate(-180deg);
+                                }
+                            }
+                        }
+                    }
+                }
+                .sub-menu {
+                    position: absolute;
+                    top: 30px;
+                    left: 0;
+                    opacity: 0;
+                    width: max-content;
+                    visibility: hidden;
+                    transform: translateY(20px);
+                    text-wrap: nowrap;
+                    transition: var(--transition);
+                    display: initial !important;
+                    background: rgba(var(--n1), 1);
+                    z-index: 10;
+                    pointer-events: none;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-color: rgba(var(--n1), 1);
+                        width: 16px;
+                        height: 16px;
+                        top: -8px;
+                        right: calc(100% - 24px);
+                        z-index: -1;
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                    .sub-menu{
+                        left: 100%;
+                        top: -20px;
+                    }
+                }
+                .menu-item {
+                    position: relative;
+                    &:hover {
+                        >.sub-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0);
+                            pointer-events: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-toggle-btn {
+            width: 40px;
+            height: 28px;
+            position: relative;
+            right: 0;
+            transition: var(--transition);
+            top: 0;
+            span {
+                display: block;
+                position: absolute;
+                height: 3px;
+                width: 100%;
+                background: rgb(var(--s1));
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: var(--transition);
+                &:nth-child(1) {
+                    top: 0;
+                }
+                &:nth-child(2),
+                &:nth-child(3) {
+                    top: 12px;
+                }
+                &:nth-child(4) {
+                    top: 24px;
+                }
+            }
+            &.open {
+                span {
+                    &:nth-child(1) {
+                        top: 18px;
+                        width: 0%;
+                        left: 50%;
+                    }
+
+                    &:nth-child(2) {
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(3) {
+                        transform: rotate(-45deg);
+                    }
+
+                    &:nth-child(4) {
+                        top: 18px;
+                        width: 0%;
+                        left: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .top-header{
+        .review-area{
+            .total-review{
+                clip-path: polygon(100% 0, 100% 100%, 50% 75%, 0 100%, 0 0);
+                width: 64px;
+                height: 100px;
+                background: rgba(var(--p1), 1);
+            }
+        }
+        .icon-box{
+            @include box(48);
+            background-color: rgba(var(--p1), 0.1);
+        }
+    }
+}

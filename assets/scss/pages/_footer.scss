@@ -1,0 +1,51 @@
+// footer-section
+.footer-section{
+    .footer-links{
+        ul{
+            overflow: hidden;
+        }
+        a{
+            position: relative;
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            &::before {
+                content: "\f318";
+                font-family: 'Phosphor';
+                z-index: 1;
+                position: absolute;
+                color: rgba(var(--n5), 1);
+                left: -30px;
+                font-size: 18px;
+                transition: var(--transition);
+            }
+            &:hover{
+                padding-left: 20px;
+                color: rgba(var(--p1), 1);
+                &::before {
+                    color: rgba(var(--p1), 1);
+                    left: -5px;
+                }
+            }
+        }
+    }
+    .copyright {
+        a{
+            color: rgba(var(--s1), 1);
+        }
+    }
+    .col-6{
+        @include maxQuery(480){
+            width: 100% !important;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// default root
+:root {
+	--body-font: 'Onest', sans-serif;
+	--transition: all 0.5s ease-in-out;
+
+	/* Color styles */
+	--p1: 1, 166, 107;
+	--s1: 0, 86, 81;
+	--n1: 236, 255, 252;
+	--n2: 255, 255, 255;
+	--n3: 73, 76, 101;
+	--n4: 255, 175, 64;
+	--n5: 28, 30, 48;
+	--n6: 195, 237, 223;
+	--n7: 230, 247, 241;
+	--n8: 205, 228, 220;
+
+	--gradient-p1: linear-gradient(90deg, rgba(12, 169, 64, 0.08) 0.68%, rgba(236, 88, 88, 0.08) 100%);
+	--box-shadow-p1: 0px 6px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+
