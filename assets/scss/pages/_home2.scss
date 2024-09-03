@@ -1,0 +1,139 @@
+//--------+ Update Style +---------//
+
+
+//hero--
+.money-calc-wrap{
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    .fire-icon{
+        width: 26px;
+        height: 26px;
+        object-fit: contain;
+    }
+    .today-text{
+        color: #01A66B;
+    }
+    .arrive{
+        width: 17px;
+    }
+    .send-countey-code{
+        background: #01A66B;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        padding: 15px 14px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.hero-content2{
+    .secure-wrap{
+        li{
+            background: rgba(236, 255, 252, 0.10);
+            border: 1px solid #ECFFFC;
+            span{
+                line-height: 16px; 
+            }
+        }
+    }
+}
+.hero-tag2{
+   border: 1px solid rgba(0, 86, 81, 0.50);
+}
+
+//Select img Change Option
+.containerss {
+    position: relative;
+    width: 100%;
+    border: 1px solid #1C1E30;
+    border-radius: 8px;
+    padding: 4px 0px;
+    padding-right: 14px;
+    background: #fff;
+    margin-bottom: 18px;
+    .recevice-money{
+        width: 100%;
+        input{
+            color: rgb(28, 30, 48, 0.7);
+            font-weight: 500;
+            font-size: 16px;
+            width: 100%;
+            height: 100%;
+            border: unset;
+            background: transparent;
+            outline: none;
+        }
+        ::placeholder{
+            color: rgb(28, 30, 48, 0.7);
+            font-weight: 500;
+        }
+    }
+	.ulList {
+        min-width: 90px;
+		color: var(--n5);
+		user-select: none;
+		cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        i{
+            font-size: 17px;
+        }
+        span{
+            img{
+                width: 24px;
+                min-width: 24px;
+            }
+        }
+		.ulImg {
+			width: 24px;
+			min-height: 24px;
+			float: left;
+			display: none;
+		}
+		.fa-chevron-down {
+			float: right;
+			padding-right: 5px;
+			line-height: 27px;
+		}
+	}
+	.liList {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        width: 100%;
+		user-select: none;
+		cursor: pointer;
+		display: none;
+        position: absolute;
+        padding: 12px 6px;
+		.li {
+			width: 100%;
+			height: 30px;
+			background: #fff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 8px;
+            transition: all 0.4s;
+			&:hover {
+                background: #3498db;
+                color: #fff !important;
+                span{
+                    color: #fff !important;
+                }
+			}
+			.liImg {
+				width: 24px;
+				min-height: 24px;
+				float: left;
+			}
+		}
+	}
+}
+//--------+ Update Style +---------//

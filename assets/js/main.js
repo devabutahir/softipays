@@ -355,6 +355,75 @@ document.addEventListener("DOMContentLoaded", function () {
       $('.single-item').removeClass('active');
     });
 
+
+
+  // Custom Select   
+  // $(function () {
+
+  //   // Global Variables //
+  //   var ulList = $('.ulList'),
+  //       ulImg  = $('.ulList .ulImg'),
+  //       ulTxt  = $('.ulList .ulTxt'),
+  //       liList = $('.liList'),
+  //       liDiv  = $('.liList .li'),
+  //       liImg  = $('.liList .li img');
+
+  //   // Hide Li List When Click Away //
+  //   $(window).on('mouseup', function (event) {
+  //       if (!ulList.is(event.target) && ulList.has(event.target).length === 0 && !liList.is(event.target) && liList.has(event.target).length === 0) {
+  //           liList.slideUp(); // Hide with smooth slide animation
+  //       }
+  //   });
+
+  //   // Show And Hide Li List with Smooth Animation //
+  //   ulList.on('click', function () {
+  //       liList.slideToggle(); // Toggle with smooth slide animation
+  //   });
+
+  //   // Put Li List Img And Text In Ul List //
+  //   liDiv.on('click', function () {
+  //       ulImg.attr('src', $(this).children('img').attr('src')).show();
+  //       ulTxt.text($(this).text());
+  //       liList.slideUp(); // Hide the list with animation after selection
+  //   });
+  // });
+
+
+  $(function () {
+
+    // Initialize dropdowns
+    $('.containerss').each(function () {
+        var container = $(this); // Scope to the current container
+        var ulList = container.find('.ulList');
+        var ulImg  = container.find('.ulImg');
+        var ulTxt  = container.find('.ulTxt');
+        var liList = container.find('.liList');
+        var liDiv  = container.find('.li');
+        var liImg  = container.find('.liImg');
+
+        // Hide Li List When Click Away //
+        $(document).on('mouseup', function (event) {
+            if (!ulList.is(event.target) && ulList.has(event.target).length === 0 && !liList.is(event.target) && liList.has(event.target).length === 0) {
+                liList.slideUp(); // Hide with smooth slide animation
+            }
+        });
+
+        // Show And Hide Li List with Smooth Animation //
+        ulList.on('click', function () {
+            liList.slideToggle(); // Toggle with smooth slide animation
+        });
+
+        // Put Li List Img And Text In Ul List //
+        liDiv.on('click', function () {
+            ulImg.attr('src', $(this).children('img').attr('src')).show();
+            ulTxt.text($(this).text());
+            liList.slideUp(); // Hide the list with animation after selection
+        });
+    });
+
+});
+
+
   });
 
 });

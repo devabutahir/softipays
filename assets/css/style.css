@@ -2524,4 +2524,143 @@ iframe {
   background: linear-gradient(#11131E, #11131E) padding-box, linear-gradient(to top left, #6a4ded, #c82f97, #f79b91) border-box;
   border: 1px solid transparent;
   z-index: -1;
+}
+
+.money-calc-wrap {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+}
+.money-calc-wrap .fire-icon {
+  width: 26px;
+  height: 26px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.money-calc-wrap .today-text {
+  color: #01A66B;
+}
+.money-calc-wrap .arrive {
+  width: 17px;
+}
+.money-calc-wrap .send-countey-code {
+  background: #01A66B;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 14px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content2 .secure-wrap li {
+  background: rgba(236, 255, 252, 0.1);
+  border: 1px solid #ECFFFC;
+}
+.hero-content2 .secure-wrap li span {
+  line-height: 16px;
+}
+
+.hero-tag2 {
+  border: 1px solid rgba(0, 86, 81, 0.5);
+}
+
+.containerss {
+  position: relative;
+  width: 100%;
+  border: 1px solid #1C1E30;
+  border-radius: 8px;
+  padding: 4px 0px;
+  padding-right: 14px;
+  background: #fff;
+  margin-bottom: 18px;
+}
+.containerss .recevice-money {
+  width: 100%;
+}
+.containerss .recevice-money input {
+  color: rgba(28, 30, 48, 0.7);
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  border: unset;
+  background: transparent;
+  outline: none;
+}
+.containerss .recevice-money ::-moz-placeholder {
+  color: rgba(28, 30, 48, 0.7);
+  font-weight: 500;
+}
+.containerss .recevice-money ::placeholder {
+  color: rgba(28, 30, 48, 0.7);
+  font-weight: 500;
+}
+.containerss .ulList {
+  min-width: 90px;
+  color: var(--n5);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.containerss .ulList i {
+  font-size: 17px;
+}
+.containerss .ulList span img {
+  width: 24px;
+  min-width: 24px;
+}
+.containerss .ulList .ulImg {
+  width: 24px;
+  min-height: 24px;
+  float: left;
+  display: none;
+}
+.containerss .ulList .fa-chevron-down {
+  float: right;
+  padding-right: 5px;
+  line-height: 27px;
+}
+.containerss .liList {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  padding: 12px 6px;
+}
+.containerss .liList .li {
+  width: 100%;
+  height: 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  transition: all 0.4s;
+}
+.containerss .liList .li:hover {
+  background: #3498db;
+  color: #fff !important;
+}
+.containerss .liList .li:hover span {
+  color: #fff !important;
+}
+.containerss .liList .li .liImg {
+  width: 24px;
+  min-height: 24px;
+  float: left;
 }/*# sourceMappingURL=style.css.map */
