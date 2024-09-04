@@ -29,6 +29,9 @@
         align-items: center;
         justify-content: center;
     }
+    @include maxQuery(575){
+        padding: 32px 18px;
+    }
 }
 .hero-content2{
     .secure-wrap{
@@ -112,6 +115,7 @@
 		display: none;
         position: absolute;
         padding: 12px 6px;
+        z-index: 9;
 		.li {
 			width: 100%;
 			height: 30px;
@@ -136,4 +140,207 @@
 		}
 	}
 }
+
+
+//Feature 
+.abroad-items{
+    height: 485px;
+    overflow: hidden;
+    position: relative;
+    &.style1{
+        background: #005651;
+        .abroad1{
+            animation: lfs 4s linear infinite;
+            position: absolute;
+            bottom: 30px;
+            right: -60px;
+            max-width: 400px;
+            height: 200px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &.style2{
+        background: #C3EDDF;
+        .abroad2{
+            position: absolute;
+            right: -120px;
+            bottom: -200px;
+            animation: cirs 20s linear infinite;
+        }
+    }
+    &.style3{
+        background: #01A66B;
+        .abroad3{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    @include maxQuery(1399){
+        height: 410px;
+        &.style1{
+            .abroad1{
+                bottom: 30px;
+                right: -60px;
+                max-width: 300px;
+                height: 150px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    @include maxQuery(767){
+        height: 390px;
+        &.style1{
+            .abroad1{
+                bottom: 10px;
+                right: -10px;
+                max-width: 300px;
+                height: 150px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+@keyframes lfs {
+    50%{
+        transform: translateX(30px);
+    }
+}
+@keyframes cirs {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+//PayStem
+.paystep-items{
+    .icon-area{
+        border: 1.6px dashed #01A66B;
+        padding: 8px;
+    }
+    .step-badge{
+        border-radius: 100px;
+        background: #005651;
+        padding: 5px 16px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+    }
+    &:hover{
+        .step-badge{
+            background: #FFAF40;
+            color: #1C1E30;
+        }
+    }
+}
+//Money Tags Inner
+.money-tags-inner{
+    li{
+        a{
+            background: #fff;
+            border-radius: 100px;
+            padding: 14px 16px;
+            transition: all 0.4s;
+            display: flex !important;
+            svg{
+                path{
+                    transition: all 0.4s;
+                }
+            }
+            &:hover{
+                background: #01A66B;
+                color: #fff;
+                svg{
+                    path{
+                        fill: #fff;
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Money Security
+.money-securitys{
+    background: #ECFFFC;
+}
+.money-security-content{
+    .security-message{
+        border-radius: 8px;
+        transition: all 0.5s;
+        p{
+            color: #4B655C;
+        }
+        &.active,
+        &:hover{
+            background: #C3EDDF;
+        }
+    }
+}
+.money-security-thumb{
+    position: relative;
+    .asset-box{
+        max-width: 400px;
+        box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.08);
+        background: #fff;
+        position: absolute;
+        animation: updown 2s linear infinite;
+        top: 140px;
+        left: -100px; 
+        .icon{
+            min-width: 75px;
+            height: 75px;
+            border-radius: 8px;
+            background: #1C1E30;
+        }
+        .just-badge{
+            position: absolute;
+            right: 16px;
+            top: 16px;
+        }
+    }
+    @include maxQuery(1399){
+        .asset-box{
+            left: 0;
+        }
+    }
+    @include maxQuery(420){
+        .asset-box{
+            .icon{
+                min-width: 55px;
+                height: 55px;
+                border-radius: 8px;
+            }
+            .just-badge{
+                right: 8px;
+                top: 8px;
+            }
+        }
+    }
+}
+@keyframes updown {
+    50%{
+        transform: translateY(-11px);
+    }
+}
+
+//choose global
+.global-choose-items{
+    p{
+        color: #4B655C;
+    }
+    
+}
+
+
 //--------+ Update Style +---------//
