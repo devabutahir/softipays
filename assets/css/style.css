@@ -2855,4 +2855,49 @@ iframe {
 }
 .global-choose-items p {
   color: #4B655C;
+}
+.global-choose-items img {
+  transition: all 0.4s;
+}
+.global-choose-items:hover img {
+  transform: rotate(10deg);
+}
+
+.faq-section2 .sec-img {
+  background: #005651;
+  border-radius: 12px;
+}
+.faq-section2 .accordion-single {
+  border-radius: 12px;
+  border: 1px solid #ECFFFC !important;
+  background: rgba(236, 255, 252, 0.2);
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.country-access-wrap {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px 20px;
+  justify-content: center;
+}
+@media (max-width: 1199px) {
+  .country-access-wrap {
+    gap: 18px 14px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .country-access-wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .country-access-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 8px;
+  }
 }/*# sourceMappingURL=style.css.map */
