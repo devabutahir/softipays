@@ -2,6 +2,18 @@
 
 
 //hero--
+.banner-section2{
+    padding: 120px 0;
+    &::before{
+        display: none;
+    }
+    @include maxQuery(1399){
+        padding: 95px 0 100px;
+    }
+    @include maxQuery(991){
+        padding: 50px 0 80px;
+    }
+}
 .money-calc-wrap{
     background: #fff;
     border-radius: 16px;
@@ -140,7 +152,6 @@
 		}
 	}
 }
-
 
 //Feature 
 .abroad-items{
@@ -382,6 +393,65 @@
     @include maxQuery(575){
         grid-template-columns: repeat(2, 1fr);
         gap: 15px 8px;
+    }
+}
+
+.secound-bg2{
+    background: #005651;
+}
+//Global Chart
+#chartdiv {
+    width: 700px;
+    height: 700px;
+    max-width:100%;
+    border-radius: 50%;
+    background-color: #98DE99;
+    position: absolute;
+    right: 120px;
+    bottom: 110px;
+    z-index: -1;
+    @include maxQuery(1599){
+        width: 600px;
+        height: 600px;
+        right: 100px;
+        bottom: 130px;
+    }
+    @include maxQuery(1399){
+        width: 600px;
+        height: 600px;
+        right: 40px;
+        bottom: 170px;
+    }
+    @include maxQuery(1199){
+        width: 450px;
+        height: 450px;
+        right: 20px;
+        bottom: 210px;
+    }
+    @include maxQuery(991){
+        width: 350px;
+        height: 350px;
+        right: 0px;
+        bottom: initial;
+        top: 80px;
+    }
+    @include maxQuery(767){
+        width: 350px;
+        height: 350px;
+        margin: 24px auto 0;
+        right: 0px;
+        bottom: initial;
+        position: initial;
+        top: 80px;
+    }
+    @include maxQuery(400){
+        width: 290px;
+        height: 290px;
+        margin: 24px auto 0;
+        right: 0px;
+        bottom: initial;
+        position: initial;
+        top: 80px;
     }
 }
 

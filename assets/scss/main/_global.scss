@@ -947,14 +947,14 @@ iframe {
 		position: relative;
 		.tabItem {
 			transform: translateY(100px);
-			position: absolute;
+			position: absolute !important;
 			z-index: -1;
 			top: 0;
 			width: 100%;
 			opacity: 0;
 			transition: 0.8s all;
 			&.active {
-				position: initial;
+				position: initial !important;
 				z-index: 1;
 				opacity: 1;
 				transform: translateY(0);
