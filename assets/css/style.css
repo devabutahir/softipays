@@ -2534,6 +2534,13 @@ iframe {
   z-index: -1;
 }
 
+.header-section.header-section2 {
+  background: #ECFFFC !important;
+}
+.header-section.header-section2.header-fixed {
+  background: #ECFFFC !important;
+}
+
 .banner-section2 {
   padding: 120px 0;
 }
@@ -2928,7 +2935,7 @@ iframe {
   height: 700px;
   max-width: 100%;
   border-radius: 50%;
-  background-color: #98DE99;
+  background-color: #005651;
   position: absolute;
   right: 120px;
   bottom: 110px;
