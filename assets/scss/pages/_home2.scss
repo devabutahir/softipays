@@ -497,6 +497,31 @@
     }
 }
 
+//Testimonial
+.testimonial3{
+    .single-item{
+        background: var(--n0);
+    }
+}
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+.w-fit {
+width: -moz-fit-content !important;
+width: fit-content !important;
+}
+
+//Partner Section
+.partnered-section{
+    .swiper-slide{
+        .partnered-item{
+            img{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
 //choose global
 .global-choose-items{
     p{
@@ -608,5 +633,42 @@
     }
 }
 
+//newsletter
+.newsletter3{
+    background: #EEF5DB;
+    z-index: 1;
+    &::before{
+        background: #1C1E30;
+    }
+}
+
+//Footer Section
+.footer-section3{
+    background: #1C1E30;
+    .footer-bottom{
+        background: rgba(255, 255, 255, 0.10);
+    }
+    .social-area{
+        li{
+            a{
+                background: #fff;
+                &:hover{
+                    background: var(--s2);
+                }
+            }
+        }
+    }
+    .single-box{
+        h5{
+            color: #fff !important;
+            margin-bottom: 20px !important;
+        }
+        ul{
+            a,li{
+                color: #fff;
+            }
+        }
+    }
+}
 
 //--------+ Update Style +---------//

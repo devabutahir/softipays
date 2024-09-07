@@ -331,6 +331,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
+      const partnered__wrapper = new Swiper(".partnered-wrapper", {
+        spaceBetween: 100,
+        speed: 6000,
+        loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          991: {
+            spaceBetween: 100,
+          },
+          600: {
+            spaceBetween: 50,
+          },
+          400: {
+            spaceBetween: 30,
+          },
+          0: {
+            spaceBetween: 22,
+          },
+        },
+      });
+
       // testimonial slider 
       let testimonialCarouselWrap = document.querySelector('.testimonial');
       if(testimonialCarouselWrap){
