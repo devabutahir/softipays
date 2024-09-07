@@ -10,7 +10,7 @@
 }
 //Header 2
 
-//hero--
+//hero--2
 .banner-section2{
     padding: 120px 0;
     &::before{
@@ -67,6 +67,149 @@
 }
 .hero-tag2{
    border: 1px solid rgba(0, 86, 81, 0.50);
+}
+//hero--3
+.banner-section3{
+    background: url(../../assets/images/home2/hero/home3-bg.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    .hero-content3{
+        padding: 266px 0;
+        z-index: 1;
+        max-width: 766px;
+        p{
+            max-width: 654px;
+        }
+        .hero-tag3{
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.10);
+        }
+    }
+    &::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        opacity: 0.8;
+        background: linear-gradient(90deg, #00170F 0%, rgba(0, 40, 25, 0.00) 100%);
+        z-index: -1;
+    }
+    .follow-icon{
+        position: absolute;
+        top: 44%;
+        left: 30px;
+        .hero-social{
+            li{
+                a{
+                    &:hover{
+                        i{
+                            color: var(--p2);
+                        }
+                    }
+                }
+            }
+        }
+        .dborder{
+            width: 1px;
+            height: 30px;
+            background: #fff;
+            margin-left: 10px;
+        }
+        .follow-text{
+            transform: rotate(-90deg);
+            position: relative;
+            display: block;
+            margin-left: -15px;
+        }
+    }
+    @include maxQuery(1700){
+        .hero-content3{
+            padding: 190px 0;
+        }
+    }
+    @include maxQuery(1600){
+        .hero-content3{
+            padding: 160px 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+        p{
+            margin: 0 auto;
+            max-width: 654px;
+        }
+        .hero-btn-area{
+            justify-content: center;
+        }
+        .follow-icon{
+            position: initial;
+            padding: 0 0 22px 24px;
+            .hero-social{
+               flex-direction: row !important; 
+               justify-content: center;
+            }
+            .dborder{
+                display: none;
+            }
+            .follow-text{
+                display: none;
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .hero-content3{
+            padding: 130px 0 140px;
+            .display-two{
+                font-size: 54px;
+            }
+        }
+        p{
+            margin: 0 auto;
+            max-width: 654px;
+        }
+    }
+    @include maxQuery(1199){
+        .hero-content3{
+            padding: 100px 0 120px;
+            .display-two{
+                font-size: 54px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .hero-content3{
+            padding: 70px 0 100px;
+            .display-two{
+                font-size: 54px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        &::before{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            opacity: 0.8;
+            background: linear-gradient(90deg, #00170F 0%, rgba(0, 40, 25, 0.5) 100%);
+            z-index: -1;
+        }
+        .hero-content3{
+            padding: 70px 0 90px;
+            .display-two{
+                font-size: 39px;
+            }
+        }
+    }
+    @include maxQuery(500){
+        .hero-content3{
+            padding: 70px 0 80px;
+            .display-two{
+                font-size: 32px;
+            }
+        }
+    }
 }
 
 //Select img Change Option

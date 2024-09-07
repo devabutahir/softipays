@@ -177,6 +177,15 @@ select {
 .p1-color{
 	color: rgba(var(--p1), 1);
 }
+.p2-color{
+	color: var(--p2) !important;
+}
+.text-black{
+	color: #1C1E30 !important;
+}
+.p2-bg{
+	background: var(--p2) !important;
+}
 .s1-color{
 	color: rgba(var(--s1), 1);
 }

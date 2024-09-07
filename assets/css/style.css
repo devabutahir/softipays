@@ -32,6 +32,7 @@
   --transition: all 0.5s ease-in-out;
   /* Color styles */
   --p1: 1, 166, 107;
+  --p2: #FFAF40;
   --s1: 0, 86, 81;
   --n1: 236, 255, 252;
   --n2: 255, 255, 255;
@@ -497,6 +498,18 @@ select {
 
 .p1-color {
   color: rgba(var(--p1), 1);
+}
+
+.p2-color {
+  color: var(--p2) !important;
+}
+
+.text-black {
+  color: #1C1E30 !important;
+}
+
+.p2-bg {
+  background: var(--p2) !important;
 }
 
 .s1-color {
@@ -2603,6 +2616,141 @@ iframe {
 
 .hero-tag2 {
   border: 1px solid rgba(0, 86, 81, 0.5);
+}
+
+.banner-section3 {
+  background: url(../../assets/images/home2/hero/home3-bg.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.banner-section3 .hero-content3 {
+  padding: 266px 0;
+  z-index: 1;
+  max-width: 766px;
+}
+.banner-section3 .hero-content3 p {
+  max-width: 654px;
+}
+.banner-section3 .hero-content3 .hero-tag3 {
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+.banner-section3::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.8;
+  background: linear-gradient(90deg, #00170F 0%, rgba(0, 40, 25, 0) 100%);
+  z-index: -1;
+}
+.banner-section3 .follow-icon {
+  position: absolute;
+  top: 44%;
+  left: 30px;
+}
+.banner-section3 .follow-icon .hero-social li a:hover i {
+  color: var(--p2);
+}
+.banner-section3 .follow-icon .dborder {
+  width: 1px;
+  height: 30px;
+  background: #fff;
+  margin-left: 10px;
+}
+.banner-section3 .follow-icon .follow-text {
+  transform: rotate(-90deg);
+  position: relative;
+  display: block;
+  margin-left: -15px;
+}
+@media (max-width: 1700px) {
+  .banner-section3 .hero-content3 {
+    padding: 190px 0;
+  }
+}
+@media (max-width: 1600px) {
+  .banner-section3 .hero-content3 {
+    padding: 160px 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .banner-section3 p {
+    margin: 0 auto;
+    max-width: 654px;
+  }
+  .banner-section3 .hero-btn-area {
+    justify-content: center;
+  }
+  .banner-section3 .follow-icon {
+    position: initial;
+    padding: 0 0 22px 24px;
+  }
+  .banner-section3 .follow-icon .hero-social {
+    flex-direction: row !important;
+    justify-content: center;
+  }
+  .banner-section3 .follow-icon .dborder {
+    display: none;
+  }
+  .banner-section3 .follow-icon .follow-text {
+    display: none;
+  }
+}
+@media (max-width: 1399px) {
+  .banner-section3 .hero-content3 {
+    padding: 130px 0 140px;
+  }
+  .banner-section3 .hero-content3 .display-two {
+    font-size: 54px;
+  }
+  .banner-section3 p {
+    margin: 0 auto;
+    max-width: 654px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-section3 .hero-content3 {
+    padding: 100px 0 120px;
+  }
+  .banner-section3 .hero-content3 .display-two {
+    font-size: 54px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section3 .hero-content3 {
+    padding: 70px 0 100px;
+  }
+  .banner-section3 .hero-content3 .display-two {
+    font-size: 54px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section3::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.8;
+    background: linear-gradient(90deg, #00170F 0%, rgba(0, 40, 25, 0.5) 100%);
+    z-index: -1;
+  }
+  .banner-section3 .hero-content3 {
+    padding: 70px 0 90px;
+  }
+  .banner-section3 .hero-content3 .display-two {
+    font-size: 39px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-section3 .hero-content3 {
+    padding: 70px 0 80px;
+  }
+  .banner-section3 .hero-content3 .display-two {
+    font-size: 32px;
+  }
 }
 
 .containerss {
