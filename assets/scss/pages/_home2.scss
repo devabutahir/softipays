@@ -603,6 +603,27 @@ width: fit-content !important;
     }
 }
 
+//Investment 
+.investment-element{
+    position: absolute;
+    left: 60px;
+    top: 130px;
+    animation: updown 2s linear infinite;
+}
+.investor-items{
+    &::before{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 40%, #000 100%);
+        content: "";
+        height: 100%
+    }
+    .investor-content{
+        z-index: 1;
+    }
+}
+
 //leading area
 .leading-thumb{
     border-radius: 500px 500px 500px 0px;

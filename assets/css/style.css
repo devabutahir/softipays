@@ -3174,6 +3174,25 @@ iframe {
     transform: scale(1.06);
   }
 }
+.investment-element {
+  position: absolute;
+  left: 60px;
+  top: 130px;
+  animation: updown 2s linear infinite;
+}
+
+.investor-items::before {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #000 100%);
+  content: "";
+  height: 100%;
+}
+.investor-items .investor-content {
+  z-index: 1;
+}
+
 .leading-thumb {
   border-radius: 500px 500px 500px 0px;
   width: 430px;
