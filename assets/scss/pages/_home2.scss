@@ -522,6 +522,134 @@ width: fit-content !important;
     }
 }
 
+//What Do 
+.what-thumb{
+    animation: updown 2s linear infinite;
+}
+.how-make-items{
+    transition: all 0.4s;
+    h5,p,a{
+        transition: all 0.4s;
+    }
+    .cion{
+       width: 80px;
+       height: 80px; 
+       transition: all 0.4s;
+    }
+    @include maxQuery(575){
+        background: var(--n0);
+        .cion{
+            margin: 0 auto;
+        }
+    }
+    &:hover{
+        background: var(--bg1) !important;
+        .cion{
+            background: var(--n0) !important;
+        }
+        h5,p,a{
+            color: var(--n0) !important;
+        }
+    }
+}
+//how works 3
+.how-wroks3{
+    .paystep-items{
+        .icon-area{
+            border-color: var(--p2);
+            position: relative;
+        }
+        .badge{
+            width: 44px;
+            height: 44px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 20px; 
+        }
+    }
+    .how-element{
+        position: absolute;
+        top: 152px;
+        left: 270px;
+        animation: zoin 2s linear infinite;
+    }
+    @include maxQuery(1199){
+        .how-element{
+            top: 20px;
+            left: 30px;
+        }
+    }
+    @include maxQuery(991){
+        .paystep-items{
+            .badge{
+                width: 24px;
+                height: 24px;
+                font-size: 12px; 
+            }
+        }
+    }
+    @include maxQuery(767){
+        .how-element{
+            top: 20px;
+            left: 30px;
+            width: 50px;
+        }
+    }
+}
+@keyframes zoin {
+    50%{
+        transform: scale(1.06);
+    }
+}
+
+//leading area
+.leading-thumb{
+    border-radius: 500px 500px 500px 0px;
+    width: 430px;
+    height: 400px;
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 500px 500px 500px 0px;
+    }
+    @include maxQuery(1399){
+        width: 100%;
+        height: 100%;
+    }
+}
+//Social Progress
+.leading-box{
+    width: 306px;
+    height: 295px;
+    .cmn-radius-box{
+        width: 234px;
+        min-height: 234px;
+    }
+    @include maxQuery(1399){
+        width: 100%;
+        height: 100%;
+        .cmn-radius-box{
+            width: 200px;
+            min-height: 200px;
+        }
+    }
+    @include maxQuery(575){
+        .cmn-radius-box{
+            margin: 0 auto;
+        }
+    }
+}
+.leading-box1{
+    border-radius: 500px 500px 0px 500px;
+}
+.leading-box2{
+    border-radius: 500px 0px 500px 500px;
+}
+.leading-box3{
+    border-radius: 0px 500px 500px 500px;
+}
+
 //choose global
 .global-choose-items{
     p{

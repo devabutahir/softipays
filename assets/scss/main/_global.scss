@@ -262,8 +262,23 @@ select {
 .n0-bg{
 	background: #fff !important;
 }
+.bg1{
+	background: var(--bg1) !important;
+}
+.bg2{
+	background: var(--bg2) !important;
+}
+.bg2-clr{
+	color: var(--bg2) !important;
+}
+.bg3{
+	background: var(--bg3) !important;
+}
 .black-clr{
 	color: var(--black-clr) !important;
+}
+.black-bg{
+	background: var(--black-clr) !important;
 }
 .fw-mid{
 	font-weight: 500;
