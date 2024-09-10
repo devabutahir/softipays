@@ -511,9 +511,13 @@
 }
 
 //blog Section
+.blog-section4{
+    margin-bottom: -30px;
+}
 .blog-items4{
     border-radius: 16px;
     overflow: hidden;
+    padding-bottom: 30px;
     .content{
         border-top: unset;
         border: 1px solid rgba(28, 30, 48, 0.10);

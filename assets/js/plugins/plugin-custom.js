@@ -331,6 +331,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
+      //Partnered
       const partnered__wrapper = new Swiper(".partnered-wrapper", {
         spaceBetween: 100,
         speed: 6000,
@@ -353,6 +354,36 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           0: {
             spaceBetween: 22,
+          },
+        },
+      });
+
+      //Blog4
+      const blog4__wrappers = new Swiper(".blog4-wrappers", {
+        spaceBetween: 100,
+        speed: 600,
+        loop: true,
+        navigation: {
+          nextEl: ".ara-next",
+          prevEl: ".ara-prev",
+        },
+        spaceBetween: 24,
+        breakpoints: {
+          991: {
+            spaceBetween: 24,
+            slidesPerView: 3,
+          },
+          600: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+          },
+          550: {
+            spaceBetween: 16,
+            slidesPerView: 2,
+          },
+          0: {
+            spaceBetween: 16,
+            slidesPerView: 1,
           },
         },
       });

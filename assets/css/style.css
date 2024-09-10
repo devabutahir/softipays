@@ -3118,9 +3118,14 @@ iframe {
     transform: rotate(360deg);
   }
 }
+.blog-section4 {
+  margin-bottom: -30px;
+}
+
 .blog-items4 {
   border-radius: 16px;
   overflow: hidden;
+  padding-bottom: 30px;
 }
 .blog-items4 .content {
   border-top: unset;
