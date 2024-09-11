@@ -3966,6 +3966,17 @@ iframe {
 .footer-section3 .footer-bottom {
   background: rgba(255, 255, 255, 0.1);
 }
+.footer-section3 .footer-bottom.style5 .social-area li a {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+}
+.footer-section3 .footer-bottom.style5 .social-area li a i {
+  color: var(--n50);
+}
+.footer-section3 .footer-bottom.style5 .social-area li a:hover i {
+  color: var(--n0);
+}
 .footer-section3 .social-area li a {
   background: #fff;
 }
