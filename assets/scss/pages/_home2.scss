@@ -1166,6 +1166,23 @@ width: fit-content !important;
     }
 }
 
+//SmartPhone App
+.smartphone-apps{
+   width: 100%;
+   max-width: 800px;
+//    height: 560px;
+   img{
+    width: 100%;
+   }
+}
+//Smart Phone
+
+//Faq Version
+.faq-section{
+   &.faq-style5{
+    background: #EFEEE7;
+   } 
+}
 //Faq Version2
 .faq-section2{
     .sec-img{
@@ -1431,6 +1448,80 @@ width: fit-content !important;
     }
 }
 //Section-badge
+
+//Blog Expose
+.blog-wrapper5{
+    border-bottom: 1px solid rgba(28, 30, 48, 0.10);
+    .blog-left-box5{
+        max-width: 636px;
+        padding-right: 54px;
+        .blog-items4{
+            .content{
+                border: unset;
+            }
+        }
+    }
+    .lines{
+        width: 1px;
+        height: 634px;
+        background: rgba(28, 30, 48, 0.10);
+    }
+    .blog-right-box5{
+        max-width: 670px;
+        .blog-items4{
+            padding-left: 50px;
+        }
+        .lines-simple{
+            width: 100%;
+            height: 1px;
+            background: rgba(28, 30, 48, 0.10);
+        }
+    }
+    @include maxQuery(1199){
+        .blog-left-box5{
+            padding-right: 30px;
+        }
+        .lines{
+            width: 1px;
+            height: initial;
+        }
+        .blog-right-box5{
+            .blog-items4{
+                padding: 16px 30px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .blog-left-box5{
+            padding-right: 20px;
+        }
+        .lines{
+            width: 1px;
+            height: initial;
+        }
+        .blog-right-box5{
+            .blog-items4{
+                padding: 16px 20px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        .blog-left-box5{
+            padding-right: 0px;
+            .blog-items4{
+                .content{
+                    border: 1px solid rgba(28, 30, 48, 0.10) !important;
+                }
+            }
+        }
+        .blog-right-box5{
+            .blog-items4{
+                padding: 16px 0px;
+            }
+        }
+    }
+}
+//Blog Expose
 
 //Footer Contact Question
 .contact-question{
