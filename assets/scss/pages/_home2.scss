@@ -1336,6 +1336,102 @@ width: fit-content !important;
     }
 }
 
+//Tracking
+.tracking-section{
+    z-index: 1;
+    .color-element1{
+        position: absolute;
+        right: -550px;
+        bottom: -550px;
+        z-index: -1;
+    }
+}
+.tracking-wrap{
+    background: #005651;
+    border-radius: 32px;
+    padding: 90px 8px;
+    p{
+        max-width: 437px;
+        margin: 0 auto;
+    }
+    .tracking-element1{
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: ups 9s linear infinite;
+    }
+    .tracking-element2{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        animation: ups2 9s linear infinite;
+    }
+    @include maxQuery(991){
+        padding: 70px 8px;
+        .tracking-element1{
+            width: 80px;
+        }
+        .tracking-element2{
+            width: 80px;
+        }
+    }
+}
+@keyframes ups {
+    50%{
+        transform: translateY(100%);
+    }
+}
+@keyframes ups2 {
+    50%{
+        transform: translateY(-100%);
+    }
+}
+//Tracking
+
+//Section-badge
+.section5-badge{
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px dashed #000;
+}
+.articles-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .art{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--black-clr);
+        position: relative;
+        transition: all 0.4s;
+        i{
+            color: var(--n0);
+        }
+        svg{
+            position: absolute;
+            left: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.4s;
+        }
+    }
+    &:hover{
+        .art{
+            transform: rotate(190deg);
+            background: var(--s2);
+        }
+        color: var(--s2);
+        svg{
+            transform: translateY(-50%) rotate(360deg);
+        }
+    }
+}
+//Section-badge
+
 //Footer Contact Question
 .contact-question{
     z-index: 1;
@@ -1432,6 +1528,7 @@ width: fit-content !important;
                     }
                 }
             }
+            border-top: 1px solid rgba(255, 255, 255, 0.10);
         }
     }
     .social-area{
@@ -1454,6 +1551,14 @@ width: fit-content !important;
                 color: #fff;
             }
         }
+    }
+    .footer-form{
+        button{
+            min-width: 145px;
+        }
+    }
+    .max-three{
+        max-width: 336px;
     }
     &.style4{
         .footer-widget-top{
