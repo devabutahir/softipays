@@ -357,6 +357,32 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         },
       });
+      //Partnered2
+      const partnered__wrapper2 = new Swiper(".partnered-wrapper2", {
+        spaceBetween: 40,
+        speed: 6000,
+        loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          991: {
+            spaceBetween: 40,
+          },
+          600: {
+            spaceBetween: 30,
+          },
+          400: {
+            spaceBetween: 20,
+          },
+          0: {
+            spaceBetween: 22,
+          },
+        },
+      });
 
       //Blog4
       const blog4__wrappers = new Swiper(".blog4-wrappers", {

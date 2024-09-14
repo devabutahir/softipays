@@ -15,6 +15,11 @@
         background: #ECFFFC !important;
     }
 }
+.header-style5{
+    &.header-fixed{
+        background: var(--n0) !important;
+    }
+}
 //Header 2
 
 //hero--2
@@ -330,6 +335,115 @@
     background: var(--p2);
    }
 }
+//Hero--5
+.banner-section5{
+    .hero-content5{
+        padding: 110px 0 190px;
+        .footer-form{
+            max-width: 388px;border: 1px solid rgba(28, 30, 48, 0.10);
+            .input-area{
+                outline: none;
+            }
+            input{
+                color: rgba(28, 30, 48, 0.60);
+                outline: none;
+            }
+            ::placeholder{
+                color: rgba(28, 30, 48, 0.60);
+            }
+        }
+    }
+    .hero5-thumb{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-47%);
+        animation: hero-up 2s linear infinite;
+    }
+    .hero5-element{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    @include maxQuery(1700){
+        .hero-content5{
+            padding: 80px 0 140px;
+        }
+        .hero5-thumb{
+            max-width: 700px;
+        }
+    }
+    @include maxQuery(1450){
+        .hero-content5{
+            padding: 80px 0 140px;
+            .display-two{
+                font-size: 58px;
+            }
+            p{
+                max-width: 500px;
+            }
+        }
+        .hero5-thumb{
+            max-width: 700px;
+        }
+    }
+    @include maxQuery(1199){
+        .hero-content5{
+            padding: 70px 0 100px;
+            .display-two{
+                font-size: 42px;
+            }
+            p{
+                max-width: 450px;
+            }
+        }
+        .hero5-thumb{
+            max-width: 500px;
+        }
+    }
+    @include maxQuery(991){
+        .hero-content5{
+            padding: 30px 0 90px;
+            .display-two{
+                font-size: 48px;
+            }
+            p{
+                max-width: 550px;
+            }
+        }
+        .hero5-thumb{
+            display: none;
+        }
+    }
+    @include maxQuery(991){
+        .hero-content5{
+            padding: 50px 0 80px;
+            .display-two{
+                font-size: 48px;
+            }
+            p{
+                max-width: 550px;
+            }
+        }
+    }
+    @include maxQuery(500){
+        .hero-content5{
+            padding: 50px 0 70px;
+            .display-two{
+                font-size: 34px;
+            }
+            p{
+                max-width: 550px;
+            }
+        }
+    }
+}
+@keyframes hero-up {
+    50%{
+        transform: translateY(-45%);
+    }
+}
 
 //About Section4
 .about-section4{
@@ -429,6 +543,45 @@
 			}
 		}
 	}
+}
+
+//Modern Banking
+.modern-banking{
+    z-index: 1;
+    .modern-head{
+        p{
+            max-width: 526px;
+        }
+    }
+    .modern-banking{
+        position: absolute;
+        left: 125px;
+        top: 125px;
+        animation: rots 2s linear infinite;
+        z-index: -1;
+    }
+}
+.modern-items{
+    .thumb-modern1{
+        margin: 0 auto;
+        max-width: 516px;
+        img{
+            width: 100%;
+        }
+    }
+    .thumb-modern2{
+        margin: 0 auto -80px;
+        max-width: 440px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.modern-count-item{
+    transition: all 0.4s;
+    &:hover{
+        background: #ebebeb;
+    }
 }
 
 //Feature 
@@ -907,6 +1060,54 @@ width: fit-content !important;
     }
 }
 
+//Service Section5
+.service-section5{
+    z-index: 1;
+    .ser-ellips{
+        position: absolute;
+        right: 125px;
+        top: 125px;
+        animation: rots 2s linear infinite;
+        z-index: -1;
+    }
+}
+.banking-service-item{
+    transition: all 0.4s;
+    .icon{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        transition: all 0.4s;
+        &::before{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 8px solid var(--s2);
+            border-top: unset;
+            border-left: unset;
+            border-right: unset;
+            transition: all 0.4s;
+        }
+    }
+    &:hover{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background: var(--bg5) !important;
+       .learn{
+        color: var(--s2) !important;
+       } 
+       .icon{
+        background: var(--n0) !important;
+            &::before{
+               transform: rotate(180deg);
+            }
+        }
+    }
+}
+
 //Choose Best
 .choose-list-item{
     border: 1px solid rgba(28, 30, 48, 0.10);
@@ -1167,10 +1368,20 @@ width: fit-content !important;
 }
 
 //SmartPhone App
+.our-apps5{
+    z-index: 1;
+    .global-element-app{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        height: 100%;
+    }
+}
 .smartphone-apps{
    width: 100%;
    max-width: 800px;
-//    height: 560px;
+   animation: updown 2s linear infinite;
    img{
     width: 100%;
    }
@@ -1181,7 +1392,32 @@ width: fit-content !important;
 .faq-section{
    &.faq-style5{
     background: #EFEEE7;
+    .faq-ellips{
+        position: absolute;
+        top: 170px;
+        left: 120px;
+        display: block;
+        animation: rots 2s linear infinite;
+    }
+    // .accordion-single{
+    //     &.active{
+    //         .content-area{
+    //             display: block;
+    //         }
+    //     }
+    // }
+    @include maxQuery(991){
+     .faq-ellips{
+         top: 30px;
+         left: 30px;
+     }
+    }
    } 
+}
+@keyframes rots {
+    50%{
+        transform: rotate(30deg);
+    }
 }
 //Faq Version2
 .faq-section2{
@@ -1405,11 +1641,23 @@ width: fit-content !important;
 }
 //Tracking
 
+//Opening Account
+.opening-account-wrapper{
+    .opening-account-item{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+//Opening Account
+
 //Section-badge
 .section5-badge{
     padding: 8px 16px;
     border-radius: 8px;
     border: 1px dashed #000;
+    &.white-badge{
+        border-color: #fff;
+    }
 }
 .articles-btn{
     display: flex;

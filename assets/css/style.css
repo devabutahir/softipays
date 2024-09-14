@@ -39,6 +39,7 @@
   --bg2: #4B655C;
   --bg3: #ECFFFC;
   --bg4: #C3EDDF;
+  --bg5: #EFEEE7;
   --s1: 0, 86, 81;
   --n0: #fff;
   --n1: 236, 255, 252;
@@ -640,6 +641,10 @@ select {
   background: var(--bg4) !important;
 }
 
+.bg5 {
+  background: var(--bg5) !important;
+}
+
 .black-clr {
   color: var(--black-clr) !important;
 }
@@ -650,6 +655,10 @@ select {
 
 .fw-mid {
   font-weight: 500;
+}
+
+.bg-trsns {
+  background-color: transparent !important;
 }
 
 .text-gradient {
@@ -2619,6 +2628,10 @@ iframe {
   background: #ECFFFC !important;
 }
 
+.header-style5.header-fixed {
+  background: var(--n0) !important;
+}
+
 .banner-section2 {
   padding: 120px 0;
 }
@@ -2938,6 +2951,117 @@ iframe {
   background: var(--p2);
 }
 
+.banner-section5 .hero-content5 {
+  padding: 110px 0 190px;
+}
+.banner-section5 .hero-content5 .footer-form {
+  max-width: 388px;
+  border: 1px solid rgba(28, 30, 48, 0.1);
+}
+.banner-section5 .hero-content5 .footer-form .input-area {
+  outline: none;
+}
+.banner-section5 .hero-content5 .footer-form input {
+  color: rgba(28, 30, 48, 0.6);
+  outline: none;
+}
+.banner-section5 .hero-content5 .footer-form ::-moz-placeholder {
+  color: rgba(28, 30, 48, 0.6);
+}
+.banner-section5 .hero-content5 .footer-form ::placeholder {
+  color: rgba(28, 30, 48, 0.6);
+}
+.banner-section5 .hero5-thumb {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-47%);
+  animation: hero-up 2s linear infinite;
+}
+.banner-section5 .hero5-element {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+@media (max-width: 1700px) {
+  .banner-section5 .hero-content5 {
+    padding: 80px 0 140px;
+  }
+  .banner-section5 .hero5-thumb {
+    max-width: 700px;
+  }
+}
+@media (max-width: 1450px) {
+  .banner-section5 .hero-content5 {
+    padding: 80px 0 140px;
+  }
+  .banner-section5 .hero-content5 .display-two {
+    font-size: 58px;
+  }
+  .banner-section5 .hero-content5 p {
+    max-width: 500px;
+  }
+  .banner-section5 .hero5-thumb {
+    max-width: 700px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-section5 .hero-content5 {
+    padding: 70px 0 100px;
+  }
+  .banner-section5 .hero-content5 .display-two {
+    font-size: 42px;
+  }
+  .banner-section5 .hero-content5 p {
+    max-width: 450px;
+  }
+  .banner-section5 .hero5-thumb {
+    max-width: 500px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section5 .hero-content5 {
+    padding: 30px 0 90px;
+  }
+  .banner-section5 .hero-content5 .display-two {
+    font-size: 48px;
+  }
+  .banner-section5 .hero-content5 p {
+    max-width: 550px;
+  }
+  .banner-section5 .hero5-thumb {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section5 .hero-content5 {
+    padding: 50px 0 80px;
+  }
+  .banner-section5 .hero-content5 .display-two {
+    font-size: 48px;
+  }
+  .banner-section5 .hero-content5 p {
+    max-width: 550px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-section5 .hero-content5 {
+    padding: 50px 0 70px;
+  }
+  .banner-section5 .hero-content5 .display-two {
+    font-size: 34px;
+  }
+  .banner-section5 .hero-content5 p {
+    max-width: 550px;
+  }
+}
+
+@keyframes hero-up {
+  50% {
+    transform: translateY(-45%);
+  }
+}
 .about-section4 .about-counter-item {
   border-top: 1px solid rgba(28, 30, 48, 0.1);
 }
@@ -3038,6 +3162,42 @@ iframe {
   width: 24px;
   min-height: 24px;
   float: left;
+}
+
+.modern-banking {
+  z-index: 1;
+}
+.modern-banking .modern-head p {
+  max-width: 526px;
+}
+.modern-banking .modern-banking {
+  position: absolute;
+  left: 125px;
+  top: 125px;
+  animation: rots 2s linear infinite;
+  z-index: -1;
+}
+
+.modern-items .thumb-modern1 {
+  margin: 0 auto;
+  max-width: 516px;
+}
+.modern-items .thumb-modern1 img {
+  width: 100%;
+}
+.modern-items .thumb-modern2 {
+  margin: 0 auto -80px;
+  max-width: 440px;
+}
+.modern-items .thumb-modern2 img {
+  width: 100%;
+}
+
+.modern-count-item {
+  transition: all 0.4s;
+}
+.modern-count-item:hover {
+  background: #ebebeb;
 }
 
 .abroad-items {
@@ -3460,6 +3620,54 @@ iframe {
     transform: scale(1.06);
   }
 }
+.service-section5 {
+  z-index: 1;
+}
+.service-section5 .ser-ellips {
+  position: absolute;
+  right: 125px;
+  top: 125px;
+  animation: rots 2s linear infinite;
+  z-index: -1;
+}
+
+.banking-service-item {
+  transition: all 0.4s;
+}
+.banking-service-item .icon {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  transition: all 0.4s;
+}
+.banking-service-item .icon::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid var(--s2);
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+  transition: all 0.4s;
+}
+.banking-service-item:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: var(--bg5) !important;
+}
+.banking-service-item:hover .learn {
+  color: var(--s2) !important;
+}
+.banking-service-item:hover .icon {
+  background: var(--n0) !important;
+}
+.banking-service-item:hover .icon::before {
+  transform: rotate(180deg);
+}
+
 .choose-list-item {
   border: 1px solid rgba(28, 30, 48, 0.1);
   border-radius: 100px;
@@ -3718,9 +3926,21 @@ iframe {
   transform: rotate(10deg);
 }
 
+.our-apps5 {
+  z-index: 1;
+}
+.our-apps5 .global-element-app {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+}
+
 .smartphone-apps {
   width: 100%;
   max-width: 800px;
+  animation: updown 2s linear infinite;
 }
 .smartphone-apps img {
   width: 100%;
@@ -3729,7 +3949,25 @@ iframe {
 .faq-section.faq-style5 {
   background: #EFEEE7;
 }
+.faq-section.faq-style5 .faq-ellips {
+  position: absolute;
+  top: 170px;
+  left: 120px;
+  display: block;
+  animation: rots 2s linear infinite;
+}
+@media (max-width: 991px) {
+  .faq-section.faq-style5 .faq-ellips {
+    top: 30px;
+    left: 30px;
+  }
+}
 
+@keyframes rots {
+  50% {
+    transform: rotate(30deg);
+  }
+}
 .faq-section2 .sec-img {
   background: #005651;
   border-radius: 12px;
@@ -3950,10 +4188,18 @@ iframe {
     transform: translateY(-100%);
   }
 }
+.opening-account-wrapper .opening-account-item {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .section5-badge {
   padding: 8px 16px;
   border-radius: 8px;
   border: 1px dashed #000;
+}
+.section5-badge.white-badge {
+  border-color: #fff;
 }
 
 .articles-btn {

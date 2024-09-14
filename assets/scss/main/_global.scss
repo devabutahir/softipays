@@ -277,6 +277,9 @@ select {
 .bg4{
 	background: var(--bg4) !important;
 }
+.bg5{
+	background: var(--bg5) !important;
+}
 .black-clr{
 	color: var(--black-clr) !important;
 }
@@ -285,6 +288,10 @@ select {
 }
 .fw-mid{
 	font-weight: 500;
+}
+
+.bg-trsns{
+	background-color: transparent !important;
 }
 
 .text-gradient{
