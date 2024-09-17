@@ -4200,9 +4200,21 @@ iframe {
 .opening-account-wrapper .opening-account-item .icon {
   width: 90px;
   height: 90px;
-  z-index: 9;
+  z-index: 1;
   position: relative;
-  background: green;
+}
+.opening-account-wrapper .opening-account-item .icon img {
+  z-index: 1;
+}
+.opening-account-wrapper .opening-account-item .icon::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--n0);
+  border-radius: 12px;
 }
 .opening-account-wrapper .opening-account-item .icon::before {
   position: absolute;
@@ -4211,10 +4223,9 @@ iframe {
   width: 99%;
   height: 99%;
   content: "";
-  background-color: red;
   border: 1px dashed var(--s2);
   animation: cirs 2s linear infinite;
-  z-index: -9;
+  z-index: -1;
   border-radius: 12px;
 }
 
