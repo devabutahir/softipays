@@ -1646,6 +1646,39 @@ width: fit-content !important;
     .opening-account-item{
         max-width: 350px;
         margin: 0 auto;
+        .serial-badge{
+            border: 1px dashed var(--n0);
+            width: 48px;
+            height: 48px;
+        }
+        .icon{
+            width: 90px;
+            height: 90px;
+            z-index: 9;
+            position: relative;
+            background: green;
+            &::before{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 99%;
+                height: 99%;
+                content: "";
+                background-color: red;
+                border: 1px dashed var(--s2);
+                animation: cirs 2s linear infinite;
+                z-index: -9;
+                border-radius: 12px;
+            }
+        }
+    }
+}
+@keyframes cirs {
+    50%{
+        transform: translateY(-10px) translateX(-10px);
+    }
+    80%{
+        transform: translateY(10px) translateX(10px);
     }
 }
 //Opening Account
