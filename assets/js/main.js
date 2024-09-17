@@ -1,3 +1,30 @@
+/**
+ * Main JavaScript file for the website
+ * 
+ * This file contains various functionality for the website, including:
+ * - Preloader animation
+ * - Scroll to top button
+ * - Sticky header
+ * - Odometer initialization
+ * - Comment area interactions
+ * - Password show/hide toggle
+ * - Circular text effect
+ * - Magnific Popup for videos and images
+ * - Navbar active class and toggle
+ * - Sidebar toggler
+ * - Mouse follower effect
+ * - Custom tabs
+ * - Progress bars
+ * - Custom accordions
+ * - Text truncation with "read more" functionality
+ * - Custom select dropdowns
+ * - Global chart (using amCharts)
+ * 
+ * The code is wrapped in a DOMContentLoaded event listener to ensure
+ * all elements are loaded before executing the JavaScript.
+ */
+
+
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -388,41 +415,41 @@ document.addEventListener("DOMContentLoaded", function () {
   //   });
   // });
 
-//Select Dropdown
-  $(function () {
+  //Select Dropdown
+    $(function () {
 
-      // Initialize dropdowns
-      $('.containerss').each(function () {
-          var container = $(this); // Scope to the current container
-          var ulList = container.find('.ulList');
-          var ulImg  = container.find('.ulImg');
-          var ulTxt  = container.find('.ulTxt');
-          var liList = container.find('.liList');
-          var liDiv  = container.find('.li');
-          var liImg  = container.find('.liImg');
+        // Initialize dropdowns
+        $('.containerss').each(function () {
+            var container = $(this); // Scope to the current container
+            var ulList = container.find('.ulList');
+            var ulImg  = container.find('.ulImg');
+            var ulTxt  = container.find('.ulTxt');
+            var liList = container.find('.liList');
+            var liDiv  = container.find('.li');
+            var liImg  = container.find('.liImg');
 
-          // Hide Li List When Click Away //
-          $(document).on('mouseup', function (event) {
-              if (!ulList.is(event.target) && ulList.has(event.target).length === 0 && !liList.is(event.target) && liList.has(event.target).length === 0) {
-                  liList.slideUp(); // Hide with smooth slide animation
-              }
-          });
+            // Hide Li List When Click Away //
+            $(document).on('mouseup', function (event) {
+                if (!ulList.is(event.target) && ulList.has(event.target).length === 0 && !liList.is(event.target) && liList.has(event.target).length === 0) {
+                    liList.slideUp(); // Hide with smooth slide animation
+                }
+            });
 
-          // Show And Hide Li List with Smooth Animation //
-          ulList.on('click', function () {
-              liList.slideToggle(); // Toggle with smooth slide animation
-          });
+            // Show And Hide Li List with Smooth Animation //
+            ulList.on('click', function () {
+                liList.slideToggle(); // Toggle with smooth slide animation
+            });
 
-          // Put Li List Img And Text In Ul List //
-          liDiv.on('click', function () {
-              ulImg.attr('src', $(this).children('img').attr('src')).show();
-              ulTxt.text($(this).text());
-              liList.slideUp(); // Hide the list with animation after selection
-          });
-      });
+            // Put Li List Img And Text In Ul List //
+            liDiv.on('click', function () {
+                ulImg.attr('src', $(this).children('img').attr('src')).show();
+                ulTxt.text($(this).text());
+                liList.slideUp(); // Hide the list with animation after selection
+            });
+        });
 
-  });
-  //Global Chart
+    });
+    //Global Chart
   
   // Themes begin
   // am4core.useTheme(am4themes_animated);
@@ -560,16 +587,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }];
 
 
-let animation;
-setTimeout(function(){
-  animation = mapChart.animate({property:"deltaLongitude", to:100000}, 20000000);
-}, 6000)
+  let animation;
+  setTimeout(function(){
+    animation = mapChart.animate({property:"deltaLongitude", to:100000}, 20000000);
+  }, 6000)
 
-mapChart.seriesContainer.events.on("down", function(){
-if(animation){
-  animation.stop();
-}
-})
+  mapChart.seriesContainer.events.on("down", function(){
+  if(animation){
+    animation.stop();
+  }
+  })
 
 
   });

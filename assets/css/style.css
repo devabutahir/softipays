@@ -3450,6 +3450,14 @@ iframe {
   }
 }
 
+.testimonial5 .swiper-slide {
+  margin-right: 50px !important;
+}
+.testimonial5 .swiper-slide .single-item {
+  transition: all 0.4s;
+  background: red;
+}
+
 .pricing-section4 .pricing-eleemet {
   position: absolute;
   top: 0;
@@ -4188,6 +4196,24 @@ iframe {
     transform: translateY(-100%);
   }
 }
+.opening-account-wrapper {
+  z-index: 1;
+}
+.opening-account-wrapper::before {
+  position: absolute;
+  content: "";
+  border: 1px dashed var(--n0);
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 48px;
+  z-index: -1;
+}
+@media (max-width: 575px) {
+  .opening-account-wrapper::before {
+    display: none;
+  }
+}
 .opening-account-wrapper .opening-account-item {
   max-width: 350px;
   margin: 0 auto;
@@ -4196,6 +4222,8 @@ iframe {
   border: 1px dashed var(--n0);
   width: 48px;
   height: 48px;
+  background: var(--black-clr);
+  z-index: -1;
 }
 .opening-account-wrapper .opening-account-item .icon {
   width: 90px;
@@ -4227,6 +4255,12 @@ iframe {
   animation: cirs 2s linear infinite;
   z-index: -1;
   border-radius: 12px;
+}
+@media (max-width: 1199px) {
+  .opening-account-wrapper .opening-account-item .icon {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @keyframes cirs {

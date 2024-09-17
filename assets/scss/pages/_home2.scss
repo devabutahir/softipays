@@ -863,6 +863,21 @@ width: fit-content !important;
         }
     }
 }
+//Testimonial 5
+.testimonial5{
+    .swiper-slide{
+        margin-right: 50px !important;
+        .single-item{
+            transition: all 0.4s;
+            background: red;
+        }
+        // &.swiper-slide-active{
+        //     .single-item{
+        //         background: red;
+        //     }
+        // }
+    }
+}
 
 //Pricing Section
 .pricing-section4{
@@ -1643,6 +1658,20 @@ width: fit-content !important;
 
 //Opening Account
 .opening-account-wrapper{
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: "";
+        border: 1px dashed var(--n0);
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 48px;
+        z-index: -1;
+        @include maxQuery(575){
+            display: none;
+        }
+    }
     .opening-account-item{
         max-width: 350px;
         margin: 0 auto;
@@ -1650,6 +1679,8 @@ width: fit-content !important;
             border: 1px dashed var(--n0);
             width: 48px;
             height: 48px;
+            background: var(--black-clr);
+            z-index: -1;
         }
         .icon{
             width: 90px;
@@ -1680,6 +1711,12 @@ width: fit-content !important;
                 animation: cirs 2s linear infinite;
                 z-index: -1;
                 border-radius: 12px;
+            }
+        }
+        @include maxQuery(1199){
+            .icon{
+                width: 70px;
+                height: 70px;   
             }
         }
     }

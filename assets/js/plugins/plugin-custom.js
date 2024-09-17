@@ -414,6 +414,38 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
 
+      //Testimonial5
+      const testimonial5__wrappers = new Swiper(".testimonial5-wrappers", {
+        spaceBetween: 100,
+        speed: 600,
+        loop: true,
+        effect: "cards",
+      grabCursor: true,
+        navigation: {
+          nextEl: ".ara-next",
+          prevEl: ".ara-prev",
+        },
+        spaceBetween: 24,
+        breakpoints: {
+          991: {
+            spaceBetween: 24,
+            slidesPerView: 1,
+          },
+          600: {
+            spaceBetween: 20,
+            slidesPerView: 1,
+          },
+          550: {
+            spaceBetween: 16,
+            slidesPerView: 1,
+          },
+          0: {
+            spaceBetween: 16,
+            slidesPerView: 1,
+          },
+        },
+      });
+
       // testimonial slider 
       let testimonialCarouselWrap = document.querySelector('.testimonial');
       if(testimonialCarouselWrap){
