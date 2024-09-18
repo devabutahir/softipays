@@ -3067,7 +3067,105 @@ iframe {
   right: 680px;
   top: 150px;
 }
+@media (max-width: 1650px) {
+  .hero5-shape-element {
+    display: none;
+  }
+}
 
+.banner-section6 {
+  padding: 90px 0 100px;
+}
+.banner-section6 .hero-content6 {
+  max-width: 554px;
+}
+.banner-section6 .hero-content6 .section-element {
+  position: absolute;
+  bottom: 90%;
+  right: 90%;
+}
+.banner-section6 .hero-content6 h2 {
+  color: #E5FDCE;
+}
+.banner-section6 .hero-content6 .hero6-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.banner-section6 .hero-content6 .hero6-btn span, .banner-section6 .hero-content6 .hero6-btn i {
+  color: #fff;
+}
+.banner-section6 .hero6-thumb {
+  border: 4px solid var(--n0);
+  border-radius: 32px;
+  animation: updown 2s linear infinite;
+}
+.banner-section6 .hero6-thumb img {
+  border-radius: 28px;
+}
+.banner-section6 .hero6-thumb .consult-booked {
+  position: absolute;
+  top: 40px;
+  right: -100px;
+  z-index: 1;
+  animation: leftright 2s linear infinite;
+}
+.banner-section6 .hero6-thumb .consult-booked .dates {
+  border-radius: 4px;
+  padding: 8px 11px;
+  background: var(--bg1);
+  color: var(--n0);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+.banner-section6 .hero6-thumb .consult-booked .new-badge {
+  background: var(--p2);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--black-clr);
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+.banner-section6 .hero6-thumb .hero-success-ratio {
+  position: absolute;
+  left: -80px;
+  bottom: 50px;
+  animation: leftright 2s linear infinite;
+}
+@media (max-width: 1500px) {
+  .banner-section6 .hero6-thumb .consult-booked {
+    right: 16px;
+    top: 16px;
+  }
+}
+@media (max-width: 1399px) {
+  .banner-section6 .hero6-thumb .hero-success-ratio {
+    left: 20px;
+    bottom: 16px;
+  }
+  .banner-section6 .hero-content6 h2 {
+    font-size: 59px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-section6 .hero6-thumb .hero-success-ratio {
+    left: 20px;
+    bottom: -60px;
+  }
+  .banner-section6 .hero6-thumb .consult-booked {
+    display: none;
+  }
+  .banner-section6 .hero-content6 h2 {
+    font-size: 46px;
+  }
+}
+
+@keyframes leftright {
+  50% {
+    transform: translateX(-10px);
+  }
+}
 .about-section4 .about-counter-item {
   border-top: 1px solid rgba(28, 30, 48, 0.1);
 }
