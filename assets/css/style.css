@@ -3062,6 +3062,12 @@ iframe {
     transform: translateY(-45%);
   }
 }
+.hero5-shape-element {
+  position: absolute;
+  right: 680px;
+  top: 150px;
+}
+
 .about-section4 .about-counter-item {
   border-top: 1px solid rgba(28, 30, 48, 0.1);
 }
@@ -3450,12 +3456,48 @@ iframe {
   }
 }
 
-.testimonial5 .swiper-slide {
-  margin-right: 50px !important;
-}
-.testimonial5 .swiper-slide .single-item {
+.testimonial5 .swiper-slide .testimonial-items5 {
   transition: all 0.4s;
-  background: red;
+  border-radius: 32px;
+  border: 1px solid rgba(28, 30, 48, 0.6);
+  background: var(--n0);
+}
+.testimonial5 .swiper-slide .testimonial-items5 .img-area {
+  width: 60px;
+  height: 60px;
+}
+.testimonial5 .swiper-slide .testimonial-items5 .content {
+  padding: 40px;
+}
+.testimonial5 .swiper-slide .testimonial-items5 .profile-info {
+  background: rgba(195, 237, 223, 0.2);
+}
+@media (max-width: 500px) {
+  .testimonial5 .swiper-slide .testimonial-items5 .content {
+    padding: 20px;
+  }
+}
+.testimonial5 .swiper-slide.swiper-slide-active {
+  box-shadow: none !important;
+}
+.testimonial5 .swiper-slide.swiper-slide-active .single-item {
+  overflow: hidden !important;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+.testimonial5 .swiper-3d .swiper-slide-shadow {
+  background-image: linear-gradient(to right, #EFEEE7, #fff);
+  border-radius: 10px;
+}
+.testimonial5 .test5-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background: rgba(28, 30, 48, 0.1);
+  width: 40px;
+  height: 4px;
+  border-radius: 0;
+}
+.testimonial5 .test5-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--black-clr);
 }
 
 .pricing-section4 .pricing-eleemet {
@@ -3950,10 +3992,24 @@ iframe {
   max-width: 800px;
   animation: updown 2s linear infinite;
 }
-.smartphone-apps img {
+.smartphone-apps .img {
   width: 100%;
 }
+.smartphone-apps .app-star {
+  position: absolute;
+  top: -40px;
+  right: 290px;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  animation: cirs 3s linear infinite;
+}
 
+@keyframes cirs {
+  50% {
+    transform: rotate(180deg);
+  }
+}
 .faq-section.faq-style5 {
   background: #EFEEE7;
 }

@@ -444,6 +444,11 @@
         transform: translateY(-45%);
     }
 }
+.hero5-shape-element{
+    position: absolute;
+    right: 680px;
+    top: 150px;         
+}
 
 //About Section4
 .about-section4{
@@ -866,16 +871,51 @@ width: fit-content !important;
 //Testimonial 5
 .testimonial5{
     .swiper-slide{
-        margin-right: 50px !important;
-        .single-item{
+        .testimonial-items5{
             transition: all 0.4s;
-            background: red;
+            border-radius: 32px;
+            border: 1px solid rgba(28, 30, 48, 0.60);
+            background: var(--n0);
+            .img-area{
+                width: 60px;
+                height: 60px;
+            }
+            .content{
+                padding: 40px;
+            }
+            .profile-info{
+                background: rgb(195, 237, 223, 20%);
+            }
+            @include maxQuery(500){
+                .content{
+                    padding: 20px;
+                }
+            }
         }
-        // &.swiper-slide-active{
-        //     .single-item{
-        //         background: red;
-        //     }
-        // }
+        &.swiper-slide-active{
+            box-shadow: none !important;
+            .single-item{
+                overflow: hidden !important;
+                border-bottom-left-radius: 32px;
+                border-bottom-right-radius: 32px;
+            }
+        }
+    }
+    .swiper-3d .swiper-slide-shadow{
+        background-image: linear-gradient(to right, #EFEEE7, #fff);
+        border-radius: 10px;
+    }
+    .test5-pagination{
+        .swiper-pagination-bullet{
+            opacity: 1;
+            background: rgb(28, 30, 48, 0.1);
+            width: 40px;
+            height: 4px;
+            border-radius: 0;
+            &.swiper-pagination-bullet-active{
+                background: var(--black-clr);
+            }
+        }
     }
 }
 
@@ -1397,9 +1437,23 @@ width: fit-content !important;
    width: 100%;
    max-width: 800px;
    animation: updown 2s linear infinite;
-   img{
+   .img{
     width: 100%;
    }
+   .app-star{
+    position: absolute;
+    top: -40px;
+    right: 290px;
+    z-index: 1;
+    width: 120px;       
+    height: 120px;
+    animation: cirs 3s linear infinite;
+   }
+}
+@keyframes cirs {
+    50%{
+        transform: rotate(180deg);
+    }
 }
 //Smart Phone
 

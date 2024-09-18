@@ -420,10 +420,10 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 600,
         loop: true,
         effect: "cards",
-      grabCursor: true,
-        navigation: {
-          nextEl: ".ara-next",
-          prevEl: ".ara-prev",
+        grabCursor: true,
+        pagination: {
+          el: ".test5-pagination",
+          clickable: true,
         },
         spaceBetween: 24,
         breakpoints: {
