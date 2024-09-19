@@ -86,12 +86,15 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             tl2.from(split_char.chars, {
               duration: 0.8,
-              x: 70,
+              y: 70,
               autoAlpha: 0,
               stagger: 0.03,
             });
           });
         }
+        
+
+        
 
         // Visible From Bottom Animation
         let visibleFromBottom = gsap.utils.toArray(".visible-from-bottom");
