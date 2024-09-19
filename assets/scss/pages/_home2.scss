@@ -512,6 +512,25 @@
             animation: leftright 2s linear infinite;
         }
     }
+    .hero6-dotting{
+        position: absolute;
+        left: 33%;
+        bottom: 145px;
+        opacity: 0.4;
+        animation: zooming 2s linear infinite;
+    }
+    .hero6-grow1{
+        position: absolute;
+        left: 45%;
+        top: 300px;
+        animation: rots 2s linear infinite;
+    }
+    .hero6-grow2{
+        position: absolute;
+        right: 160px;
+        bottom: 130px;
+        animation: rots 2s linear infinite;
+    }
     @include maxQuery(1500){
         .hero6-thumb{
             .consult-booked{
@@ -553,6 +572,11 @@
 @keyframes leftright {
     50%{
         transform: translateX(-10px);
+    }
+}
+@keyframes zooming {
+    50%{
+        transform: scale(1.1);
     }
 }
 
@@ -1134,6 +1158,17 @@ width: fit-content !important;
                 opacity: 0.7;
             }
         }
+        &.swiper-slide-active{
+            .partnered-item{
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &.partnered-style6{
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
     }
 }
 
@@ -1264,6 +1299,34 @@ width: fit-content !important;
         background: var(--n0) !important;
             &::before{
                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+//Service Section6
+.top-service-item{
+    border-radius: 32px;
+    border: 1px solid rgba(28, 30, 48, 0.10);
+    transition: all 0.4s;
+    height: 100%;
+    .icon-area{
+        transition: all 0.4s;
+    }
+    &:hover{
+        background: #E5FDCE;
+        .icon-area{
+            transform: scale(1.05);
+        }
+        .articles-btn{
+            .art{
+                transform: rotate(85deg);
+                background: var(--s2);
+                svg{
+                    path{
+                        stroke: var(--s2);
+                    }
+                }
             }
         }
     }

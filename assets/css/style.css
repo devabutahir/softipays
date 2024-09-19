@@ -3133,6 +3133,25 @@ iframe {
   bottom: 50px;
   animation: leftright 2s linear infinite;
 }
+.banner-section6 .hero6-dotting {
+  position: absolute;
+  left: 33%;
+  bottom: 145px;
+  opacity: 0.4;
+  animation: zooming 2s linear infinite;
+}
+.banner-section6 .hero6-grow1 {
+  position: absolute;
+  left: 45%;
+  top: 300px;
+  animation: rots 2s linear infinite;
+}
+.banner-section6 .hero6-grow2 {
+  position: absolute;
+  right: 160px;
+  bottom: 130px;
+  animation: rots 2s linear infinite;
+}
 @media (max-width: 1500px) {
   .banner-section6 .hero6-thumb .consult-booked {
     right: 16px;
@@ -3164,6 +3183,11 @@ iframe {
 @keyframes leftright {
   50% {
     transform: translateX(-10px);
+  }
+}
+@keyframes zooming {
+  50% {
+    transform: scale(1.1);
   }
 }
 .about-section4 .about-counter-item {
@@ -3686,6 +3710,13 @@ iframe {
 .partnered-section .swiper-slide .partnered-item img {
   opacity: 0.7;
 }
+.partnered-section .swiper-slide.swiper-slide-active .partnered-item img {
+  opacity: 1;
+}
+.partnered-section.partnered-style6 {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
 
 .what-thumb {
   animation: updown 2s linear infinite;
@@ -3814,6 +3845,29 @@ iframe {
 }
 .banking-service-item:hover .icon::before {
   transform: rotate(180deg);
+}
+
+.top-service-item {
+  border-radius: 32px;
+  border: 1px solid rgba(28, 30, 48, 0.1);
+  transition: all 0.4s;
+  height: 100%;
+}
+.top-service-item .icon-area {
+  transition: all 0.4s;
+}
+.top-service-item:hover {
+  background: #E5FDCE;
+}
+.top-service-item:hover .icon-area {
+  transform: scale(1.05);
+}
+.top-service-item:hover .articles-btn .art {
+  transform: rotate(85deg);
+  background: var(--s2);
+}
+.top-service-item:hover .articles-btn .art svg path {
+  stroke: var(--s2);
 }
 
 .choose-list-item {
