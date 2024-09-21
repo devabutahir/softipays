@@ -92,9 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
           });
         }
-        
-
-        
 
         // Visible From Bottom Animation
         let visibleFromBottom = gsap.utils.toArray(".visible-from-bottom");
@@ -412,6 +409,59 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           0: {
             spaceBetween: 16,
+            slidesPerView: 1,
+          },
+        },
+      });
+
+      //Project Testimonial
+      const porject_testimonial_wrapper = new Swiper(".porject-testimonial-wrapper", {
+        speed: 600,
+        loop: true,
+        spaceBetween: 40,
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".ara-next",
+          prevEl: ".ara-prev",
+        },
+        breakpoints: {
+          991: {
+            slidesPerView: 1.4,
+          },
+          600: {
+            spaceBetween: 20,
+            slidesPerView: 1,
+          },
+          550: {
+            slidesPerView: 1,
+          },
+          0: {
+            slidesPerView: 1,
+          },
+        },
+      });
+
+      //Project Testimonial
+      const testimonial_wrapper6 = new Swiper(".testimonial-wrapper6", {
+        speed: 600,
+        loop: true,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".ara-next",
+          prevEl: ".ara-prev",
+        },
+        breakpoints: {
+          991: {
+            slidesPerView: 1,
+          },
+          600: {
+            spaceBetween: 20,
+            slidesPerView: 1,
+          },
+          550: {
+            slidesPerView: 1,
+          },
+          0: {
             slidesPerView: 1,
           },
         },
