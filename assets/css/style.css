@@ -2138,7 +2138,7 @@ iframe {
   border-radius: 50%;
   content: "\f31a";
   font-family: "Phosphor";
-  font-size: 24px;
+  font-size: 20px;
   transform: rotate(0deg);
   transition: var(--transition);
   font-weight: 700;
@@ -2147,9 +2147,9 @@ iframe {
   justify-content: center;
   color: rgba(var(--n2), 1);
   background-color: rgba(var(--p1), 1);
-  width: 48px;
-  min-width: 48px;
-  height: 48px;
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
 }
 @media (max-width: 767px) {
   .faq-section .header-area button::after {
@@ -4487,6 +4487,34 @@ iframe {
   }
 }
 
+.faq-btn-blackstyle .accordion-single {
+  transition: all 0.4s;
+}
+.faq-btn-blackstyle .accordion-single .header-area .accordion-btn::after {
+  background: var(--black-clr);
+  color: var(--n0);
+}
+.faq-btn-blackstyle .accordion-single.active {
+  background: var(--bg6) !important;
+}
+.faq-btn-blackstyle .accordion-single.active .header-area .accordion-btn::after {
+  background: var(--p2);
+  color: var(--black-clr);
+}
+
+.faq-element6 {
+  position: absolute;
+  left: 50%;
+  bottom: -100px;
+  transform: translateX(-50%);
+  animation: zom 2s linear infinite;
+}
+
+@keyframes zom {
+  50% {
+    transform: translateX(-50%) scale(1.1);
+  }
+}
 .country-access-wrap {
   display: grid;
   flex-wrap: wrap;

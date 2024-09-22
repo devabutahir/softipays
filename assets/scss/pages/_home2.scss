@@ -1982,6 +1982,43 @@ width: fit-content !important;
         }
     }
 }
+//Faq Version6
+.faq-btn-blackstyle{
+    .accordion-single{
+        transition: all 0.4s;
+        .header-area{
+            .accordion-btn{
+                &::after{
+                    background: var(--black-clr);
+                    color: var(--n0);
+                }
+            }
+        }
+        &.active{
+            background: var(--bg6) !important;
+            .header-area{
+                .accordion-btn{
+                    &::after{
+                        background: var(--p2);
+                        color: var(--black-clr);
+                    }
+                }
+            }
+        }
+    }
+}
+.faq-element6{
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-50%);
+    animation: zom 2s linear infinite;
+}
+@keyframes zom {
+    50%{
+        transform: translateX(-50%) scale(1.1);
+    }
+}
 
 //Country access 
 .country-access-wrap{
