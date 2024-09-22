@@ -194,7 +194,7 @@
                 border-radius: 50%;
                 content: '\f31a';
                 font-family: "Phosphor";
-                font-size: 20px;
+                font-size: 18px;
                 transform: rotate(0deg);
                 transition: var(--transition);
                 font-weight: 700;
@@ -203,9 +203,9 @@
                 justify-content: center;
                 color: rgba(var(--n2), 1);
                 background-color: rgba(var(--p1), 1);
-                @include box(42);
+                @include box(38);
                 @include maxQuery(767) {
-                    @include box(38);
+                    @include box(32);font-size: 16px;
                 }
             }
         }
