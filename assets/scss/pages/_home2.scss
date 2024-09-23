@@ -1232,6 +1232,47 @@ width: fit-content !important;
     }
 }
 
+//Testimonial Case Studies
+.case-testi-item{
+    border: 1px solid rgba(255, 255, 255, 0.20); 
+    .thumb{
+        width: 500px;
+        img{
+            width: 100%;
+        }
+    }
+    .content{
+        .empowerment-badge{
+            display: flex;
+            align-items: center;
+            padding-left: 24px;
+            position: relative;
+            &::before{
+                position: absolute;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                content: '';
+                background: var(--p4);
+            }
+        }
+        .learn-mores{
+            svg{
+                transition: all 0.4s;
+            }
+            &:hover{
+                color: var(--p4) !important;
+                svg{
+                    transform: translateX(10px);
+                }
+            }
+        }
+    }
+    @include maxQuery(500){
+        flex-wrap: wrap;
+    }
+}
+
 //Pricing Section
 .pricing-section4{
     .pricing-eleemet{
@@ -1613,6 +1654,30 @@ width: fit-content !important;
     }
 }
 
+//Choose Watach
+.choose-watach-wrap{
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    .choose-watach-thumb{
+        .video-better{
+            width: 36px;
+            height: 36px;
+            font-size: 14px;
+            position: absolute;
+            i{
+                font-size: 14px !important;
+            }
+        }
+    }
+    .cont{
+        .watch-title{
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--black-clr);
+            display: block;
+        }
+    }
+}
+
 //Planing Services
 .planing-services{
     border-radius: 16px;
@@ -1623,6 +1688,45 @@ width: fit-content !important;
         }
     }
 }
+
+//Service 7
+.service-item7{
+    border: 1px solid rgb(28, 30, 48, 10%);
+    .text-pre{
+        font-size: 20px;
+    }
+    .service-thumb{
+        overflow: hidden;
+        img{
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+    }
+    .icon{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: rgb(255, 72, 0, 10%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+    }
+    &:hover{
+        .service-thumb{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .icon{
+            background: rgb(255, 72, 0);
+            img{
+                filter: brightness(0);
+            }
+        }
+    }
+}
+//Service 7
 
 //Investment 
 .investment-element{

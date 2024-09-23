@@ -61,55 +61,83 @@ document.addEventListener("DOMContentLoaded", function () {
           let visibleFromRight = document.querySelectorAll(".visible-from-right")
           visibleFromRight.forEach((visibleFromRight) => {
             let split_item = new SplitText(visibleFromRight, { type: "chars, words" })
-            gsap.from(split_item.chars, { duration: 1, x: 95, autoAlpha: 0, stagger: 0.15 });
+            gsap.from(split_item.chars, { duration: 2, x: 95, autoAlpha: 0, stagger: 0.15 });
           })
         }
 
         // Visible From Right Slowly Animation
+        // let visibleSlowlyRight = document.querySelectorAll(".visible-slowly-right");
+        // if ($(visibleSlowlyRight).length > 0) {
+        //   let char_come = gsap.utils.toArray(visibleSlowlyRight);
+        //   char_come.forEach((char_come) => {
+        //     let split_char = new SplitText(char_come, {
+        //       type: "chars, words",
+        //       lineThreshold: 0.5,
+        //     });
+        //     const tl2 = gsap.timeline({
+        //       scrollTrigger: {
+        //         trigger: char_come,
+        //         start: "top 90%",
+        //         end: "bottom 60%",
+        //         scrub: false,
+        //         markers: false,
+        //         toggleActions: "play none none none",
+        //       },
+        //     });
+        //     tl2.from(split_char.chars, {
+        //       duration: 0.8,
+        //       y: 70,
+        //       autoAlpha: 0,
+        //       stagger: 0.03,
+        //     });
+        //   });
+        // }
+        // // Visible From Bottom Animation
+        // let visibleFromBottom = gsap.utils.toArray(".visible-from-bottom");
+        // visibleFromBottom.forEach(splitArea => {
+        //   const trigger = gsap.timeline({
+        //     scrollTrigger: {
+        //       trigger: splitArea,
+        //       start: 'top 90%',
+        //       end: 'bottom 60%',
+        //       scrub: false,
+        //       markers: false,
+        //     }
+        //   });
+        //   const contentSplitted = new SplitText(splitArea, { type: "words, lines" });
+        //   gsap.set(splitArea, { perspective: 400 });
+        //   contentSplitted.split({ type: "lines" })
+        //   trigger.from(contentSplitted.lines, { duration: 1, delay: 0.3, opacity: 0, rotationX: -75, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
+        // });
+
         let visibleSlowlyRight = document.querySelectorAll(".visible-slowly-right");
-        if ($(visibleSlowlyRight).length > 0) {
-          let char_come = gsap.utils.toArray(visibleSlowlyRight);
-          char_come.forEach((char_come) => {
-            let split_char = new SplitText(char_come, {
+        if (visibleSlowlyRight.length > 0) {
+          visibleSlowlyRight.forEach((element) => {
+            let splitTextInstance = new SplitText(element, {
               type: "chars, words",
-              lineThreshold: 0.5,
             });
-            const tl2 = gsap.timeline({
+            
+            let tl = gsap.timeline({
               scrollTrigger: {
-                trigger: char_come,
-                start: "top 90%",
-                end: "bottom 60%",
+                trigger: element,
+                start: "top 80%", // Adjust this value based on your layout
+                end: "bottom 40%", // Adjust this value based on your layout
                 scrub: false,
-                markers: false,
-                toggleActions: "play none none none",
+                // markers: true,
+                toggleActions: "play play play play",
               },
             });
-            tl2.from(split_char.chars, {
+            
+            tl.from(splitTextInstance.chars, {
               duration: 0.8,
               y: 70,
               autoAlpha: 0,
               stagger: 0.03,
+              ease: "power3.out",
             });
           });
         }
 
-        // Visible From Bottom Animation
-        let visibleFromBottom = gsap.utils.toArray(".visible-from-bottom");
-        visibleFromBottom.forEach(splitArea => {
-          const trigger = gsap.timeline({
-            scrollTrigger: {
-              trigger: splitArea,
-              start: 'top 90%',
-              end: 'bottom 60%',
-              scrub: false,
-              markers: false,
-            }
-          });
-          const contentSplitted = new SplitText(splitArea, { type: "words, lines" });
-          gsap.set(splitArea, { perspective: 400 });
-          contentSplitted.split({ type: "lines" })
-          trigger.from(contentSplitted.lines, { duration: 1, delay: 0.3, opacity: 0, rotationX: -75, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
-        });
     
         // Visible Slowly From Bottom Animation 
         const visibleSlowlyBottom = document.querySelectorAll(".visible-slowly-bottom");
@@ -147,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let rts = gsap.timeline({
                 scrollTrigger: {
                 trigger: container,
-                toggleActions: "restart none none reset",
+                toggleActions: "restart restart restart reset",
                 start: "top 90%",
                 end: "top 0%",
                 }
@@ -240,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
           let tl = gsap.timeline({
             scrollTrigger: {
               trigger: container,
-              toggleActions: "restart none none reset"
+              toggleActions: "restart restart restart reset"
             }
           });
           tl.set(container, { autoAlpha: 1 });
@@ -427,6 +455,33 @@ document.addEventListener("DOMContentLoaded", function () {
         breakpoints: {
           991: {
             slidesPerView: 1.4,
+          },
+          600: {
+            spaceBetween: 20,
+            slidesPerView: 1,
+          },
+          550: {
+            slidesPerView: 1,
+          },
+          0: {
+            slidesPerView: 1,
+          },
+        },
+      });
+
+      //Case Studies
+      const case_testimonial_wrapper = new Swiper(".case-testimonial-wrapper", {
+        speed: 600,
+        loop: true,
+        spaceBetween: 24,
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".ara-next",
+          prevEl: ".ara-prev",
+        },
+        breakpoints: {
+          991: {
+            slidesPerView: 1.8,
           },
           600: {
             spaceBetween: 20,
