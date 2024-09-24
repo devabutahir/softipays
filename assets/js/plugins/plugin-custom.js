@@ -417,6 +417,10 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 100,
         speed: 600,
         loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
         navigation: {
           nextEl: ".ara-next",
           prevEl: ".ara-prev",

@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   $(function ($) {
 
     // preloader
-    $("#preloader").delay(300).animate({
+    $("#preloader").delay(400).animate({
       "opacity": "0"
     }, 500, function () {
       $("#preloader").css("display", "none");
