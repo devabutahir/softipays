@@ -579,12 +579,71 @@
         transform: scale(1.1);
     }
 }
-
+// Hero--7
+.banner-section7{
+    .hero-content7{
+        padding: 90px 0 100px;
+    }
+    .hero-shape-element7{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .hero-incorpo{
+        animation: updown 2s linear infinite;
+    }
+    background-color: #F4F3F0;
+    .satisfied-inner{
+        span{
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .hero-content7{
+            padding: 70px 0 95px;
+            .display-two{
+                font-size: 48px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .hero-content7{
+            padding: 40px 0 95px;
+            .display-two{
+                font-size: 44px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        .hero-content7{
+            padding: 60px 0 95px;
+            .display-two{
+                font-size: 38px;
+            }
+        }
+    }
+}
 //About Section4
 .about-section4{
     .about-counter-item{
         border-top: 1px solid rgba(28, 30, 48, 0.10);
     }
+}
+
+//Section Element shape
+.section7-element-route{
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%);
 }
 
 //Select img Change Option
