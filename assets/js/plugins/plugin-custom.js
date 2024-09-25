@@ -446,6 +446,41 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
 
+      //Testimonial9
+      const testimonial__wrappers9 = new Swiper(".testimonial-wrappers9", {
+        spaceBetween: 100,
+        speed: 600,
+        loop: true,
+        clickable: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".ara-next",
+          prevEl: ".ara-prev",
+        },
+        spaceBetween: 24,
+        breakpoints: {
+          991: {
+            spaceBetween: 24,
+            slidesPerView: 3.5,
+          },
+          600: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+          },
+          550: {
+            spaceBetween: 16,
+            slidesPerView: 2,
+          },
+          0: {
+            spaceBetween: 16,
+            slidesPerView: 1,
+          },
+        },
+      });
+
       //Project Testimonial
       const porject_testimonial_wrapper = new Swiper(".porject-testimonial-wrapper", {
         speed: 600,

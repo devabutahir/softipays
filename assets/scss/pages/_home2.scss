@@ -1440,6 +1440,19 @@ width: fit-content !important;
     }
 }
 
+//Testimonial 9
+.testimonial-wrappers9{
+    margin-left: 17%;
+    .testimonial-items8{
+        &:hover{
+            background: var(--p5) !important;
+        }
+    }
+    @include maxQuery(1890){
+        margin-left: 0;
+    }
+}
+
 //section badge 
 .section-badge8{
     border: 1px dashed var(--black-clr);
@@ -2528,6 +2541,36 @@ width: fit-content !important;
     }
 }
 
+//Faq Version 9
+.faq-btn-blackstyle9{
+    .accordion-single{
+        transition: all 0.4s;
+        .header-area{
+            .accordion-btn{
+                &::after{
+                    background: var(--black-clr);
+                    color: var(--n0);
+                }
+            }
+        }
+        &.active{
+            background: var(--n0) !important;
+            .header-area{
+                .accordion-btn{
+                    color: var(--p5);
+                    &::after{
+                        background: var(--p5);
+                        color: var(--n0);
+                    }
+                }
+            }
+            &::after{
+                background: var(--p5);
+            }
+        }
+    }
+}
+
 //Country access 
 .country-access-wrap{
     display: grid;
@@ -2665,6 +2708,12 @@ width: fit-content !important;
 @keyframes ups2 {
     50%{
         transform: translateY(-100%);
+    }
+}
+.tracking-wrap{
+    .tracking-element2,
+    .tracking-element1{
+        opacity: 0.4;
     }
 }
 //Tracking
