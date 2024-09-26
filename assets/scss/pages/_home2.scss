@@ -688,9 +688,10 @@
 //Hero--9
 .banner-section9{
     .hero-content9{
-        padding: 256px 0;
+        padding: 220px 0 256px;
         .input-area{
             outline: none;
+            max-width: 395px;
             input{
                 border: unset;
                 outline: none;
@@ -702,9 +703,11 @@
         }
         .hero9-element{
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 190px;
+            left: -60px;
             z-index: -1;
+            animation: rots 2s linear infinite;
+            opacity: 0.4;
         }
     }
     .hero-thumb9{
@@ -728,6 +731,112 @@
             right: 0;
             bottom: 190px;
             animation: rots 2s linear infinite;
+        }
+    }
+    @include maxQuery(1600){
+        .hero-content9{
+            padding: 100px 0 180px;
+        }
+        .hero-thumb9{
+            bottom: 0;
+            right: 140px;
+            .thumb-bg{
+                max-width: 600px;
+            }
+            .thumb{
+                right: 50px;
+                max-width: 513px;
+            }
+            .hero9-ele{
+                right: 0;
+                bottom: 190px;
+                width: 80px;
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .hero-content9{
+            padding: 100px 0 180px;
+        }
+        .hero-thumb9{
+            bottom: 0;
+            right: 50px;
+            .thumb-bg{
+                max-width: 500px;
+            }
+            .thumb{
+                right: 50px;
+                max-width: 413px;
+            }
+            .hero9-ele{
+                right: 0;
+                bottom: 190px;
+                width: 80px;
+            }
+        }
+    }
+    @include maxQuery(1199){
+        .hero-content9{
+            .display-four{
+                font-size: 40px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .hero-content9{
+            padding: 50px 0 180px;
+        }
+        .hero-thumb9{
+            position: relative;
+            margin: 0 auto;
+            .thumb-bg{
+                max-width: 300px;
+                img{
+                    width: 100%;
+                }
+                right: 50%;
+                left: initial;
+                transform: translateX(50%);
+                animation: none;
+            }
+            .thumb{
+                right: 50%;
+                transform: translateX(50%);
+                max-width: 513px;
+            }
+            .hero9-ele{
+                right: 0;
+                bottom: 190px;
+                width: 80px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        .hero-content9{
+            padding: 30px 0 80px;
+            .display-four{
+                font-size: 34px;
+            }
+        }
+        .hero-thumb9{
+            .thumb-bg{
+                opacity: 0.2;
+            }
+            .thumb{
+                right: initial;
+                transform: translateX(0%);
+                max-width: 1113px;
+                width: 260px;
+                left: 50%;
+                transform: translateX(-30%);
+                height: 300px;
+                img{
+                    height: 100%;
+                }
+            }
+            .hero9-ele{
+                display: none;
+            }
         }
     }
 }
