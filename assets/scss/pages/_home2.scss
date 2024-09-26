@@ -685,6 +685,57 @@
     }
 }
 
+//Hero--9
+.banner-section9{
+    .hero-content9{
+        padding: 256px 0;
+        .input-area{
+            outline: none;
+            input{
+                border: unset;
+                outline: none;
+                color: rgb(28, 30, 48, 60%);
+            }
+            ::placeholder{
+                color: rgb(28, 30, 48, 60%);
+            }
+        }
+        .hero9-element{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    .hero-thumb9{
+        position: absolute;
+        bottom: 0;
+        right: 140px;
+        .thumb-bg{
+            animation: zomin 3s linear infinite;
+        }
+        .thumb{
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+            max-width: 613px;
+            img{
+                width: 100%;
+            }
+        }
+        .hero9-ele{
+            position: absolute;
+            right: 0;
+            bottom: 190px;
+            animation: rots 2s linear infinite;
+        }
+    }
+}
+@keyframes zomin {
+    50%{
+        transform: scale(1.03);
+    }
+}
 //Tax Section
 .tax-wrapper{
     border-radius: 16px;
@@ -1462,6 +1513,14 @@ width: fit-content !important;
     }
 }
 
+//Section Badge 9
+.section-badge9{
+    &:hover{
+        background: var(--p5);
+        border-color: var(--p5);
+    }
+}
+
 //Testimonial Project
 .porject-testi-item{
     .content{
@@ -1951,6 +2010,94 @@ width: fit-content !important;
         }
     }
 }
+
+//Choose 9
+.choose9-content{
+    .choose9-items{
+        .cion{
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 700;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 110%;
+                width: 1px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid rgb(28, 30, 48, 20%)
+            }
+        }
+    }
+}
+.hash-element{
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    animation: updown 2s linear infinite;
+    @include maxQuery(1700){
+        top: 40px;
+        left: 40px;
+    }
+}
+.flatform-thumb4{
+    max-width: 436px;
+    margin: 0 auto;
+    text-align: center;
+    @include maxQuery(991){
+        max-width: 300px;
+    }
+    @include maxQuery(400){
+        max-width: 200px;
+    }
+}
+.platform4-element{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+//Use-app
+.use-app-item{
+    border-radius: 16px;
+    border: 1px solid rgb(28, 30, 48, 20%);
+    z-index: 1;
+    .use-app-icon{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0%;
+        background: linear-gradient(180deg, #C8D7FE 0%, rgba(200, 216, 254, 0.00) 104.79%);
+        border-radius: 16px;
+        z-index: -1;
+        transition: all 0.4s;
+    }
+    &:hover{
+        &::before{
+            height: 100%;
+        }
+    }
+}
+.app-counting-item{
+    @include maxQuery(575){
+        img{
+            width: 50px;
+        }
+    }
+}
+//Use-app
 
 //Planing Services
 .planing-services{
