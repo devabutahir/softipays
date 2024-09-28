@@ -731,6 +731,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
+      //--Global SideBar--
+      $('.toggleMain-controls .bar-toggles, .cmn-overlay').on('click', function () {
+        $('.toggleMain-controls .sidebar-wrapper, .cmn-overlay').toggleClass('active');
+      });
+      //--Global SideBar--
+
       /* Wow js */
       new WOW().init();
 

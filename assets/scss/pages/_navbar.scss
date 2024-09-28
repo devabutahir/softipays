@@ -6,6 +6,10 @@
     background: rgba(var(--n6), 1);
     .nav-brand {
         max-width: 265px;
+        object-fit: contain;
+        img{
+            object-fit: contain;
+        }
         @include maxQuery(991) {
             max-width: 150px;
         }
@@ -43,11 +47,28 @@
                     color: rgba(var(--n5), 1);
                     border-bottom: 1px solid transparent;
                     transition: var(--transition);
+                    font-size: 18px;
+                    font-weight: 500;
+                    span{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
                     &:hover, &.active{
                         span{
                             &::after, &::before{
                                 color: rgba(var(--p1), 1);
                             }
+                        }
+                        &::after{
+                            color: rgba(var(--p1), 1);
+                        }
+                    }
+                }
+                @include maxQuery(1399){
+                    button, a{
+                        font-size: 16px;
+                        span{
+                            font-size: 16px;
                         }
                     }
                 }
@@ -87,6 +108,10 @@
                             }
                         }
                     }
+                }
+                .custom-scroll{
+                    overflow: scroll;
+                    height: 45vh;
                 }
                 .sub-menu {
                     position: absolute;
@@ -133,7 +158,7 @@
             }
         }
         .navbar-toggle-btn {
-            width: 40px;
+            width: 33px;
             height: 28px;
             position: relative;
             right: 0;
@@ -142,7 +167,7 @@
             span {
                 display: block;
                 position: absolute;
-                height: 3px;
+                height: 2px;
                 width: 100%;
                 background: rgb(var(--s1));
                 border-radius: 9px;
@@ -155,10 +180,10 @@
                 }
                 &:nth-child(2),
                 &:nth-child(3) {
-                    top: 12px;
+                    top: 10px;
                 }
                 &:nth-child(4) {
-                    top: 24px;
+                    top: 20px;
                 }
             }
             &.open {
@@ -198,6 +223,17 @@
         .icon-box{
             @include box(48);
             background-color: rgba(var(--p1), 0.1);
+        }
+    }
+    .bars-button{
+        border: 1px solid rgb(0, 0, 0, 10%);
+        @include box(50);
+        transition: all 0.4s ease;
+        &:hover{
+            transform: rotate(180deg);
+        }
+        @include maxQuery(991){
+            @include box(40);
         }
     }
 }

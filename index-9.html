@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body class="n0-bg toggleMain-controls">
 
     <!-- start preloader -->
     <div id="preloader">
@@ -40,16 +40,18 @@
 
     <!-- header-section start -->
     <header class="header-section header-section4 bg8">
-        <div class="container custom-container">
+        <div class="container">
             <div class="main-navbar py-4 py-lg-5">
                 <nav class="navbar-custom">
                     <div class="d-flex align-items-center justify-content-between">
                         <a href="index.html" class="nav-brand d-flex d-lg-none">
-                            <img class="logo" src="assets/images/fav.png" alt="logo">
+                            <img class="logo" src="assets/images/white-fav.png" alt="logo">
                             <img class="logo" src="assets/images/logo-text.png" alt="logo">
                         </a>
-                        <div class="d-flex gap-6">
-                            <div class="switch-wrapper-top d-flex d-lg-none"></div>
+                        <div class="d-flex align-items-center gap-lg-6 gap-4">
+                            <button type="button" class="bars-button bar-toggles d-lg-none d-flex align-items-center justify-content-center rounded-circle">
+                                <img src="assets/images/bars-dot.png" alt="icon">
+                            </button>
                             <button class="navbar-toggle-btn d-block d-lg-none" type="button">
                                 <span></span>
                                 <span></span>
@@ -61,21 +63,75 @@
                     <div class="navbar-toggle-item">
                         <div class="d-flex gap-5 flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between mt-5 mt-lg-0">
                             <a href="index.html" class="navbar-brand d-center d-none d-lg-flex justify-content-start gap-2 logo">
-                                <img class="logo" src="assets/images/fav.png" alt="logo">
+                                <img class="logo" src="assets/images/white-fav.png" alt="logo">
                                 <img class="logo d-none d-xl-block" src="assets/images/logo-text.png" alt="logo">
                             </a>
-                            <ul class="custom-nav d-lg-flex d-grid gap-3 gap-lg-4">
-                                <li class="menu-link">
-                                    <a href="index.html" class="slide-vertical" data-splitting>Home</a>
+                            <ul class="custom-nav d-lg-flex d-grid gap-3 gap-lg-4 gap-xl-6 gap-xxl-8 gap-xl-6 gap-xxl-8">
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 cus-z1 slide-vertical" data-splitting>
+                                        Demos
+                                    </button>
+                                    <ul class="sub-menu custom-scroll p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="index.html" class="n2-color slide-horizontal" data-splitting>Home Version 1</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-2.html" class="n2-color slide-horizontal" data-splitting>Home Version 2</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-3.html" class="n2-color slide-horizontal" data-splitting>Home Version 3</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-4.html" class="n2-color slide-horizontal" data-splitting>Home Version 4</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-5.html" class="n2-color slide-horizontal" data-splitting>Home Version 5</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-6.html" class="n2-color slide-horizontal" data-splitting>Home Version 6</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-7.html" class="n2-color slide-horizontal" data-splitting>Home Version 7</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-8.html" class="n2-color slide-horizontal" data-splitting>Home Version 8</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-9.html" class="n2-color slide-horizontal" data-splitting>Home Version 9</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-10.html" class="n2-color slide-horizontal" data-splitting>Home Version 10</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="menu-link">
-                                    <a href="company.html" class="slide-vertical" data-splitting>Company</a>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 cus-z1 slide-vertical" data-splitting>
+                                        Feautes
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="index.html" class="n2-color slide-horizontal" data-splitting>Features Version 1</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-2.html" class="n2-color slide-horizontal" data-splitting>Features Version 2</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-3.html" class="n2-color slide-horizontal" data-splitting>Features Version 3</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="menu-link">
-                                    <a href="industry.html" class="slide-vertical" data-splitting>Industry</a>
-                                </li>
-                                <li class="menu-link">
-                                    <a href="merchant.html" class="slide-vertical" data-splitting>Merchant</a>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 cus-z1 slide-vertical" data-splitting>
+                                        Services
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="index.html" class="n2-color slide-horizontal" data-splitting>Services</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="index-2.html" class="n2-color slide-horizontal" data-splitting>Services Details</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="menu-item position-relative">
                                     <button class="position-relative pe-5 cus-z1 slide-vertical" data-splitting>
@@ -95,6 +151,15 @@
                                                     <a href="blog-details.html" class="n2-color slide-horizontal" data-splitting>Blog details</a>
                                                 </li>
                                             </ul>
+                                        </li>
+                                        <li class="menu-link">
+                                            <a href="company.html" class="slide-vertical" data-splitting>Company</a>
+                                        </li>
+                                        <li class="menu-link">
+                                            <a href="industry.html" class="slide-vertical" data-splitting>Industry</a>
+                                        </li>
+                                        <li class="menu-link">
+                                            <a href="merchant.html" class="slide-vertical" data-splitting>Merchant</a>
                                         </li>
                                         <li class="menu-link py-1">
                                             <a href="pricing.html" class="n2-color slide-horizontal" data-splitting>Pricing</a>
@@ -116,16 +181,52 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="menu-link">
-                                    <a href="contact.html" class="slide-vertical" data-splitting>Contact</a>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 cus-z1 slide-vertical" data-splitting>
+                                        Blog
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="blog.html" class="n2-color slide-horizontal" data-splitting>Blog</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="blog-details.html" class="n2-color slide-horizontal" data-splitting>Blog details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 cus-z1 slide-vertical" data-splitting>
+                                        Shop
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="shop.html" class="n2-color slide-horizontal" data-splitting>Shop</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="shop-details.html" class="n2-color slide-horizontal" data-splitting>Shop details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 cus-z1 slide-vertical" data-splitting>
+                                        Portfolio
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="shop.html" class="n2-color slide-horizontal" data-splitting>Portfoilo</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="shop-details.html" class="n2-color slide-horizontal" data-splitting>Portfoilo details</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                            <div class="right-area d-flex align-items-center gap-3 gap-md-6">
-                                <a href="sign-in.html" class="">
-                                    <span class="fs-six fw-semibold">Log In</span>
-                                </a>
-                                <a href="contact.html" class="box-style box-second bg1 d-center">
-                                    <span class="fs-six">Contact Us</span>
+                            <div class="right-area d-flex align-items-center gap-3 gap-md-4">
+                                <button type="button" class="bars-button bar-toggles d-lg-flex d-none align-items-center justify-content-center rounded-circle">
+                                    <img src="assets/images/bars-dot.png" alt="icon">
+                                </button>
+                                <a href="contact.html" class="box-style box-second second-alt border-0 rounded-5 p5-bg d-center">
+                                    <span class="fs-six n0-color">Contact Us</span>
                                 </a>
                             </div>
                         </div>
@@ -150,7 +251,7 @@
                         <form action="#" class="footer-form mb-xxl-10 mb-xl-8 mb-lg-6 mb-5">
                             <div class="input-area second n0-bg rounded-5 d-flex p-1">
                                 <input type="text" class="px-3 px-md-6" placeholder="Email address">
-                                <button class="box-style box-second border-0 second-alt py-3 px-6 p5-bg gap-2 d-flex align-items-center justify-content-center rounded-5">
+                                <button class="box-style box-second border-0 second-alt py-3 px-8 p5-bg gap-2 d-flex align-items-center justify-content-center rounded-5">
                                     <span class="text-nowrap n0-color">Start now</span><i class="fa-solid fa-angle-right n0-color"></i>
                                 </button> 
                             </div>
@@ -873,7 +974,108 @@
             </div>
         </div>
     </footer>
-    <!-- Footer Area End -->
+     <!-- Footer Area End -->
+
+    <!-- Sidebar Start -->
+    <div class="cmn-styles sidebar-wrapper">
+        <div class="d-flex ramove-area justify-content-end px-10 pt-3 mb-xxl-10 mb-8">
+            <div class="side-remove d-flex align-items-center gap-2 bar-toggles text-uppercase">
+                Close <i class="ph ph-x black-clr fs-five fw-bold"></i>
+            </div>
+        </div>
+        <div class="box">
+            <a href="index.html" class="text-center mb-md-15 mb-10 d-block">
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
+            <h5 class="black-clr mb-xxl-5 mb-4 text-uppercase text-center">
+                //INSTAGRAM
+            </h5>
+            <div class="sideba-gallery mb-md-15 mb-10">
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta1.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta2.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta3.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta4.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta5.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta6.jpg" alt="img">
+                </a>
+            </div>
+            <h5 class="black-clr mb-xxl-5 mb-4 text-uppercase text-center">
+                Info
+            </h5>
+            <ul class="side-infocontact d-grid gap-3 mb-md-15 mb-10">
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-envelope"></i>
+                    </span>
+                    <a href="#">
+                        softipay@example.com
+                    </a>
+                </li>
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-map-pin"></i>
+                    </span>
+                    <a href="#">
+                        28 street, new york, USA
+                    </a>
+                </li>
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-phone-call"></i>
+                    </span>
+                    <a href="#">
+                        (+987) 123 456 789 77
+                    </a>
+                </li>
+            </ul>
+            <h5 class="black-clr mb-xxl-5 mb-4 text-uppercase text-center">
+                //Follow Us
+            </h5>
+            <ul class="header-social">
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f"></i>                                     
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/?hl=en">
+                        <i class="fa-brands fa-instagram"></i>                                                                              
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bd.linkedin.com/">
+                        <i class="fa-brands fa-linkedin-in"></i>                                                                                                                           
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>                                                                               
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>                                                                               
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Common Overlay -->
+    <div class="cmn-overlay"></div>
+    <!-- Common Overlay -->
 
     <!-- ==== js dependencies start ==== -->
     <script src="assets/js/plugins/plugins.js"></script>
