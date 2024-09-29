@@ -848,6 +848,69 @@
         transform: scale(1.03);
     }
 }
+//Hero 10 
+.banner-section10{
+    background: url(../../assets/images/hero10-bg.png) no-repeat center center;
+    background-size: cover;
+    .hero-content10{
+        padding: 200px 0 80px;
+        @include maxQuery(1199){
+            .display-two{
+                font-size: 52px;
+            }
+        }
+        @include maxQuery(991){
+            padding: 160px 0 80px;
+        }
+        @include maxQuery(767){
+            padding: 140px 0 60px;
+            .display-two{
+                font-size: 36px;
+            }
+        }
+        @include maxQuery(500){
+            padding: 130px 0 60px;
+            .display-two{
+                font-size: 30px;
+            }
+        }
+    }
+    .feature-lement-top{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .hero10-thumb{
+        margin-bottom: -320px;
+        z-index: 1;
+        position: relative;
+    }
+    @include maxQuery(1550){
+        .hero10-thumb{
+            margin-bottom: -220px;
+        }
+    }
+    @include maxQuery(991){
+        .hero10-thumb{
+            margin-bottom: -120px;
+        }
+    }
+    @include maxQuery(767){
+        .hero10-thumb{
+            margin-bottom: -80px;
+        }
+    }
+    @include maxQuery(500){
+        .hero10-thumb{
+            margin-bottom: -30px;
+        }
+    }
+}
+.hero10-badge{
+    background: rgba(255, 255, 255, 0.10);
+}
+
 //Tax Section
 .tax-wrapper{
     border-radius: 16px;
@@ -1119,6 +1182,73 @@
     }
 }
 
+//Feature 10
+.feature-items10{
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(28, 30, 48, 0.10);
+    background: rgba(0, 86, 81, 0.05);
+    .cmn-header{
+        background: rgba(0, 86, 81, 0.10);
+        font-size: 14px;
+    }
+    .thumb-planning{
+        border-radius: 16px;
+        position: relative;
+        width: 100%;
+        .mimg{
+            border-radius: 16px;
+            width: 100%;
+        }
+        .feature-planning-ele{
+            position: absolute;
+            bottom: 18px;
+            left: 24px;
+            animation: updown 2s linear infinite;
+        }
+    }
+    .feature-paragraph{
+        max-width: 252px;
+    }
+    &.feature-style1{
+        .thumb-planning{
+          max-width: 234px;  
+          width: 234px;
+           .feature-planning-ele{
+            left: 10px;
+            bottom: 8px;
+                width: 80px;
+                object-fit: contain;
+            }
+        }
+        @include maxQuery(500){
+            flex-wrap: wrap;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            .thumb-planning{
+                width: 100%;
+                max-width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include maxQuery(1199){
+        gap: 14px;
+        padding: 20px;
+        .thumb-planning{
+            .feature-planning-ele{
+                width: 150px;
+                object-fit: contain;
+                left: 10px;
+                bottom: 8px;
+            }
+        }
+    }
+}
+
 //blog Section
 .blog-section4{
     margin-bottom: -30px;
@@ -1288,6 +1418,12 @@
         &:hover{
             background: #C3EDDF;
         }
+    }
+}
+.security-message10{
+    &.active,
+    &:hover{
+        background: rgba(0, 86, 81, 0.102) !important;
     }
 }
 .money-security-thumb{
@@ -3038,6 +3174,14 @@ width: fit-content !important;
             .icon{
                 width: 70px;
                 height: 70px;   
+            }
+        }
+    }
+    &.opening-account-wrapper10{
+        .opening-account-item{
+            .serial-badge{
+                border: 1px dashed var(--n0);
+                background: var(--bg1);
             }
         }
     }

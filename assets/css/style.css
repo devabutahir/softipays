@@ -36,6 +36,7 @@
   --p3: #EEF5DB;
   --p4: #FF4800;
   --p5: #444CE7;
+  --p6: #FAFE02;
   --s2: #01A66B;
   --bg1: #005651;
   --bg2: #4B655C;
@@ -598,6 +599,14 @@ select {
 
 .p5-bg {
   background-color: var(--p5) !important;
+}
+
+.p6-clr {
+  color: var(--p6) !important;
+}
+
+.p6-bg {
+  background-color: var(--p6) !important;
 }
 
 .s1-bg-color {
@@ -3647,6 +3656,75 @@ iframe {
     transform: scale(1.03);
   }
 }
+.banner-section10 {
+  background: url(../../assets/images/hero10-bg.png) no-repeat center center;
+  background-size: cover;
+}
+.banner-section10 .hero-content10 {
+  padding: 200px 0 80px;
+}
+@media (max-width: 1199px) {
+  .banner-section10 .hero-content10 .display-two {
+    font-size: 52px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section10 .hero-content10 {
+    padding: 160px 0 80px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section10 .hero-content10 {
+    padding: 140px 0 60px;
+  }
+  .banner-section10 .hero-content10 .display-two {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-section10 .hero-content10 {
+    padding: 130px 0 60px;
+  }
+  .banner-section10 .hero-content10 .display-two {
+    font-size: 30px;
+  }
+}
+.banner-section10 .feature-lement-top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.banner-section10 .hero10-thumb {
+  margin-bottom: -320px;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 1550px) {
+  .banner-section10 .hero10-thumb {
+    margin-bottom: -220px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section10 .hero10-thumb {
+    margin-bottom: -120px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section10 .hero10-thumb {
+    margin-bottom: -80px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-section10 .hero10-thumb {
+    margin-bottom: -30px;
+  }
+}
+
+.hero10-badge {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .tax-wrapper {
   border-radius: 16px;
   background: var(--n0);
@@ -3916,6 +3994,74 @@ iframe {
     transform: rotate(360deg);
   }
 }
+.feature-items10 {
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid rgba(28, 30, 48, 0.1);
+  background: rgba(0, 86, 81, 0.05);
+}
+.feature-items10 .cmn-header {
+  background: rgba(0, 86, 81, 0.1);
+  font-size: 14px;
+}
+.feature-items10 .thumb-planning {
+  border-radius: 16px;
+  position: relative;
+  width: 100%;
+}
+.feature-items10 .thumb-planning .mimg {
+  border-radius: 16px;
+  width: 100%;
+}
+.feature-items10 .thumb-planning .feature-planning-ele {
+  position: absolute;
+  bottom: 18px;
+  left: 24px;
+  animation: updown 2s linear infinite;
+}
+.feature-items10 .feature-paragraph {
+  max-width: 252px;
+}
+.feature-items10.feature-style1 .thumb-planning {
+  max-width: 234px;
+  width: 234px;
+}
+.feature-items10.feature-style1 .thumb-planning .feature-planning-ele {
+  left: 10px;
+  bottom: 8px;
+  width: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 500px) {
+  .feature-items10.feature-style1 {
+    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .feature-items10.feature-style1 .thumb-planning {
+    width: 100%;
+    max-width: 100%;
+  }
+  .feature-items10.feature-style1 .thumb-planning img {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .feature-items10 {
+    gap: 14px;
+    padding: 20px;
+  }
+  .feature-items10 .thumb-planning .feature-planning-ele {
+    width: 150px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    left: 10px;
+    bottom: 8px;
+  }
+}
+
 .blog-section4 {
   margin-bottom: -30px;
 }
@@ -4052,6 +4198,10 @@ iframe {
 }
 .money-security-content .security-message.active, .money-security-content .security-message:hover {
   background: #C3EDDF;
+}
+
+.security-message10.active, .security-message10:hover {
+  background: rgba(0, 86, 81, 0.102) !important;
 }
 
 .money-security-thumb {
@@ -5664,6 +5814,10 @@ iframe {
     width: 70px;
     height: 70px;
   }
+}
+.opening-account-wrapper.opening-account-wrapper10 .opening-account-item .serial-badge {
+  border: 1px dashed var(--n0);
+  background: var(--bg1);
 }
 
 @keyframes cirs {
