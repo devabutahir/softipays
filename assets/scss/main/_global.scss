@@ -707,6 +707,12 @@ select {
 	&.b-seventh{
 		border-color: rgba(var(--n4), 1) !important;
 	}
+	&.b-black{
+		border-color: #000 !important;
+	}
+	&.b-gray{
+		border-color: rgba(28, 30, 48, 0.10) !important;
+	}
 }
 
 // dotted border
