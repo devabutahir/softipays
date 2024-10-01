@@ -2157,10 +2157,12 @@ iframe {
 .banner-section.index-one .first-abs {
   left: -45% !important;
   top: -20px;
+  animation: updown 2s linear infinite;
 }
 .banner-section.index-one .second-abs {
   right: -50% !important;
   top: -20px;
+  animation: updown 2s linear infinite;
 }
 
 .how-works .icon-area {
@@ -4008,6 +4010,7 @@ iframe {
   border-radius: 16px;
   border: 1px solid rgba(28, 30, 48, 0.1);
   background: rgba(0, 86, 81, 0.05);
+  transition: all 0.4s;
 }
 .feature-items10 .cmn-header {
   background: rgba(0, 86, 81, 0.1);
@@ -4030,6 +4033,9 @@ iframe {
 }
 .feature-items10 .feature-paragraph {
   max-width: 252px;
+}
+.feature-items10.feature-style1 {
+  transition: all 0.4s;
 }
 .feature-items10.feature-style1 .thumb-planning {
   max-width: 234px;
@@ -4057,6 +4063,9 @@ iframe {
     width: 100%;
   }
 }
+.feature-items10.feature-style1:hover {
+  background: var(--n0);
+}
 @media (max-width: 1199px) {
   .feature-items10 {
     gap: 14px;
@@ -4069,6 +4078,9 @@ iframe {
     left: 10px;
     bottom: 8px;
   }
+}
+.feature-items10:hover {
+  background: var(--n0);
 }
 
 .blog-section4 {
@@ -6479,6 +6491,18 @@ iframe {
   top: 190px;
   right: 200px;
   animation: cirs 5s linear infinite;
+}
+.footer-style10 .footer10-element1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.footer-style10 .footer10-element2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 @media (max-width: 1399px) {
   .footer-style10 .foter-circle-ele {

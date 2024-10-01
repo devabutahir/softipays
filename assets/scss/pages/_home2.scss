@@ -1192,6 +1192,7 @@
     border-radius: 16px;
     border: 1px solid rgba(28, 30, 48, 0.10);
     background: rgba(0, 86, 81, 0.05);
+    transition: all 0.4s;
     .cmn-header{
         background: rgba(0, 86, 81, 0.10);
         font-size: 14px;
@@ -1215,6 +1216,7 @@
         max-width: 252px;
     }
     &.feature-style1{
+        transition: all 0.4s;
         .thumb-planning{
           max-width: 234px;  
           width: 234px;
@@ -1238,6 +1240,9 @@
                 }
             }
         }
+        &:hover{
+            background: var(--n0);
+        }
     }
     @include maxQuery(1199){
         gap: 14px;
@@ -1250,6 +1255,9 @@
                 bottom: 8px;
             }
         }
+    }
+    &:hover{
+        background: var(--n0);
     }
 }
 
@@ -3927,6 +3935,18 @@ width: fit-content !important;
         top: 190px;
         right: 200px;
         animation: cirs 5s linear infinite;
+    }
+    .footer10-element1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .footer10-element2{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
     }
     @include maxQuery(1399){
         .foter-circle-ele{

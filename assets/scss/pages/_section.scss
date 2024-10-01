@@ -48,10 +48,12 @@
         .first-abs{
             left: -45% !important;
             top: -20px;
+            animation: updown 2s linear infinite;
         }
         .second-abs{
             right: -50% !important;
             top: -20px;
+            animation: updown 2s linear infinite;
         }
     }
 }
