@@ -914,6 +914,111 @@
     }
 }
 
+//Hero 11
+.banner-section11{
+    z-index: 1;
+    .hero11-wrapper{
+        padding-top: 90px;
+    }
+    .hero-form{
+        background: var(--n0);
+        box-shadow: 0px 596px 167px 0px rgba(0, 0, 0, 0.00), 0px 382px 153px 0px rgba(0, 0, 0, 0.01), 0px 215px 129px 0px rgba(0, 0, 0, 0.05), 0px 95px 95px 0px rgba(0, 0, 0, 0.09), 0px 24px 52px 0px rgba(0, 0, 0, 0.10);
+        z-index: 1;
+        position: relative;
+        .form-grp{
+            input{
+                width: 100%;
+                border: unset;
+                background: #F5F5F5;
+                color: var(--black-clr);
+                padding: 16px 18px;
+                border-radius: 0;
+                &::placeholder{
+                    color: var(--black-clr);
+                }
+            }
+        }
+        .form-check-input{
+            padding: 3px 3px;
+            border-color: var(--black-clr);
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+        }
+        .social-area{
+            li{
+                a{
+                    background: #E6F7F1 !important;
+                    border: unset;
+                    @include box(38);
+                    i{
+                        font-size: 14px;
+                    }
+                    &:hover{
+                        background: var(--bg1) !important;
+                        i{
+                            color: var(--n0) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hero11-thumb{
+        margin-top: -320px;
+        z-index: -1;
+        img{
+            max-width: unset;
+        }
+    }
+    &::before{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 822px;
+        background: var(--bg1);
+        content: "";
+    }
+    @include maxQuery(1399){
+        .hero-content11{
+            h1{
+                font-size: 42px;
+            }
+        }
+    }
+    @include maxQuery(1199){
+        .hero11-wrapper{
+            padding-top: 70px;
+        }
+        .hero11-thumb{
+            width: 100%;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .hero11-thumb{
+            width: 100%;
+            margin-top: 0;
+            padding-top: 32px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    @include maxQuery(500){
+        .hero-content11{
+            h1{
+                font-size: 29px;
+            }
+            p{
+                line-height: 24px;
+            }
+        }
+    }
+}
+
 
 //Tax Section
 .tax-wrapper{

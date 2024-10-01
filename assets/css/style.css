@@ -94,7 +94,7 @@
 .fs-one,
 h1,
 h1 > a {
-  font-size: 76px;
+  font-size: 70px;
 }
 
 .fs-two,
@@ -3734,6 +3734,105 @@ iframe {
 }
 .hero10-badge.hero10-badge1 {
   background: rgba(0, 86, 81, 0.1);
+}
+
+.banner-section11 {
+  z-index: 1;
+}
+.banner-section11 .hero11-wrapper {
+  padding-top: 90px;
+}
+.banner-section11 .hero-form {
+  background: var(--n0);
+  box-shadow: 0px 596px 167px 0px rgba(0, 0, 0, 0), 0px 382px 153px 0px rgba(0, 0, 0, 0.01), 0px 215px 129px 0px rgba(0, 0, 0, 0.05), 0px 95px 95px 0px rgba(0, 0, 0, 0.09), 0px 24px 52px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+}
+.banner-section11 .hero-form .form-grp input {
+  width: 100%;
+  border: unset;
+  background: #F5F5F5;
+  color: var(--black-clr);
+  padding: 16px 18px;
+  border-radius: 0;
+}
+.banner-section11 .hero-form .form-grp input::-moz-placeholder {
+  color: var(--black-clr);
+}
+.banner-section11 .hero-form .form-grp input::placeholder {
+  color: var(--black-clr);
+}
+.banner-section11 .hero-form .form-check-input {
+  padding: 3px 3px;
+  border-color: var(--black-clr);
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+}
+.banner-section11 .hero-form .social-area li a {
+  background: #E6F7F1 !important;
+  border: unset;
+  width: 38px;
+  min-width: 38px;
+  height: 38px;
+}
+.banner-section11 .hero-form .social-area li a i {
+  font-size: 14px;
+}
+.banner-section11 .hero-form .social-area li a:hover {
+  background: var(--bg1) !important;
+}
+.banner-section11 .hero-form .social-area li a:hover i {
+  color: var(--n0) !important;
+}
+.banner-section11 .hero11-thumb {
+  margin-top: -320px;
+  z-index: -1;
+}
+.banner-section11 .hero11-thumb img {
+  max-width: unset;
+}
+.banner-section11::before {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 822px;
+  background: var(--bg1);
+  content: "";
+}
+@media (max-width: 1399px) {
+  .banner-section11 .hero-content11 h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-section11 .hero11-wrapper {
+    padding-top: 70px;
+  }
+  .banner-section11 .hero11-thumb {
+    width: 100%;
+  }
+  .banner-section11 .hero11-thumb img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section11 .hero11-thumb {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 32px;
+  }
+  .banner-section11 .hero11-thumb img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .banner-section11 .hero-content11 h1 {
+    font-size: 29px;
+  }
+  .banner-section11 .hero-content11 p {
+    line-height: 24px;
+  }
 }
 
 .tax-wrapper {
