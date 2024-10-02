@@ -1019,6 +1019,91 @@
     }
 }
 
+//Sponsor Unique
+.unique-sponsor-wrap{
+    display: flex;
+    align-items: center;
+    .unique-sponsor-item{
+        width: 250px;
+        min-width: 250px;
+        height: 250px;
+        transition: all 0.4s;
+        border-radius: 50%;
+        background-color: var(--n0);
+        border: 1px solid rgb(28, 30, 48, 10%);
+        z-index: 0;
+        &:not(:first-child){
+            margin-left: -25px;
+        }
+        img{
+            width: 134px;
+            height: 27px;
+            filter: brightness(0);
+            object-fit: contain;
+            transition: all 0.4s;
+        }
+        &:hover{
+            border-color: var(--bg1);
+            transform: scale(1.09);
+            z-index: 1;
+            img{
+                filter: brightness(25);
+            }
+        }
+    }
+    @include maxQuery(1599){
+        .unique-sponsor-item{
+            width: 230px;
+            min-width: 230px;
+            height: 230px;
+        }
+    }
+    @include maxQuery(1399){
+        .unique-sponsor-item{
+            width: 200px;
+            min-width: 200px;
+            height: 200px;
+        }
+    }
+    @include maxQuery(1199){
+        .unique-sponsor-item{
+            width: 175px;
+            min-width: 175px;
+            height: 175px;
+            img{
+                width: 124px;
+                height: 24px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .unique-sponsor-item{
+            width: 128px;
+            min-width: 128px;
+            height: 128px;
+            &:not(:first-child){
+                margin-left: -15px;
+            }
+            img{
+                width: 104px;
+                height: 20px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        flex-wrap: wrap;
+        justify-content: center;
+        .unique-sponsor-item{
+            &:not(:first-child){
+                margin-left: 0px;
+            }
+            img{
+                width: 104px;
+                height: 20px;
+            }
+        }
+    }
+}
 
 //Tax Section
 .tax-wrapper{
@@ -2009,6 +2094,13 @@ width: fit-content !important;
     }
 }
 
+//Project Counting
+.project-counting-wrap{
+    .project-count-item{
+        
+    }
+}
+
 //Pricing Section
 .pricing-section4{
     .pricing-eleemet{
@@ -2503,6 +2595,54 @@ width: fit-content !important;
     z-index: -1;
 }
 
+//Choose 11
+.choose-thumb11{
+    .choose-counting{
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+        @include maxQuery(1199){
+            bottom: 16px;
+            left: 16px;
+        }
+    }
+}
+
+//Financial 
+.financial-wrapper{
+    .financial-item{
+        transition: all 0.4s;
+        .icon{
+            @include box(96);
+            transition: all 0.4s;
+        }
+        &:hover{
+            .icon{
+                background: var(--p2) !important;
+            }
+            .cont{
+                h5,p{
+                    color: var(--n0) !important;
+                }
+            }
+        }
+        @include maxQuery(991){
+            .icon{
+                @include box(70);
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+    .line{
+        height: 1px;
+        width: 100%;
+        background: rgb(0, 0, 0, 10%);
+    }
+}
+//Financial 
+
 //Use-app
 .use-app-item{
     border-radius: 16px;
@@ -2589,6 +2729,155 @@ width: fit-content !important;
     }
 }
 //Service 7
+
+//Service 11
+.service-item11{
+    z-index: 1;
+    .ser-badge{
+        background: linear-gradient(180deg, rgba(0, 86, 81, 0.40) -16200%, rgba(0, 86, 81, 0.00) 3250%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 100px;
+        font-weight: 800;
+        font-family: var(--body-font);
+        display: block;
+        position: absolute;
+        right: 24px;
+        top: -10px;
+    }
+    .servie-btn{
+        transform: rotate(-18deg);
+        transition: all 0.4s;
+    }
+    svg{
+        transition: all 0.4s;
+        path{
+            transition: all 0.4s;
+        }
+    }
+    height: 100%;
+    &::before{
+        position: absolute;
+        left: 0;
+        content: "";
+        z-index: -1;
+        height: 0px;
+        width: 100%;
+        transition: all 0.4s;
+    }
+    &::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: rgba(0, 0, 0, 0.51);
+        z-index: -1;
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    &.serbg__1{
+        &::before{
+            background: url(../../assets/images/home2/global/service-fin1.jpg) no-repeat center center;
+            background-size: cover;
+            top: 0;
+        }
+    }
+    &.serbg__2{
+        &::before{
+            background: url(../../assets/images/home2/global/service-fin2.jpg) no-repeat center center;
+            background-size: cover;
+            bottom: 0;
+        }
+    }
+    &.serbg__3{
+        &::before{
+            background: url(../../assets/images/home2/global/service-fin3.jpg) no-repeat center center;
+            background-size: cover;
+            top: 0;
+        }
+    }
+    &.serbg__4{
+        &::before{
+            background: url(../../assets/images/home2/global/service-fin4.jpg) no-repeat center center;
+            background-size: cover;
+            bottom: 0;
+        }
+    }
+    &.serbg__5{
+        &::before{
+            background: url(../../assets/images/home2/global/service-fin5.jpg) no-repeat center center;
+            background-size: cover;
+            top: 0;
+        }
+    }
+    &.serbg__6{
+        &::before{
+            background: url(../../assets/images/home2/global/service-fin6.jpg) no-repeat center center;
+            background-size: cover;
+            bottom: 0;
+        }
+    }
+    &:hover{
+        &::before{
+            height: 100%;
+        }
+        &::after{
+            opacity: 1;
+        }
+        .ser-badge{
+            display: none;
+        }
+        svg{
+            path{
+                stroke: var(--n0);
+                fill: var(--n0);
+            }
+        }
+        .icons{
+            filter: brightness(0) !important;
+        }
+        h5,p,a{
+            color: var(--n0);
+        }
+        .servie-btn{
+            transform: rotate(15deg);
+            background: var(--n0);
+            i{
+                color: var(--black-clr);
+            }
+            &:hover{
+                border-color: var(--bg1) !important;
+                i{
+                    color: var(--n0) !important;
+                }
+            }
+        }
+    }
+    @include maxQuery(991){
+        .ser-badge{
+            font-size: 36px;
+            line-height: 42px;
+        }
+    }
+}
+
+.service-br-rgiht{
+    border-right: 1px solid rgb(28, 30, 48, 10%);
+}
+.servie-btn{
+    @include box(40);
+    i{
+        font-size: 14px;
+    }
+    &:hover{
+        i{
+            color: var(--n0);
+        }
+    }
+}
 
 //Service Tax
 .service-tax-item{

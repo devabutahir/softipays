@@ -325,6 +325,12 @@ select {
 .bg10-clr{
 	color: var(--bg10) !important;
 }
+.bg11{
+	background: var(--bg11) !important;
+}
+.bg11-clr{
+	color: var(--bg11) !important;
+}
 .black-clr{
 	color: var(--black-clr) !important;
 }
@@ -636,6 +642,11 @@ select {
 		}
 		&.second-alt{
 			background-color: rgba(var(--n2), 1);
+		}
+	}
+	&.box-forth{
+		&::before{
+			background-color: var(--bg1);
 		}
 	}
 }
@@ -1489,3 +1500,25 @@ iframe {
 	}
 }
 // Sidebar Checking
+
+
+
+//Progress bars
+.progress_bar_item{
+	.item_bar{
+		background: var(--p2);
+		height: 8px;
+		.progress{
+			border-radius: 0;
+			background: var(--bg1);
+			height: 8px;
+		}
+	}
+}
+//Progress bars
+
+//tracking-spacing
+.tracking-spacing{
+	letter-spacing: 3px;
+}
+//tracking-spacing

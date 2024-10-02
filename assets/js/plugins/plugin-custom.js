@@ -241,7 +241,36 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: -1.5,
             ease: Power2.out
           });
-        });          
+        });    
+        
+        //--== Progress Bar ==--//
+        progress_bar();
+        function progress_bar() {
+          var speed = 30;
+          var items = $('.progress_bar').find('.progress_bar_item');
+          
+            items.each(function() {
+                var item = $(this).find('.progress');
+                var itemValue = item.data('progress');
+                var i = 0;
+                var value = $(this);
+            
+                var count = setInterval(function(){
+                    if(i <= itemValue) {
+                        var iStr = i.toString();
+                        item.css({
+                            'width': iStr+'%'
+                        });
+                        value.find('.item_value').html(iStr +'%');
+                    }
+                    else {
+                        clearInterval(count);
+                    }
+                    i++;
+                },speed);
+            });
+        }
+        //--== Progress Bar ==--//
 
         // box-content
         const boxContent = document.querySelectorAll('.box-content')
