@@ -1992,6 +1992,44 @@ width: fit-content !important;
     }
 }
 
+//Testimonial 11
+.testimonial-wrapper11{
+    .testimonial-inner11{
+        .single-item{
+            transition: all 0.5s;
+            .img-area{
+                width: 60px;
+                height: 60px;
+            }
+            .quote-icon{
+                position: absolute;
+                right: 24px;
+                top: 24px;
+                font-size: 36px;
+                color: rgb(1, 166, 107, 0.1);
+            }
+            p{
+                color: rgb(28, 30, 48, 0.8);
+            }
+            &:hover{
+                background: var(--bg1);
+                h6,p,span{
+                    color: var(--n0) !important;
+                }
+            }
+        }
+        width: 50%;
+        @include maxQuery(767){
+            width: 100%;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+//Testimonial 11
+
+
 //section badge 
 .section-badge8{
     border: 1px dashed var(--black-clr);
@@ -2095,9 +2133,98 @@ width: fit-content !important;
 }
 
 //Project Counting
+.project-counting-section{
+    z-index: 1;
+    .project-ele1{
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        animation: cir360 20s linear infinite;
+        z-index: -1;
+    }
+    .project-ele2{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        animation: cir360 20s linear infinite;
+        width: 40px;
+        z-index: -1;
+    }
+    .project-ele3{
+        position: absolute;
+        top: 40px;
+        right: 140px;
+        animation: cir360 20s linear infinite;
+        width: 55px;
+        z-index: -1;
+    }
+}
 .project-counting-wrap{
     .project-count-item{
-        
+        .counters{
+            .odometer{
+                color: var(--p2);
+                span{
+                    letter-spacing: 0.1px;
+                }
+            }
+            .style-plus{
+                color: var(--bg1);
+                -webkit-text-stroke: 2px #FFAF40;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-rendering: optimizeLegibility;
+                font-size: 58px;
+                font-weight: 700;
+                line-height: 120%;
+            }
+            @include maxQuery(991){
+                .style-plus{
+                    font-size: 30px;
+                }
+                .fs-two{
+                    span{
+                        bottom: 0;
+                        line-height: 55px;
+                    }
+                }
+            }
+        }
+    }
+    .line{
+        height: 105px;
+        width: 1px;
+        background: rgb(255, 255, 255, 0.1);
+        @include maxQuery(767){
+            display: none;
+        }
+    }
+}
+
+//Callto Become
+.callto-become{
+    background: url(../../assets/images/callto-become.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    &::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+        z-index: -1;
+    }
+    padding: 230px 0;
+    @include maxQuery(1399){
+        padding: 180px 0;
+    }
+    @include maxQuery(1199){
+        padding: 160px 0;
+    }
+    @include maxQuery(991){
+        padding: 100px 0;
     }
 }
 
@@ -3949,6 +4076,77 @@ width: fit-content !important;
 }
 //Blog Style10
 
+//Blog Style11
+.blog-items11{
+    transition: all 0.4s;
+    .thumb{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        .date-box{
+            background: var(--bg1);
+            padding: 8px 10px 10px;
+            text-align: center;
+            width: 74px;
+            position: absolute;
+            right: 24px;
+            bottom: -40px;
+            span{
+                margin-top: -6px;
+            }
+        }
+        @include maxQuery(767){
+            .date-box{
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    }
+    .blog-dot{
+        font-size: 5px;
+        color: var(--bg1);
+    }
+    &:hover{
+        transform: translateY(-10px);
+        h5{
+            a{
+                color: var(--bg1) !important;
+            }
+        }
+    }
+}
+//Blog Style11
+
+//Newsletter11
+.newsletter-place{
+    .newsletter11-ele1{
+        position: absolute;
+        top: 50px;
+        left: 70px;
+        z-index: -1;
+        animation: cir360 10s linear infinite;
+    }
+    .newsletter11-ele2{
+        position: absolute;
+        bottom: 60px;
+        right: 60px;
+        z-index: -1;
+        animation: cir360 10s linear infinite;
+        width: 40px;
+    }
+    &::before{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 50%;
+        background: var(--bg1);
+    }
+}
+//Newsletter11
+
 //Footer Contact Question
 .contact-question{
     z-index: 1;
@@ -4257,6 +4455,22 @@ width: fit-content !important;
         }
     }
 }
+.social-area-style11{
+    li{
+        a{
+            i{
+                color: var(--n0) !important;
+            }
+            background: rgba(255, 255, 255, 0.10) !important;
+            &:hover{
+                background: var(--n0) !important;
+                i{
+                    color: var(--black-clr) !important;
+                }
+            }
+        }
+    }
+}
 .together-wrapper{
     position: relative;
     .content-box{
@@ -4354,6 +4568,53 @@ width: fit-content !important;
             right: 16px;
             width: 60px;
         }
+    }
+}
+//Footer Style 11
+.footer-style11{
+    position: relative;
+    .copyright{
+        border-top: 1px solid rgb(255, 255, 255, 10%);
+    }
+    .footer-ele11v1{
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        animation: cir360 10s linear infinite;
+        width: 60px;
+        z-index: -1;
+    }
+    .footer-ele11v2{
+        position: absolute;
+        top: 00px;
+        right: 20px;
+        animation: cir360 10s linear infinite;
+        width: 60px;
+        z-index: -1;
+    }
+    .footer-ele11v3{
+        position: absolute;
+        bottom: 0px;
+        right: 60px;
+        animation: cir360 10s linear infinite;
+        width: 40px;
+        z-index: -1;
+    }
+    .footer-ele11v4{
+        position: absolute;
+        bottom: 0px;
+        left: 640px;
+        animation: cir360 10s linear infinite;
+        width: 30px;
+        z-index: -1;
+    }
+    .footer-ele11v5{
+        position: absolute;
+        bottom: 180px;
+        left: 640px;
+        animation: cir360 10s linear infinite;
+        width: 30px;
+        z-index: -1;
     }
 }
 
