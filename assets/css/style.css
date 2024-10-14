@@ -7158,6 +7158,24 @@ iframe {
   z-index: -1;
 }
 
+.footer-style12 .input-area input {
+  color: rgba(28, 30, 48, 0.6);
+  outline: none !important;
+  border: unset !important;
+}
+.footer-style12 .input-area input::-moz-placeholder {
+  color: rgba(28, 30, 48, 0.6);
+}
+.footer-style12 .input-area input::placeholder {
+  color: rgba(28, 30, 48, 0.6);
+}
+.footer-style12 .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-style12 .single-box ul li a::before {
+  color: #fff !important;
+}
+
 .slider-btn-stylewhite button {
   border-color: var(--n0) !important;
   color: var(--n0) !important;

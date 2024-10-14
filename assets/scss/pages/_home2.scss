@@ -4618,6 +4618,34 @@ width: fit-content !important;
     }
 }
 
+//Footer Style 12
+.footer-style12{
+    .input-area{
+        input{
+            color: rgb(28, 30, 48, 60%);
+            outline: none !important;
+            border: unset !important;
+            &::placeholder{
+                color: rgb(28, 30, 48, 60%);
+            }
+        }
+    }
+    .copyright{
+        border-top: 1px solid rgb(255, 255, 255, 20%);
+    }
+    .single-box{
+        ul{
+            li{
+                a{
+                    &::before{
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 //GLobal Button Slide
 .slider-btn-stylewhite{
     button{
