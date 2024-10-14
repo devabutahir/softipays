@@ -1019,6 +1019,50 @@
     }
 }
 
+//Hero 12
+.banner-section12{
+    .container{
+        max-width: 1450px;
+        margin: 0 auto;
+    }
+    .hero12-inner{
+        .hero-content{ 
+            padding-bottom: 180px;
+            padding-top: 130px;
+            h1{
+                font-size: 88px;
+            }
+            .footer-form{
+                max-width: 380px;
+                .input-area{
+                    input{
+                        color: rgba(28, 30, 48, 0.60);
+                        &::placeholder{
+                            color: rgba(28, 30, 48, 0.60);
+                        }
+                    }
+                }
+            }
+        }
+        .hero-thumb12{
+            min-width: 620px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        width: 1638px;
+        height: 100%;
+        background: linear-gradient(180deg, #B5FFC2 0%, #FFF 100%);
+    }
+}
+
 //Sponsor Unique
 .unique-sponsor-wrap{
     display: flex;
@@ -2431,6 +2475,37 @@ width: fit-content !important;
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+            }
+        }
+    }
+    &.partnered-style12{
+       .partnered-item{
+            max-width: 130px;
+            height: 40px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .swiper-slide{
+            .partnered-item{
+                max-width: 130px;
+                height: 40px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    opacity: 1;
+                    filter: brightness(25);
+                }
+            }
+            &.swiper-slide-active{
+                .partnered-item{
+                    img{
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
