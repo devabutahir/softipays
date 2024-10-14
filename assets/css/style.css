@@ -4297,6 +4297,9 @@ iframe {
 .blog-section4 {
   margin-bottom: -30px;
 }
+.blog-section4.blog-style12 {
+  background: linear-gradient(180deg, #B5FFC2 0%, #FFF 123.45%);
+}
 
 .blog-items4 {
   border-radius: 16px;
@@ -4378,6 +4381,24 @@ iframe {
   overflow: hidden;
 }
 .blog8-items:hover .thumb img {
+  transform: scale(1.05);
+}
+
+.blog-items10.blog-items12 .thumb {
+  overflow: hidden;
+}
+.blog-items10.blog-items12 .thumb img {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.blog-items10.blog-items12 .box-style {
+  background: transparent;
+}
+.blog-items10.blog-items12:hover .content .box-style {
+  border-color: var(--s2) !important;
+  background: var(--s2) !important;
+}
+.blog-items10.blog-items12:hover .thumb img {
   transform: scale(1.05);
 }
 
@@ -4960,6 +4981,14 @@ iframe {
   background-attachment: fixed;
   padding: 230px 0;
 }
+.callto-become.callto-become12 {
+  background: url(../../assets/images/callto-become2.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.callto-become.callto-become12::before {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
 .callto-become::before {
   position: absolute;
   left: 0;
@@ -5455,6 +5484,21 @@ iframe {
     bottom: 16px;
     left: 16px;
   }
+}
+
+.choose-item12 {
+  border: 1px dashed #005651;
+  border-radius: 16px;
+  transition: all 0.5s;
+}
+.choose-item12:hover {
+  background: var(--s2);
+}
+.choose-item12:hover img {
+  filter: brightness(0);
+}
+.choose-item12:hover h5, .choose-item12:hover p {
+  color: var(--n0) !important;
 }
 
 .financial-wrapper .financial-item {
@@ -6801,6 +6845,12 @@ iframe {
   .footer-qustion-wrap .question-thumb img {
     border-radius: 16px;
   }
+}
+
+.contact-question12 .question-content form textarea,
+.contact-question12 .question-content form input {
+  border: 1px solid rgba(28, 30, 48, 0.1);
+  color: rgba(28, 30, 48, 0.6);
 }
 
 .newsletter3 {
