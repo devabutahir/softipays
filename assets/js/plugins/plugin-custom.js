@@ -622,6 +622,17 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
 
+      //Hero12 SLide
+      const hero__wrapper12 = new Swiper(".hero-wrapper12", {
+        spaceBetween: 100,
+        speed: 1100,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+      });
+
       // testimonial slider 
       let testimonialCarouselWrap = document.querySelector('.testimonial');
       if(testimonialCarouselWrap){

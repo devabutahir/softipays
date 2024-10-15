@@ -1022,13 +1022,16 @@
 //Hero 12
 .banner-section12{
     .container{
-        max-width: 1450px;
-        margin: 0 auto;
+        @include minQuery(991){
+            max-width: 1450px;
+            margin: 0 auto;
+        }
     }
     .hero12-inner{
         .hero-content{ 
             padding-bottom: 180px;
-            padding-top: 130px;
+            padding-top: 150px;
+            max-width: 600px;
             h1{
                 font-size: 88px;
             }
@@ -1046,8 +1049,89 @@
         }
         .hero-thumb12{
             min-width: 620px;
+            height: 723px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
             img{
                 width: 100%;
+                height: 100%;
+            }
+        }
+        .hero10-element{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: zomin 2s linear infinite;
+        }
+        @include maxQuery(1399){
+            .hero-content{ 
+                padding-bottom: 180px;
+                padding-top: 150px;
+                max-width: 600px;
+                h1{
+                    font-size: 74px;
+                }
+            } 
+            .hero-thumb12{
+                min-width: 520px;
+                height: 623px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        @include maxQuery(991){
+            .hero-content{ 
+                padding-top: 70px;
+                padding-bottom: 30px;
+                max-width: 600px;
+                text-align: center;
+                h1{
+                    font-size: 64px;
+                }
+                .footer-form{
+                    margin: 0 auto;
+                }
+            } 
+            .hero-thumb12{
+                min-width: 400px;
+                height: initial;
+                width: 300px;
+                margin: 0 auto;
+                text-align: center;
+                position: initial;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        @include maxQuery(500){
+            .hero-content{ 
+                padding-top: 70px;
+                padding-bottom: 30px;
+                max-width: 600px;
+                h1{
+                    font-size: 42px;
+                }
+                .footer-form{
+                    max-width: 288px;
+                }
+            } 
+            .hero-thumb12{
+                min-width: 300px;
+                height: initial;
+                width: 300px;
+                margin: 0 auto;
+                text-align: center;
+                position: initial;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
@@ -1060,6 +1144,23 @@
         width: 1638px;
         height: 100%;
         background: linear-gradient(180deg, #B5FFC2 0%, #FFF 100%);
+    }
+    .swiper-slide{
+        .hero12-inner{
+            .hero-thumb12{
+                margin-bottom: -100%;
+                transition: all 1.2s;
+                transform: scale(0);
+            }
+        }
+        &.swiper-slide-active{
+            .hero12-inner{
+                .hero-thumb12{
+                    margin-bottom: 0%;
+                    transform: scale(1);
+                }
+            }
+        }
     }
 }
 
@@ -1201,6 +1302,34 @@
     }
 }
 
+//About Section12
+.about-section12{
+    background: linear-gradient(180deg, #B5FFC2 0%, #FFF 123.45%);
+}
+.about-thumb12{
+    .about-thumb-content{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 202px;
+        height: 200px;
+        background: rgb(1, 166, 107, 0.8);
+        border-top-right-radius: 200px;
+        border-bottom-left-radius: 14px;
+        @include maxQuery(575){
+            width: 180px;
+            height: 180px;
+        }
+    }
+    .about-thumb-element{
+        position: absolute;
+        top: -90px;
+        left: -90px;
+        z-index: -1;
+        animation: customlr 2s linear infinite;
+    }
+}
+
 //Section Element shape
 .section7-element-route{
     position: absolute;
@@ -1300,6 +1429,11 @@
 			}
 		}
 	}
+}
+
+//Potfolio
+.portfolio-section12{
+    background: linear-gradient(180deg, #B5FFC2 0%, #FFF 123.45%);
 }
 
 //Modern Banking
@@ -2724,6 +2858,66 @@ width: fit-content !important;
                 }
             }
         }
+    }
+}
+
+//Service Section 12
+.service-items12{
+    border: 1px dashed var(--s2);
+    border-radius: 16px;
+    padding: 69px 40px 40px;
+    transition: all 0.5s;
+    .icon-inner{
+        position: relative;
+        width: 99px;
+        height: 99px;
+        margin: 0 auto 38px;
+        .icon{
+            width: 100px;
+            height: 100px;
+            transition: all 0.4s;
+            position: relative;
+            z-index: 2;
+            background: var(--s2);
+            z-index: 1;
+            img{
+                transition: all 0.4s;
+            }
+        }
+        .shape{
+            display: block;
+            width: 145px;
+            height: 90px;
+            background: var(--bg1);
+            position: absolute;
+            top: -22px;
+            left: -20px;
+            clip-path: polygon(49% 100%, 0 0, 100% 0);
+            border-radius: 49%;
+            animation: customlr 2s linear infinite;
+        }
+        @keyframes customlr {
+            50%{
+                transform: rotate(9deg);
+            }
+        }
+    }
+    &:hover{
+        background: var(--s2);
+        .content{
+            h5,p,a,i{
+                color: var(--n0) !important;
+            }
+        }
+        .icon{
+            background: var(--n0) !important;
+            img{
+                filter: brightness(0);
+            }
+        }
+    }
+    @include maxQuery(1399){
+        padding: 60px 20px 24px;
     }
 }
 
@@ -4783,6 +4977,38 @@ width: fit-content !important;
                     }
                 }
             }
+        }
+    }
+}
+
+//Footer Style13
+.footer-style13{
+    .investing-newsletter{
+        border-radius: 32px;
+        background: linear-gradient(180deg, #121212 0%, #1E1E1E 100%);
+        padding: 100px 22px 100px;
+        .footer-form12{
+            max-width: 380px;
+            margin: 0 auto;
+            input{
+                color: var(--n9);
+                &::placeholder{
+                    color: var(--n9);
+                }
+            }
+        }
+    }
+    .copyright{
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+    @include maxQuery(1399){
+        .investing-newsletter{
+            padding: 70px 18px 70px;
+        }
+    }
+    @include maxQuery(991){
+        .investing-newsletter{
+            padding: 60px 18px 60px;
         }
     }
 }

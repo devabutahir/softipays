@@ -219,6 +219,12 @@ select {
 .n8-color{
 	color: rgba(var(--n8), 1);
 }
+.n9-color{
+	color: var(--n9);
+}
+.n9-bg{
+	background: var(--n9);
+}
 
 .p1-bg-color{
 	background-color: rgba(var(--p1), 1);
