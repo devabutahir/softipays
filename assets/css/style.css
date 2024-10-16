@@ -37,6 +37,7 @@
   --p4: #FF4800;
   --p5: #444CE7;
   --p6: #FAFE02;
+  --p7-gradient: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%);
   --s2: #01A66B;
   --bg1: #005651;
   --bg2: #4B655C;
@@ -1051,11 +1052,32 @@ select {
 .box-style.box-forth::before {
   background-color: var(--bg1);
 }
+.box-style.box-five {
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.4s;
+}
+
+.box-style2 {
+  border-radius: 100px;
+  background: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%);
+  transition: all 0.4s;
+}
+.box-style2:hover {
+  background: linear-gradient(274deg, #03FFB7 4.65%, #3FFF08 91.31%);
+}
 
 .v-border {
   background: rgba(var(--p1), 0.2);
   width: 1px;
   height: 25px;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .v-line::before {
@@ -4003,6 +4025,19 @@ iframe {
   transform: scale(1);
 }
 
+.banner-section13 {
+  background: url(../../assets/images/hero13-bg.png) no-repeat center center;
+  background-size: cover;
+}
+.banner-section13 .banner-content {
+  padding: 80px 0 98px;
+}
+.banner-section13 .banner-content p {
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
 .unique-sponsor-wrap {
   display: flex;
   align-items: center;
@@ -4992,6 +5027,95 @@ iframe {
   }
 }
 
+.testimonial-items13 {
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, #121212 0%, #1E1E1E 100%);
+  padding: 40px 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.testimonial-items13 .line {
+  width: 100%;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  height: initial;
+  background: transparent;
+}
+.testimonial-items13 .emial-info {
+  color: rgba(255, 255, 255, 0.6);
+}
+.testimonial-items13 p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.testimonial-items13 .dev-social,
+.testimonial-items13 .dev-tag {
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 16px;
+  color: var(--n0);
+  text-align: center;
+  padding: 8px 12px;
+  transition: all 0.4s;
+}
+.testimonial-items13 .dev-social:hover,
+.testimonial-items13 .dev-tag:hover {
+  background: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%);
+  color: #000;
+}
+.testimonial-items13 .dev-social:hover svg path,
+.testimonial-items13 .dev-tag:hover svg path {
+  stroke: #000;
+}
+.testimonial-items13::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 0px;
+  height: 100%;
+  border-radius: 32px;
+  background: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%) !important;
+  transition: all 0.4s;
+}
+.testimonial-items13:hover {
+  background: transparent !important;
+}
+.testimonial-items13:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+.testimonial-items13:hover h6, .testimonial-items13:hover p {
+  color: #000 !important;
+}
+.testimonial-items13:hover .line {
+  border-color: rgba(6, 6, 6, 0.112) !important;
+}
+.testimonial-items13:hover .dev-social,
+.testimonial-items13:hover .dev-tag {
+  border-radius: 100px;
+  background: rgba(6, 6, 6, 0.112);
+  font-size: 16px;
+  color: var(--n0);
+  text-align: center;
+  padding: 8px 12px;
+  transition: all 0.4s;
+}
+.testimonial-items13:hover .dev-social:hover,
+.testimonial-items13:hover .dev-tag:hover {
+  background: linear-gradient(180deg, #121212 0%, #1E1E1E 100%) !important;
+  color: #fff;
+}
+.testimonial-items13:hover .dev-social:hover svg path,
+.testimonial-items13:hover .dev-tag:hover svg path {
+  stroke: #fff;
+}
+@media (max-width: 1399px) {
+  .testimonial-items13 {
+    padding: 24px 20px;
+  }
+}
+
 .section-badge8 {
   border: 1px dashed var(--black-clr);
 }
@@ -5145,6 +5269,36 @@ iframe {
 }
 @media (max-width: 767px) {
   .project-counting-wrap .line {
+    display: none;
+  }
+}
+
+.faq-counting-section {
+  background: var(--n9);
+}
+.faq-counting-section .faq-counting-wrap {
+  max-width: 970px;
+  margin: 0 auto;
+}
+.faq-counting-section .faq-counting-wrap .faq-count-item .counters span {
+  font-size: 64px;
+  color: var(--n0);
+}
+.faq-counting-section .faq-counting-wrap .faq-count-item .fag-pra {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: -8px;
+}
+@media (max-width: 991px) {
+  .faq-counting-section .faq-counting-wrap .faq-count-item .counters span {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .faq-counting-section .faq-counting-wrap .faq-count-item .fag-pra {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .faq-counting-section .faq-counting-wrap svg {
     display: none;
   }
 }
@@ -5758,6 +5912,17 @@ iframe {
 }
 .choose-item12:hover h5, .choose-item12:hover p {
   color: var(--n0) !important;
+}
+
+.choose-section13 {
+  background: url(../../assets/images/choose13-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+.choose-section13 .choose-thumb13 {
+  animation: updown 2s linear infinite;
+}
+.choose-section13 .choose13-item p {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .financial-wrapper .financial-item {
@@ -6524,6 +6689,48 @@ iframe {
   background: rgba(28, 30, 48, 0.1);
 }
 
+.accordion-style13 .accordion-single {
+  padding: 24px 24px;
+  border-radius: 32px;
+  background: linear-gradient(270deg, rgba(18, 18, 18, 0.4392156863) 0%, rgba(30, 30, 30, 0.4274509804) 100%);
+}
+.accordion-style13 .accordion-single .header-area {
+  color: var(--n0) !important;
+}
+.accordion-style13 .accordion-single .header-area .accordion-btn::after {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  transform: rotate(0deg);
+  transition: var(--transition);
+  font-weight: 700;
+  color: var(--n0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: initial;
+  height: initial;
+  background: transparent;
+}
+.accordion-style13 .accordion-single::after {
+  display: none;
+}
+.accordion-style13 .accordion-single.active {
+  border-radius: 32px;
+  background: linear-gradient(270deg, #121212 0%, #1E1E1E 100%);
+}
+.accordion-style13 .accordion-single .content-area .content-body p {
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 991px) {
+  .accordion-style13 .accordion-single {
+    padding: 20px 18px;
+  }
+}
+
 .country-access-wrap {
   display: grid;
   flex-wrap: wrap;
@@ -6754,6 +6961,17 @@ iframe {
 .opening-account-wrapper.opening-account-wrapper10 .opening-account-item .serial-badge {
   border: 1px dashed var(--n0);
   background: var(--bg1);
+}
+.opening-account-wrapper.opening-account-wrapper10 .opening-items13 .serial-badge {
+  background: var(--n9);
+}
+.opening-account-wrapper.opening-account-wrapper10 .opening-items13 .icon::after {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, #1E1E1E 0%, #121212 100%), #FFF;
+}
+.opening-account-wrapper.opening-account-wrapper10 .opening-items13 p {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @keyframes cirs {
@@ -7489,9 +7707,10 @@ iframe {
   border-radius: 32px;
   background: linear-gradient(180deg, #121212 0%, #1E1E1E 100%);
   padding: 100px 22px 100px;
+  position: relative;
 }
 .footer-style13 .investing-newsletter .footer-form12 {
-  max-width: 380px;
+  max-width: 390px;
   margin: 0 auto;
 }
 .footer-style13 .investing-newsletter .footer-form12 input {
@@ -7503,8 +7722,20 @@ iframe {
 .footer-style13 .investing-newsletter .footer-form12 input::placeholder {
   color: var(--n9);
 }
+.footer-style13 .investing-newsletter .investing-ele {
+  position: absolute;
+  top: 64px;
+  left: 234px;
+  animation: zomin 2s linear infinite;
+}
 .footer-style13 .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-style13 .social-area-style11 li a {
+  border: unset;
+}
+.footer-style13 .social-area-style11 li a:hover {
+  background: var(--p7-gradient) !important;
 }
 @media (max-width: 1399px) {
   .footer-style13 .investing-newsletter {
@@ -7514,6 +7745,10 @@ iframe {
 @media (max-width: 991px) {
   .footer-style13 .investing-newsletter {
     padding: 60px 18px 60px;
+  }
+  .footer-style13 .investing-newsletter .investing-ele {
+    top: 24px;
+    left: 34px;
   }
 }
 

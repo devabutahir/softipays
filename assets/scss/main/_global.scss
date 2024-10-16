@@ -655,13 +655,33 @@ select {
 			background-color: var(--bg1);
 		}
 	}
+	&.box-five{
+		border-radius: 100px;
+		border: 1px solid rgba(255, 255, 255, 0.20);
+		background: rgba(255, 255, 255, 0.10);
+		transition: all 0.4s;
+	}
 }
-
+.box-style2{
+	border-radius: 100px;
+	background: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%);
+	transition: all 0.4s;
+	&:hover{
+		background: linear-gradient(274deg, #03FFB7 4.65%, #3FFF08 91.31%);
+	}
+}
 // vertical border 
 .v-border{
 	background: rgba(var(--p1), 0.2);
     width: 1px;
     height: 25px;
+}
+
+//Text Gradient
+.gradient-text{
+	background: -webkit-linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 // vertical line
