@@ -253,6 +253,18 @@ select {
 .p6-bg{
 	background-color: var(--p6) !important;
 }
+.p8-clr{
+	color: var(--p8) !important;
+}
+.p8-bg{
+	background-color: var(--p8) !important;
+}
+.p9-clr{
+	color: var(--p9) !important;
+}
+.p9-bg{
+	background-color: var(--p9) !important;
+}
 .s1-bg-color{
 	background-color: rgba(var(--s1), 1);
 }
@@ -668,6 +680,15 @@ select {
 	transition: all 0.4s;
 	&:hover{
 		background: linear-gradient(274deg, #03FFB7 4.65%, #3FFF08 91.31%);
+	}
+}
+.box-style3{
+	border-radius: 100px;
+	border: 1px solid rgba(255, 255, 255, 0.10);
+	background: linear-gradient(335deg, rgba(31, 0, 255, 0.86) -6.4%, rgba(196, 113, 237, 0.86) 68.1%, rgba(255, 123, 131, 0.86) 97.04%, rgba(160, 45, 201, 0.86) 105.26%), #1F00FF;
+	transition: all 0.4s;
+	&:hover{
+		background: linear-gradient(335deg, rgba(31, 0, 255, 0.86) -6.4%, rgba(196, 113, 237, 0.86) 68.1%, rgba(255, 123, 131, 0.86) 97.04%, rgba(160, 45, 201, 0.86) 105.26%), #1F00FF;
 	}
 }
 // vertical border 

@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- required meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- #keywords -->
+    <meta name="keywords" content="boot, Bootstrap, Softipay - HTML Template">
+    <!-- #description -->
+    <meta name="description" content="Softipay - HTML Template">
+    <!-- #title -->
+    <title>Softipay - HTML Template</title>
+    <!-- #favicon -->
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <!-- ==== css dependencies start ==== -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body class="toggleMain-controls">
+
+    <!-- start preloader -->
+    <div id="preloader">
+        <div class="load">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background: transparent;display:block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <g transform="translate(50 50)">
+                  <g transform="scale(0.7)">
+                    <g transform="translate(-50 -50)">
+                      <g>
+                        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" values="0 50 50;360 50 50" keyTimes="0;1" dur="0.7575757575757576s"></animateTransform>
+                        <path fill-opacity="0.8" fill="#e1fe6e" d="M50 50L50 0A50 50 0 0 1 100 50Z"></path>
+                      </g>
+                      <g>
+                        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" values="0 50 50;360 50 50" keyTimes="0;1" dur="1.0101010101010102s"></animateTransform>
+                        <path fill-opacity="0.8" fill="#4a6436" d="M50 50L50 0A50 50 0 0 1 100 50Z" transform="rotate(90 50 50)"></path>
+                      </g>
+                      <g>
+                        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" values="0 50 50;360 50 50" keyTimes="0;1" dur="1.5151515151515151s"></animateTransform>
+                        <path fill-opacity="0.8" fill="#111310" d="M50 50L50 0A50 50 0 0 1 100 50Z" transform="rotate(180 50 50)"></path>
+                      </g>
+                      <g>
+                        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" values="0 50 50;360 50 50" keyTimes="0;1" dur="3.0303030303030303s"></animateTransform>
+                        <path fill-opacity="0.8" fill="#61d05e" d="M50 50L50 0A50 50 0 0 1 100 50Z" transform="rotate(270 50 50)"></path>
+                      </g>
+                    </g>
+                 </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <button class="scrollToTop d-none d-md-flex d-center rounded-circle" aria-label="scroll Bar Button"><i class="fa-solid fa-arrow-up n4-color fs-five"></i></button>
+    <!-- Scroll To Top End -->
+
+    <!-- Start Custom Cursor -->
+    <div class="mouse-follower">
+        <span class="cursor-outline"></span>
+        <span class="cursor-dot"></span>
+    </div>
+    <!-- End Custom Cursor -->
+
+    <!-- header-section start -->
+    <header class="header-section bg-transparent">
+        <div class="container">
+            <div class="main-navbar py-4 py-lg-5">
+                <nav class="navbar-custom">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="index.html" class="nav-brand d-flex d-lg-none">
+                            <img class="logo" src="assets/images/fav.png" alt="logo">
+                            <img class="logo" src="assets/images/logo-text.png" alt="logo">
+                        </a>
+                        <div class="d-flex gap-6">
+                            <div class="switch-wrapper-top d-flex d-lg-none"></div>
+                            <button class="navbar-toggle-btn d-block d-lg-none" type="button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="navbar-toggle-item">
+                        <div class="d-flex gap-5 flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between mt-5 mt-lg-0">
+                            <a href="index.html" class="navbar-brand d-center d-none d-lg-flex justify-content-start gap-2 logo">
+                                <img class="logo" src="assets/images/fav.png" alt="logo">
+                                <img class="logo d-none d-xl-block" src="assets/images/logo-text.png" alt="logo">
+                            </a>
+                            <ul class="custom-nav d-lg-flex d-grid gap-3 gap-lg-4 gap-xl-6 gap-xxl-8">
+                                <li class="menu-link">
+                                    <a href="index.html" class="slide-vertical" data-splitting>Home</a>
+                                </li>
+                                <li class="menu-link">
+                                    <a href="company.html" class="slide-vertical" data-splitting>Company</a>
+                                </li>
+                                <li class="menu-link">
+                                    <a href="industry.html" class="slide-vertical" data-splitting>Industry</a>
+                                </li>
+                                <li class="menu-link">
+                                    <a href="merchant.html" class="slide-vertical" data-splitting>Merchant</a>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 cus-z1 slide-vertical" data-splitting>
+                                        Pages
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="payments.html" class="n2-color slide-horizontal" data-splitting>Payments</a>
+                                        </li>
+                                        <li class="menu-item py-1">
+                                            <button class="position-relative pe-5 n2-color cus-z1 slide-vertical" data-splitting>Blog</button>
+                                            <ul class="sub-menu p-lg-5">
+                                                <li class="menu-link py-1">
+                                                    <a href="blog.html" class="n2-color slide-horizontal" data-splitting>Blog</a>
+                                                </li>
+                                                <li class="menu-link py-1">
+                                                    <a href="blog-details.html" class="n2-color slide-horizontal" data-splitting>Blog details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="pricing.html" class="n2-color slide-horizontal" data-splitting>Pricing</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="resources.html" class="n2-color slide-horizontal" data-splitting>Resources</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="privacy-policy.html" class="n2-color slide-horizontal" data-splitting>Privacy Policy</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="terms-conditions.html" class="n2-color slide-horizontal" data-splitting>Terms Conditions</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="sign-in.html" class="n2-color slide-horizontal" data-splitting>Sign In</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="sign-up.html" class="n2-color slide-horizontal" data-splitting>Sign Up</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-link">
+                                    <a href="contact.html" class="slide-vertical" data-splitting>Contact</a>
+                                </li>
+                            </ul>
+                            <div class="right-area d-flex gap-2 gap-md-4">
+                                <a href="sign-in.html" class="box-style box-second first-alt d-center">
+                                    <span class="fs-six">Log In</span>
+                                </a>
+                                <a href="sign-up.html" class="box-style box-second d-center">
+                                    <span class="fs-six">Open an Account</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header-section end -->
+
+    <!-- banner section start-->
+    <section class="banner-section13 overflow-hidden position-relative pt-lg-20 pt-15">
+        <div class="container">
+           <div class="row g-4 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="banner-content text-center">
+                        <h1 class="n0-color mb-xxl-6 mb-5">
+                            Your Gateway to Global Forex Trading
+                        </h1>
+                        <p class="fs-six mb-xxl-8 mb-6">
+                            Join now and receive $10,000 in your demo account to practice trading and build your skills risk-free."
+                        </p>
+                        <div class="d-flex align-items-center justify-content-center gap-xxl-5 gap-xl-4 gap-sm-3 gap-2">
+                            <a href="#0" class="box-style box-style2 border-0 second-alt py-xl-4 py-3 px-lg-9 px-md-7 px-6 gap-2 d-flex align-items-center justify-content-center rounded-5">
+                                <span class="text-nowrap n3-color fs-seven fw-semibold">Start Trading</span>
+                            </a>
+                            <a href="#0" class="box-style box-five py-xl-4 py-3 px-lg-9 px-md-7 px-6 gap-2 d-flex align-items-center justify-content-center rounded-5">
+                                <span class="text-nowrap n0-color fs-seven fw-semibold">Start Trading</span>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="assets/images/gateway-thumb13.jpg" alt="img" class="w-100 wow fadeInUp rounded-4" data-wow-dealy="1s">
+                </div>
+           </div>
+           
+        <!-- Partnered section Start -->
+        <div class="partnered-section partnered-style13 rounded-0 pt-lg-20 pt-md-13 pt-10 pb-120">
+            <div class="container">
+                <div class="partnered-wrapper-style6 d-flex flex-lg-nowrap justify-content-lg-start justify-content-center flex-wrap align-items-center gap-xxl-20 gap-xl-10 gap-lg-8 gap-md-6 gap-sm-5 gap-4">
+                    <p class="fs-six fw-mid text-center text-nowrap">As featured on:</p>
+                    <div class="partnered-wrapper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide w-fit">
+                                <div class="partnered-item">
+                                    <img src="assets/images/home2/sponsor/s1.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fit">
+                                <div class="partnered-item">
+                                    <img src="assets/images/home2/sponsor/s2.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fit">
+                                <div class="partnered-item">
+                                    <img src="assets/images/home2/sponsor/s3.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fit">
+                                <div class="partnered-item">
+                                    <img src="assets/images/home2/sponsor/s4.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fit">
+                                <div class="partnered-item">
+                                    <img src="assets/images/home2/sponsor/s5.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fit">
+                                <div class="partnered-item">
+                                    <img src="assets/images/home2/sponsor/s6.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fit">
+                                <div class="partnered-item">
+                                    <img src="assets/images/home2/sponsor/s7.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fit">
+                                <div class="partnered-item">
+                                    <img src="assets/images/home2/sponsor/s8.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-fit">
+                                <div class="partnered-item">
+                                    <img src="assets/images/home2/sponsor/s1.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Partnered section end -->
+        </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- Get Problems section Start -->
+    <section class="get-problems-section n9-bg pt-120">
+        <div class="container">
+            <div class="row pb-8 pb-md-15 justify-content-center">
+                <div class="col-xl-9">
+                    <div class="section-header text-center">
+                        <span class="hero12-badge d-flex align-items-center justify-content-center fs-six gradient-text gap-2 fw-mid d-inline-block black-clr mb-lg-4 mb-3 text-capitalize">
+                            <img src="assets/images/section-icon13.png" alt="badge"> What you’ll get
+                        </span>
+                        <h2 class="visible-slowly-right fw-mid n0-color"> We resolve problems associated with creative procedures.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-xxl-6 g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-dealy="0.4s">
+                    <div class="get-common h-100 px-xxl-10 px-xl-9 px-lg-6 px-5 py-xxl-10 py-xl-9 py-lg-6 py-6 wow fadeInUp" data-wow-dealy="0.4s">
+                        <div class="d-flex flex-column justify-content-between gap-4 h-100">
+                            <span class="display-six n0-color fw-bold">
+                                All-in-One
+                                <span class="gradient-text">Platform</span>
+                            </span>
+                            <div class="text-area">
+                                <h5 class="n0-color mb-2">Customization in Minutes</h5>
+                                <p>
+                                    Configure your own trading instruments, mechanicsand more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 wow fadeInUp" data-wow-dealy="0.5s">
+                    <div class="get-common h-100 px-xxl-10 px-xl-9 px-lg-6 px-5 py-xxl-10 py-xl-9 py-lg-6 py-6 wow fadeInUp" data-wow-dealy="0.4s">
+                        <img src="assets/images/development-grp.png" alt="img" class="development-grp mb-xl-10 mb-lg-8 mb-6">
+                        <div class="text-area">
+                            <h5 class="n0-color mb-2">Top-Notch Development</h5>
+                            <p>
+                                Build using highly reliable, secure, and scalable technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 wow col-md-6 fadeInUp" data-wow-dealy="0.6s">
+                    <div class="get-common h-100 px-xxl-10 px-xl-9 px-lg-6 px-5 py-xxl-10 py-xl-9 py-lg-6 py-6 wow fadeInUp" data-wow-dealy="0.4s">
+                        <div class="d-flex flex-column gap-4">
+                            <img src="assets/images/collaborate-grow.png" alt="img" class="w-100">
+                            <div class="text-area">
+                                <h5 class="n0-color mb-2"> Real-Time Market Data</h5>
+                                <p>
+                                    Configure your own trading instruments, mechanicsand more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow col-md-6 fadeInUp" data-wow-dealy="0.7s">
+                    <div class="get-common h-100 px-xxl-10 px-xl-9 px-lg-6 px-5 py-xxl-10 py-xl-9 py-lg-6 py-6 wow fadeInUp" data-wow-dealy="0.4s">
+                        <div class="d-flex h-100 flex-column justify-content-between gap-4">
+                            <img src="assets/images/collaborate.png" alt="img" class="mb-3 collaborate text-center">
+                            <div class="text-area">
+                                <h5 class="n0-color mb-2"> Collaborate
+                                    Real-time</h5>
+                                <p>
+                                    Configure your own trading instruments, mechanicsand more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 wow fadeInUp" data-wow-dealy="0.8s">
+                    <div class="get-common py-xxl-14 py-xl-12 py-lg-9 py-8 px-xxl-10 px-xl-9 px-lg-6 px-5 wow fadeInUp" data-wow-dealy="0.4s">
+                        <div class="get-problems-footer d-flex flex-md-nowrap flex-wrap align-items-center justify-content-md-between justify-content-center gap-3">
+                            <div class="d-md-flex d-grid justify-content-center text-md-start text-center justify-content-md-start align-items-center gap-xxl-7 gap-xl-5 gap-lg-3 gap-2">
+                                <img src="assets/images/graduate.png" alt="img" class="graduate">
+                                <p>
+                                    Trade on demo – no registration is required!
+                                    Or register a personal account to access additional features.
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center gap-xxl-5 gap-xl-4 gap-sm-3 gap-2">
+                                <a href="#0" class="box-style box-style2 border-0 second-alt py-xl-4 py-3 px-lg-9 px-md-7 px-sm-6 px-5 gap-2 d-flex align-items-center justify-content-center rounded-5">
+                                    <span class="text-nowrap n3-color fs-seven fw-semibold">Start Trading</span>
+                                </a>
+                                <a href="#0" class="box-style box-five py-xl-4 py-3 px-lg-9 px-md-7 px-sm-6 px-5 gap-2 d-flex align-items-center justify-content-center rounded-5">
+                                    <span class="text-nowrap n0-color fs-seven fw-semibold">Start Trading</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Get Problems section end -->
+
+    <!-- opening account start -->
+    <section class="opening-account position-relative cus-z1 pt-120 pb-120 n9-bg">
+        <div class="container">
+            <div class="row pb-8 pb-md-15 justify-content-center">
+                <div class="col-xl-6">
+                    <div class="section-header text-center">
+                        <span class="hero12-badge d-flex align-items-center justify-content-center fs-six gradient-text gap-2 fw-mid d-inline-block black-clr mb-lg-4 mb-3 text-capitalize">
+                            <img src="assets/images/section-icon13.png" alt="badge"> How It Works
+                        </span>
+                        <h2 class="visible-slowly-right fw-mid n0-color">Check Out How It <br> Works</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="opening-account-wrapper opening-account-wrapper10 position-relative">
+                <div class="row g-6 justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="opening-account-item opening-items13 text-center">
+                            <span class="serial-badge m-auto mb-xxl-14 mb-10 d-center rounded-circle n0-color">01</span>
+                            <a href="#" class="icon rounded-4 d-center m-auto mb-xxl-9 mb-8">
+                                <img src="assets/images/home2/icon/work13-icon1.png" alt="icon">
+                            </a>
+                            <h5 class="n0-color mb-xxl-4 mb-3 visible-slowly-right">Create Your Account</h5>
+                            <p class="fs-seven">Sign up quickly and easily to gain access to your trading dashboard. Choose between a demo or live account.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="opening-account-item opening-items13 text-center">
+                            <span class="serial-badge m-auto mb-xxl-14 mb-10 d-center rounded-circle n0-color">02</span>
+                            <a href="#" class="icon style2 rounded-4 d-center m-auto mb-xxl-9 mb-8">
+                                <img src="assets/images/home2/icon/work13-icon2.png" alt="icon">
+                            </a>
+                            <h5 class="n0-color mb-xxl-4 mb-3 visible-slowly-right">Choose a Currency Pair</h5>
+                            <p class="fs-seven">Deposit funds securely, browse the available currency pairs, and use our advanced tools to analyze the market.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="opening-account-item opening-items13 text-center">
+                            <span class="serial-badge m-auto mb-xxl-14 mb-10 d-center rounded-circle n0-color">03</span>
+                            <a href="#" class="icon style3 rounded-4 d-center m-auto mb-xxl-9 mb-8">
+                                <img src="assets/images/home2/icon/work13-icon3.png" alt="icon">
+                            </a>
+                            <h5 class="n0-color mb-xxl-4 mb-3 visible-slowly-right">Start Trading</h5>
+                            <p class="fs-seven visible-slowly-bottom">Place your trades with real-time market data. Monitor your positions, manage risk, and watch your profits grow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- opening account end -->
+
+    <!-- Choose Start -->
+    <section class="choose-section13 pt-120 pb-120">
+        <div class="container">
+            <div class="row g-6 justify-content-between align-items-center">
+                <div class="col-xl-6 col-lg-7">
+                    <div class="choose-content13">
+                        <div class="section-header mb-xxl-14 mb-xl-9 mb-lg-7 mb-6">
+                            <span class="hero12-badge d-flex align-items-center fs-six gradient-text gap-2 fw-mid d-inline-block black-clr mb-lg-4 mb-3 text-capitalize">
+                                <img src="assets/images/section-icon13.png" alt="badge"> Why Choose Us
+                            </span>
+                            <h2 class="visible-slowly-right fw-mid n0-color">We Make Trading <br> Simple</h2>
+                        </div>
+                        <div class="choose13-content-inner d-flex flex-column gap-xxl-8 gap-xl-6 gap-4">
+                            <div class="choose13-item wow fadeInUp" data-wow-dealy="0.4s">
+                                <h5 class="n0-color mb-lg-4 mb-3">A World-Class Trading Experience</h5>
+                                <p>
+                                    Experience the FP Markets difference with 18 years of expertise with our award-winning service, top-tier trading platforms, 24/7 multi-lingual support, extensive market access - all combined to enhance your trading journey.
+                                </p>
+                            </div>
+                            <div class="choose13-item wow fadeInUp" data-wow-dealy="0.5s">
+                                <h5 class="n0-color mb-lg-4 mb-3">Explore a World of Trading Options</h5>
+                                <p>
+                                    Trade with over 70+ currency pairs, over 10,000 stocks, major global indices, diverse commodities, bonds, metals, and popular cryptocurrencies tailored for every trading style.
+                                </p>
+                            </div>
+                            <div class="choose13-item wow fadeInUp" data-wow-dealy="0.6s">
+                                <h5 class="n0-color mb-lg-4 mb-3">Empower Trades with Cutting-Edge Platforms</h5>
+                                <p>
+                                    Gain access to top-rated platforms and advanced tools for an edge in the financial markets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-8 col-sm-10">
+                    <div class="choose-thumb13 w-100">
+                        <img src="assets/images/choose-thumb13.png" alt="icon" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Choose End -->
+
+    <!-- Blog4 Section start -->
+    <section class="testimonial-section8 n9-bg position-relative pt-120">
+        <div class="container position-relative">
+            <div class="section-header mb-xxl-15 mb-xl-10 mb-lg-7 mb-6 text-center">
+                <span class="hero12-badge d-flex align-items-center justify-content-center fs-six gradient-text gap-2 fw-mid d-inline-block black-clr mb-lg-4 mb-3 text-capitalize">
+                    <img src="assets/images/section-icon13.png" alt="badge"> Testimonial
+                </span>
+                <h2 class="visible-slowly-right fw-mid n0-color">Join Our Community of <br> Successful Traders</h2>
+            </div>
+            <div class="blog4-wrappers swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-items8 testimonial-items13">
+                            <div class="d-flex align-items-center gap-3 gap-lg-4 mb-xxl-5 mb-4">
+                                <div class="img-area">
+                                    <img class="profile-img rounded-circle" src="assets/images/testimonial13-v1.jpg" alt="Image">
+                                </div>
+                                <div class="profile-info">
+                                    <h6 class="mb-1 text-white fs-six fw-semibold">Kane Willamson</h6>
+                                    <p class="emial-info fs-eight">@kanewillamson.com</p>
+                                </div>
+                            </div>
+                            <div class="line mt-xxl-6 mt-4 mb-xxl-8 mb-xl-6 mb-4"></div>
+                            <p class="fs-seven mb-xxl-6 mb-xl-5 mb-4">
+                                "This platform has transformed my trading experience. The real-time data and advanced tools helped me make smarter decisions and increase my profits."
+                            </p>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="dev-tag">Developer</span>
+                                <a href="javascript:void(0)" class="dev-social">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_8467_1359)">
+                                        <path d="M14.2737 10.1635L23.2022 0H21.0872L13.3312 8.82302L7.14122 0H0L9.36257 13.3432L0 23.9999H2.11503L10.3002 14.6805L16.8387 23.9999H23.9799M2.87839 1.56189H6.12767L21.0856 22.5148H17.8355" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_8467_1359">
+                                        <rect width="23.9799" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                        
+                                </a>
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-btn second d-center gap-3 gap-lg-5 justify-content-center d-lg-none d-flex mt-4">
+                <button type="button" aria-label="Slide Prev"
+                    class="ara-prev slide-button m-0 d-center">
+                    <i class="ph ph-caret-left fs-five fw-bold"></i>
+                </button>
+                <button type="button" aria-label="Slide Next"
+                    class="ara-next slide-button m-0 d-center">
+                    <i class="ph ph-caret-right fs-five fw-bold"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Blog4 Section end -->
+
+    <!-- Project Counting section Start -->
+    <section class="faq-counting-section position-relative pt-xl-15 pt-lg-13 pt-md-10 pt-8">
+        <div class="container">
+            <div class="faq-counting-wrap d-flex flex-sm-nowrap flex-wrap gap-sm-0 gap-4 align-items-center justify-content-between">
+                <div class="faq-count-item">
+                    <div class="counters d-flex gap-1 align-items-center wow fadeInRight" data-wow-dealy="4s">
+                        <span class="odometer fs-two fw-bold" data-odometer-final="45">0</span>
+                        <span class="style-plus">+</span>
+                    </div>
+                    <p class="fag-pra">
+                        Happy Customers
+                    </p>
+                </div>
+                <svg width="1" height="109" viewBox="0 0 1 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line opacity="0.3" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="109" stroke="url(#paint0_linear_8467_14060)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_8467_14060" x1="-0.5" y1="-2.18557e-08" x2="-0.500005" y2="109" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="white" stop-opacity="0"/>
+                    <stop offset="0.49" stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                </svg>                        
+                <div class="faq-count-item">
+                    <div class="counters d-flex gap-1 align-items-center wow fadeInRight" data-wow-dealy="4s">
+                        <span class="odometer fs-two fw-bold" data-odometer-final="7">0</span>
+                        <span class="style-plus">k+</span>
+                    </div>
+                    <p class="fag-pra">
+                        Hours spent on craft
+                    </p>
+                </div>
+                <svg width="1" height="109" viewBox="0 0 1 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line opacity="0.3" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="109" stroke="url(#paint0_linear_8467_1406)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_8467_1406" x1="-0.5" y1="-2.18557e-08" x2="-0.500005" y2="109" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="white" stop-opacity="0"/>
+                    <stop offset="0.49" stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                <div class="faq-count-item">
+                    <div class="counters d-flex gap-1 align-items-center wow fadeInRight" data-wow-dealy="4s">
+                        <span class="odometer fs-two fw-bold" data-odometer-final="4.8">0</span>
+                    </div>
+                    <p class="fag-pra">
+                        Review rate
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Counting section end -->
+
+    <!-- Testimonial Start -->
+    <section class="testimonial-section6 bg11 pt-120 pb-120 position-relative">
+        <div class="container">
+            <div class="d-flex flex-sm-nowrap flex-wrap gap-4 align-items-end justify-content-between mb-xxl-14 mb-xl-12 mb-lg-10 mb-md-8 mb-7">
+                <div class="section-header">
+                    <span class="d-flex align-items-center p9-clr gap-2 fw-mid d-inline-block mb-lg-4 mb-3 text-uppercase">
+                        <img src="assets/images/section-icon14.png" alt="badge"> TESTIMONIAL
+                    </span>
+                    <h3 class="visible-slowly-right display-six fw-bold">What They Say <br> About Us</h3>
+                </div>
+                <a href="#0" class="box-style box-style3 border-0 second-alt py-xl-4 py-3 px-lg-9 px-md-7 px-6 gap-2 d-flex align-items-center justify-content-center rounded-5">
+                    <span class="text-nowrap text-white fs-seven fw-semibold">Get Started</span>
+                    <i class="fa-solid fa-arrow-right-long text-white"></i>
+                </a>
+            </div>
+            <div class="row g-4 justify-content-between align-items-end">
+                <div class="col-lg-10">
+                    <div class="testimonial-wrapper6 swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-item14 n0-bg rounded-4 p-xxl-15 p-xl-10 p-lg-7 p-5">
+                                    <div class="d-flex flex-sm-nowrap flex-wrap gap-xxl-8 gap-xl-6 gap-lg-4 gap-3">
+                                        <div class="author-thumb rounded-circle">
+                                            <img src="assets/images/testimonial14-author1.png" alt="img" class="rounded-circle">
+                                        </div>
+                                       <div class="cont">
+                                            <p class="fs-five black-clr mb-xl-8 mb-lg-7 mb-md-4 mb-3">
+                                                "Working with Softipay transformed our business. Their strategic insights improved our operations and boosted our overall efficiency. We saw a 30% increase in productivity within six months!"
+                                            </p>
+                                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                                <div class="content">
+                                                    <h5 class="black-clr mb-2">Taylor Swift</h5>
+                                                    <span class="fs-seven pra d-block">Co-Founder at Whirlwind</span>
+                                                </div>
+                                                <img src="assets/images/quote14.png" alt="icon" class="quote">
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="slider-btn slider-btn-stylewhite style14 d-flex justify-content-end align-items-center gap-2 gap-lg-3">
+                        <button type="button" aria-label="Slide Prev"
+                            class="ara-prev slide-button m-0 d-center">
+                            <i class="ph ph-caret-left fs-five fw-bold"></i>
+                        </button>
+                        <button type="button" aria-label="Slide Next active"
+                            class="ara-next slide-button m-0 d-center">
+                            <i class="ph ph-caret-right fs-five fw-bold"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial end -->
+
+    <!-- Our Apps start -->
+    <section class="our-apps pt-120 pb-120 position-relative n0-bg">
+        <div class="container">
+            <div class="row gy-6 gy-xxl-0 align-items-center justify-content-between">
+                <div class="col-xl-7 col-md-7 col-sm-10 order-1 order-md-0">
+                    <div class="smartphone-apps position-relative wow fadeInUp" data-wow-delay="0.4s">
+                       <img src="assets/images/smartphone14.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-5">
+                    <div class="section-header mb-4 mb-lg-8">
+                        <span class="d-flex align-items-center p9-clr gap-2 fw-mid d-inline-block mb-lg-4 mb-3 text-uppercase">
+                            <img src="assets/images/section-icon14.png" alt="badge"> Get App
+                        </span>
+                        <h3 class="visible-slowly-right pb-3 pb-md-6">Innovative Banking Features Tailored for.</h3>
+                        <p class="black-clr fw-mid">Bank on the go with the SoftiPay app. Access your accounts, transfer funds, pay bills, and manage finances securely—all from your mobile device, anytime, anywhere. Download now!</p>
+                    </div>
+                    <div class="btn-area d-center justify-content-start gap-3">
+                        <a href="javascript:void(0)"><img class="store" src="assets/images/google-play.png" alt="Icon"></a>
+                        <a href="javascript:void(0)"><img class="store" src="assets/images/app-store.png" alt="Icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Element App Ele -->
+        <img src="assets/images/app-ele14.png" alt="img" class="app-ele14 d-md-block d-none">
+    </section>
+    <!-- Our Apps end -->
+
+    <!-- Faqs start -->
+    <section class="faq-section pt-120 pb-lg-20 pb-15 position-relative bg11">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 position-relative">
+                    <div class="section-header mb-xxl-14 mb-xl-10 mb-lg-7 mb-6">
+                        <span class="d-flex align-items-center p9-clr gap-2 fw-mid d-inline-block mb-lg-4 mb-3 text-uppercase">
+                            <img src="assets/images/section-icon14.png" alt="badge"> FAQs
+                        </span>
+                        <h2 class="visible-slowly-right fw-semibold black-clr">Frequently Asked Questions</h2>
+                    </div>
+                    <img src="assets/images/faq-thumb13.png" alt="img" class="w-100 d-lg-block d-none">
+                </div>
+                <div class="col-xxl-6 col-xl-7 col-lg-7">
+                    <div class="accordion-section accordion-style13 accordionstyle-14">
+                        <div class="d-grid gap-4 gap-xl-6 gap-5">
+                            <div class="accordion-single position-relative wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                                <h5 class="header-area">
+                                    <button class="accordion-btn text-start fw-semibold text-white d-flex align-items-center position-relative w-100" type="button">1. What is Forex trading?</button>
+                                </h5>
+                                <div class="content-area">
+                                    <div class="content-body pt-3 pt-md-4">
+                                        <p class="n3-color">Forex trading, or foreign exchange trading, is the buying and selling of currencies to profit from changes in exchange rates. It’s the largest financial market in the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-single position-relative wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                                <h5 class="header-area">
+                                    <button class="accordion-btn text-start fw-semibold text-white d-flex align-items-center position-relative w-100" type="button">2. How do I open an account?</button>
+                                </h5>
+                                <div class="content-area">
+                                    <div class="content-body pt-3 pt-md-4">
+                                        <p class="n3-color">Forex trading, or foreign exchange trading, is the buying and selling of currencies to profit from changes in exchange rates. It’s the largest financial market in the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-single position-relative wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                                <h5 class="header-area">
+                                    <button class="accordion-btn text-start fw-semibold text-white d-flex align-items-center position-relative w-100" type="button">3. What’s the minimum deposit required?</button>
+                                </h5>
+                                <div class="content-area">
+                                    <div class="content-body pt-3 pt-md-4">
+                                        <p class="n3-color">Forex trading, or foreign exchange trading, is the buying and selling of currencies to profit from changes in exchange rates. It’s the largest financial market in the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-single position-relative wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                                <h5 class="header-area">
+                                    <button class="accordion-btn text-start fw-semibold text-white d-flex align-items-center position-relative w-100" type="button">4. Is my money safe with your platform?</button>
+                                </h5>
+                                <div class="content-area">
+                                    <div class="content-body pt-3 pt-md-4">
+                                        <p class="n3-color">Forex trading, or foreign exchange trading, is the buying and selling of currencies to profit from changes in exchange rates. It’s the largest financial market in the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-single position-relative wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                                <h5 class="header-area">
+                                    <button class="accordion-btn text-start fw-semibold text-white d-flex align-items-center position-relative w-100" type="button">5. Can I practice before trading real money?</button>
+                                </h5>
+                                <div class="content-area">
+                                    <div class="content-body pt-3 pt-md-4">
+                                        <p class="n3-color">Forex trading, or foreign exchange trading, is the buying and selling of currencies to profit from changes in exchange rates. It’s the largest financial market in the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-single position-relative wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                                <h5 class="header-area">
+                                    <button class="accordion-btn text-start fw-semibold text-white d-flex align-items-center position-relative w-100" type="button">2. How do I open an account?</button>
+                                </h5>
+                                <div class="content-area">
+                                    <div class="content-body pt-3 pt-md-4">
+                                        <p class="n3-color">Forex trading, or foreign exchange trading, is the buying and selling of currencies to profit from changes in exchange rates. It’s the largest financial market in the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faqs end -->
+
+    <!-- Footer Newsletter Start -->
+    <section class="footer-newsletter14 position-relative cus-z1 pt-120 n0-bg">
+        <div class="container">
+            <div class="footer-newsletter-wrapper position-relative rounded-4">
+                <div class="content text-center">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center n0-color gap-xl-3 gap-2 mb-xxl-6 mb-5">
+                        <span class="badge-14 d-center rounded-5 py-2 px-3 fs-eight n0-color">Wow!</span> What are you waiting for
+                    </div>
+                    <span class="display-six fw-bold n0-color mb-3">
+                        Start Your Banking Experience With Softipay
+                    </span>
+                    <p class="n0-color fs-seven mb-xxl-9 mb-xl-8 mb-lg-7 mb-md-6 mb-5">
+                        Start your journey to experience the smartest and the most wholesome Digital Banking today.
+                    </p>
+                    <div class="d-flex align-items-center justify-content-center gap-xxl-5 gap-xl-4 gap-sm-3 gap-2">
+                        <a href="#0" class="box-style box-style3 border-0 second-alt py-xl-4 py-3 px-lg-9 px-md-7 px-6 gap-2 d-flex align-items-center justify-content-center rounded-5">
+                            <span class="text-nowrap text-white fs-seven fw-semibold">Get Started</span>
+                            <i class="fa-solid fa-arrow-right-long text-white"></i>
+                        </a>
+                        <a href="#0" class="box-style n0-bg py-xl-4 py-3 px-lg-9 px-md-7 px-6 gap-2 d-flex align-items-center justify-content-center rounded-5">
+                            <span class="text-nowrap n3-color fs-seven fw-semibold">Play Store</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Element -->
+                <img src="assets/images/star-vector-white.png" alt="img" class="star-badge14">
+            </div>
+        </div>
+    </section>
+    <!-- Footer Newsletter End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section footer-style14 cus-z1 black-bg">
+        <div class="container py-xxl-18 py-xl-16 py-lg-14 py-13">
+            <div class="row gy-10 gy-xl-0">
+                <div class="col-xl-4 col-lg-5 col-sm-6">
+                    <div class="footer11-pragraph">
+                        <a href="#" class="flogo mb-xxl-6 mb-5 d-block"><img src="assets/images/logo14.png" alt="img"></a>
+                        <p class="n0-color mb-xxl-8 mb-xl-6 mb-5">Our company provides reliable and comprehensive insurance solutions tailored to your needs.</p>
+                        <ul class="d-flex align-items-center gap-sm-2 gap-1 social-area social-area-style11">
+                            <li>
+                                <a href="https://www.facebook.com" aria-label="Facebook" class="d-center">
+                                    <i class="fab fa-facebook-f fs-six"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com" aria-label="Twitter" class="d-center">
+                                    <i class="fab fa-twitter fs-six"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com" aria-label="Instagram" class="d-center">
+                                    <i class="fab fa-instagram fs-six"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.dribbble.com" aria-label="dribbble" class="d-center">
+                                    <i class="fa-brands fa-dribbble fs-six"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-sm-6 col-6 footer-links d-flex justify-content-lg-center justify-content-start">
+                    <div class="single-box">
+                        <h5 class="mb-3 mb-sm-4 slide-horizontal text-white">Quick Links</h5>
+                        <ul class="d-grid gap-2 gap-sm-3">
+                            <li><a href="index.html" class="n0-color">Home</a></li>
+                            <li><a href="company.html" class="n0-color">Our Company</a></li>
+                            <li><a href="payments.html" class="n0-color">Payments</a></li>
+                            <li><a href="merchant.html" class="n0-color">Merchants</a></li>
+                            <li><a href="resources.html" class="n0-color">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6 col-6 footer-links d-flex justify-content-lg-center justify-content-start">
+                    <div class="single-box">
+                        <h5 class="mb-3 mb-sm-4 slide-horizontal n0-color">Customer Support</h5>
+                        <ul class="d-grid gap-2 gap-sm-3">
+                            <li><a href="contact.html" class="n0-color">Contact Us</a></li>
+                            <li><a href="merchant.html" class="n0-color">Merchant</a></li>
+                            <li><a href="contact.html" class="n0-color">Support Centre</a></li>
+                            <li><a href="industry.html" class="n0-color">Industry</a></li>
+                            <li><a href="resources.html" class="n0-color">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h5 class="mb-3 mb-sm-4 slide-horizontal n0-color">Office Address</h5>
+                        <ul class="d-grid gap-2 gap-sm-3">
+                            <li class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-location-dot fs-five n0-color"></i>
+                                <span class="n0-color">Nenuya Centre, Elia  Street New York, USA</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-phone fs-six n0-color"></i>
+                                <a href="#0" class="n0-color fs-seven">Phone: +1-212-9876543</a>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-envelope fs-six n0-color"></i>
+                                <a href="#0" class="n0-color fs-seven">Email:  info@softipay.com</a>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-clock fs-six n0-color"></i>
+                                <span class="n0-color">Mon-Fri : 9:00 am - 5:00pm</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom bg-transparent">
+            <div class="container">
+                <div class="copyright text-center py-xxl-7 py-5">
+                    <p class="text-white">©<span class="currentYear text-white"></span> <a href="index.html" class="text-white">Sofipay.</a> All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- Sidebar Start -->
+    <div class="cmn-styles sidebar-wrapper">
+        <div class="d-flex ramove-area justify-content-end px-10 pt-3 mb-xxl-10 mb-8">
+            <div class="side-remove d-flex align-items-center gap-2 bar-toggles text-uppercase">
+                Close <i class="ph ph-x black-clr fs-five fw-bold"></i>
+            </div>
+        </div>
+        <div class="box">
+            <a href="index.html" class="text-center mb-md-15 mb-10 d-block">
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
+            <h5 class="black-clr mb-xxl-5 mb-4 text-uppercase text-center">
+                //INSTAGRAM
+            </h5>
+            <div class="sideba-gallery mb-md-15 mb-10">
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta1.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta2.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta3.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta4.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta5.jpg" alt="img">
+                </a>
+                <a href="blog.html" class="small-gl">
+                    <img src="assets/images/insta6.jpg" alt="img">
+                </a>
+            </div>
+            <h5 class="black-clr mb-xxl-5 mb-4 text-uppercase text-center">
+                Info
+            </h5>
+            <ul class="side-infocontact d-grid gap-3 mb-md-15 mb-10">
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-envelope"></i>
+                    </span>
+                    <a href="#">
+                        softipay@example.com
+                    </a>
+                </li>
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-map-pin"></i>
+                    </span>
+                    <a href="#">
+                        28 street, new york, USA
+                    </a>
+                </li>
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-phone-call"></i>
+                    </span>
+                    <a href="#">
+                        (+987) 123 456 789 77
+                    </a>
+                </li>
+            </ul>
+            <h5 class="black-clr mb-xxl-5 mb-4 text-uppercase text-center">
+                //Follow Us
+            </h5>
+            <ul class="header-social">
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f"></i>                                     
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/?hl=en">
+                        <i class="fa-brands fa-instagram"></i>                                                                              
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bd.linkedin.com/">
+                        <i class="fa-brands fa-linkedin-in"></i>                                                                                                                           
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>                                                                               
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>                                                                               
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Common Overlay -->
+    <div class="cmn-overlay"></div>
+    <!-- Common Overlay -->
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="assets/js/plugins/plugins.js"></script>
+    <script src="assets/js/plugins/plugin-custom.js"></script>
+    <!-- <script src="assets/js/plugins/charts.js"></script> -->
+    <!-- <script src="assets/js/plugins/animated.js"></script> -->
+    <script src="assets/js/plugins/core.js"></script>
+    <script src="assets/js/plugins/continentsLow.js"></script>
+    <script src="assets/js/plugins/maps.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
