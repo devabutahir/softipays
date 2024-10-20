@@ -1187,6 +1187,81 @@
     }
 }
 
+//Hero 14
+.banner-section14{
+    .container{
+        max-width: 1720px;
+        margin: 0 auto;
+    }
+    .banner-wrapper14{
+        border-radius: 32px;
+        background: linear-gradient(335deg, rgba(31, 0, 255, 0.86) -6.4%, rgba(196, 113, 237, 0.86) 68.1%, rgba(255, 123, 131, 0.86) 97.04%, rgba(160, 45, 201, 0.86) 105.26%), #1F00FF;
+        padding: 90px 60px 40px;
+        z-index: 1;
+        p{
+            max-width: 500px;
+        }
+        .hero14-ele{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+    }
+    .hero14-thumb{
+        animation: updwon 4s linear infinite;
+        max-width: 683px;
+        img{
+            width: 100%;
+        }
+    }
+    @include maxQuery(1399){
+        .banner-wrapper14{
+            padding: 80px 60px 40px;
+            p{
+                max-width: 500px;
+            }
+            h1{
+                font-size: 48px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .banner-wrapper14{
+            padding: 80px 60px 40px;
+            text-align: center;
+            .pragraph{
+                max-width: 500px;
+                line-height: 26px;
+                margin: 0 auto;
+            }
+            h1{
+                font-size: 48px;
+            }
+        }
+        .hero14-thumb{
+            margin: 0 auto;
+        }
+    }
+    @include maxQuery(480){
+        .banner-wrapper14{
+            padding: 70px 14px 40px;
+            text-align: center;
+            .pragraph{
+                max-width: 500px;
+                line-height: 26px;
+                margin: 0 auto;
+            }
+            h1{
+                font-size: 34px;
+            }
+        }
+        .hero14-thumb{
+            margin: 0 auto;
+        }
+    }
+}
+
 //Sponsor Unique
 .unique-sponsor-wrap{
     display: flex;
@@ -1684,6 +1759,47 @@
     &:hover{
         background: var(--n0);
     }
+}
+
+//Feature Sectin14
+.unique-feature-section{
+    .feature-incr{
+        background: linear-gradient(335deg, #A02DC9 -9.54%, #FF7B83 -1.31%, #C471ED 27.62%, #1F00FF 102.13%);
+    }
+    .feature-incr2{
+        background: #C5FF7A;
+    }
+    .feature-banking-app{
+        .feature-app{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            animation: leftright 3s linear infinite
+        }
+        @include maxQuery(991){
+            .feature-app{
+                width: 200px;
+            }
+        }
+        @include maxQuery(767){
+            .feature-app{
+                width: 200px;
+                position: initial;
+                margin-top: 20px;
+            }
+        }
+    }
+    .feature-exclusice{
+        .play{
+            max-width: 126px;
+        }
+    }
+}
+.feaure-element14{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: updwon 2s linear infinite;
 }
 
 //blog Section
@@ -2872,6 +2988,14 @@ width: fit-content !important;
             }
         }
     }
+    .partnered-wrapper-style14{
+        .partnered-item{
+            img{
+                filter: brightness(0);
+                opacity: 0.8;
+            }
+        }
+    }
 }
 
 //What Do 
@@ -3859,6 +3983,40 @@ width: fit-content !important;
         img{
             transform: rotate(10deg);
         }
+    }
+}
+
+//Choose 14
+.choose-items14{
+    transition: all 0.4s;
+    .icon{
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 20px;
+        border: unset;
+    }
+    &:hover{
+        .icon{
+            background: linear-gradient(335deg, #1F00FF -6.4%, #C471ED 68.1%, #A02DC9 97.04%, #FF7B83 105.26%);
+        }
+    }
+}
+.choose-ele14{
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    animation: updwon 2s linear infinite;
+    @include maxQuery(1399){
+        top: 30px;
+    }
+    @include maxQuery(991){
+        top: 20px;
+        width: 120px;
+    }
+}
+@keyframes updwon {
+    50%{
+        transform: translateY(-10px);
     }
 }
 
@@ -5503,7 +5661,8 @@ width: fit-content !important;
             i{
                 color: var(--black-clr) !important;
             }
-            &:hover{
+            &:hover,
+            &.active{
                 background: linear-gradient(335deg, #1F00FF -6.4%, #C471ED 68.1%, #FF7B83 97.04%, #A02DC9 105.26%) !important;
                 i{
                     color: var(--n0) !important;
