@@ -137,6 +137,22 @@ document.addEventListener("DOMContentLoaded", function () {
       })
     }
 
+    //>> Project Hover Image Show Slider Start <<//
+    const portfolioBoxItems = document.querySelectorAll(".portfolio-box-items");
+
+    function followImageCursor(event, portfolioBoxItems) {
+        const contentBox = portfolioBoxItems.getBoundingClientRect();
+        const dx = event.clientX - contentBox.x;
+        const dy = event.clientY - contentBox.y;
+        portfolioBoxItems.children[2].style.transform = `translate(${dx}px, ${dy}px) rotate(0)`;
+    }
+    
+    portfolioBoxItems.forEach((item, i) => {
+        item.addEventListener("mousemove", (event) => {
+            setInterval(followImageCursor(event, item), 1000);
+        });
+    });
+
     // Password Show Hide
     $('.show-hide-pass').on('click', function () {
       var passwordInput = $($(this).siblings(".pass-box input"));

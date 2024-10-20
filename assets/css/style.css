@@ -8165,4 +8165,53 @@ iframe {
   border-color: var(--p2) !important;
   background: var(--p2) !important;
   color: var(--black-clr) !important;
+}
+
+.portfolio-box-items {
+  position: relative;
+}
+.portfolio-box-items .project-hover {
+  width: 200px;
+  height: 240px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(10deg);
+  inset-inline-start: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 75%;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  margin: -200px 0 0 -50px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+  visibility: hidden;
+}
+.portfolio-box-items:hover .project-hover {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio-box-items .portfoli-thumb-area .icon-area {
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  border: 1px dashed rgba(0, 86, 81, 0.1);
+  transition: all 0.5s;
+}
+.portfolio-box-items .big-pragraph {
+  max-width: 636px;
+}
+
+.port-line {
+  border-bottom: 1px dashed #01A66B;
+  width: 100%;
+  display: block;
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
