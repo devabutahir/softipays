@@ -5706,12 +5706,6 @@ width: fit-content !important;
 		z-index: 2;
 		visibility: hidden;
 	}
-	&:hover {
-		.project-hover {
-			opacity: 1;
-			visibility: visible;
-		}
-	}
     .portfoli-thumb-area{
         .icon-area{
            width: 150px;
@@ -5723,6 +5717,47 @@ width: fit-content !important;
     }
     .big-pragraph{
         max-width: 636px;
+    }
+    &:hover {
+        .portfoli-thumb-area{
+            .icon-area{
+              background: var(--s2);
+            }
+        }
+		.project-hover {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+    @include maxQuery(1199){
+        .portfoli-thumb-area{
+            .icon-area{
+               width: 100px;
+               height: 100px;
+               min-width: 100px; 
+               img{
+                width: 80px;
+               }
+            }
+        }
+        .big-pragraph{
+            max-width: 500px;
+        }
+    }
+    @include maxQuery(991){
+        .portfoli-thumb-area{
+            .icon-area{
+               width: 80px;
+               height: 80px;
+               min-width: 80px; 
+               img{
+                width: 60px;
+               }
+            }
+        }
+        .big-pragraph{
+            max-width: 400px;
+        }
     }
 }
 .port-line{
