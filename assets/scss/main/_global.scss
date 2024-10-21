@@ -265,6 +265,12 @@ select {
 .p9-bg{
 	background-color: var(--p9) !important;
 }
+.p10-clr{
+	color: var(--p10) !important;
+}
+.p10-bg{
+	background-color: var(--p10) !important;
+}
 .s1-bg-color{
 	background-color: rgba(var(--s1), 1);
 }
@@ -1266,6 +1272,7 @@ iframe {
 			border: 1px solid rgba(var(--p1), 1);
 			background-color: transparent;
 			color: rgba(var(--p1), 1);
+			&.active,
 			&:hover{
 				color: rgba(var(--n2), 1);
 				background-color: rgba(var(--p1), 1);
