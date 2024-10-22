@@ -222,6 +222,9 @@ select {
 .n9-color{
 	color: var(--n9);
 }
+.n10-color{
+	color: var(--n10);
+}
 .n9-bg{
 	background: var(--n9);
 }
@@ -355,11 +358,17 @@ select {
 .bg11-clr{
 	color: var(--bg11) !important;
 }
+.bg12{
+	background: var(--bg12) !important;
+}
 .black-clr{
 	color: var(--black-clr) !important;
 }
 .black-bg{
 	background: var(--black-clr) !important;
+}
+.black-border{
+	border: 1px solid var(--black-clr);
 }
 .fw-mid{
 	font-weight: 500;
@@ -678,6 +687,11 @@ select {
 		border: 1px solid rgba(255, 255, 255, 0.20);
 		background: rgba(255, 255, 255, 0.10);
 		transition: all 0.4s;
+	}
+	&.box-six{
+		&::before{
+			background-color: var(--p10);
+		}
 	}
 }
 .box-style2{

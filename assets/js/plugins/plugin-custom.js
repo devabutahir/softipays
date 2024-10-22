@@ -622,6 +622,45 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
 
+      //Testimonial15
+      const testimonial__wrapper15 = new Swiper(".testimonial-wrapper15", {
+        spaceBetween: 100,
+        speed: 600,
+        loop: true,
+        spaceBetween: 24,
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".ara-next",
+          prevEl: ".ara-prev",
+        },
+        breakpoints: {
+          1650: {
+            spaceBetween: 24,
+            slidesPerView: 4.5,
+          },
+          1399: {
+            spaceBetween: 20,
+            slidesPerView: 3.5,
+          },
+          991: {
+            spaceBetween: 16,
+            slidesPerView: 3,
+          },
+          767: {
+            spaceBetween: 16,
+            slidesPerView: 2,
+          },
+          500: {
+            spaceBetween: 16,
+            slidesPerView: 2,
+          },
+          0: {
+            spaceBetween: 16,
+            slidesPerView: 1,
+          },
+        },
+      });
+
       //Hero12 SLide
       const hero__wrapper12 = new Swiper(".hero-wrapper12", {
         spaceBetween: 100,

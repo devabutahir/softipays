@@ -53,6 +53,7 @@
   --bg9: #C6E3D5;
   --bg10: #00F09A;
   --bg11: #F5F5F5;
+  --bg12: #EFF9F6;
   --s1: 0, 86, 81;
   --n0: #fff;
   --n1: 236, 255, 252;
@@ -64,6 +65,7 @@
   --n7: 230, 247, 241;
   --n8: 205, 228, 220;
   --n9: #0D0D0D;
+  --n10: #4A5551;
   --black-clr: #1C1E30;
   --gradient-p1: linear-gradient(90deg, rgba(12, 169, 64, 0.08) 0.68%, rgba(236, 88, 88, 0.08) 100%);
   --box-shadow-p1: 0px 6px 30px 0px rgba(0, 0, 0, 0.08);
@@ -583,6 +585,10 @@ select {
   color: var(--n9);
 }
 
+.n10-color {
+  color: var(--n10);
+}
+
 .n9-bg {
   background: var(--n9);
 }
@@ -759,12 +765,20 @@ select {
   color: var(--bg11) !important;
 }
 
+.bg12 {
+  background: var(--bg12) !important;
+}
+
 .black-clr {
   color: var(--black-clr) !important;
 }
 
 .black-bg {
   background: var(--black-clr) !important;
+}
+
+.black-border {
+  border: 1px solid var(--black-clr);
 }
 
 .fw-mid {
@@ -1084,6 +1098,9 @@ select {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.4s;
+}
+.box-style.box-six::before {
+  background-color: var(--p10);
 }
 
 .box-style2 {
@@ -5399,9 +5416,38 @@ iframe {
   background: var(--p10) !important;
   color: var(--black-clr) !important;
 }
+.testimonial-section15.same-tyle-btn .slider-btn button {
+  border-color: rgba(0, 86, 81, 0.2) !important;
+}
+.testimonial-section15.same-tyle-btn .slider-btn button i {
+  color: var(--black-clr);
+}
+.testimonial-section15.same-tyle-btn .slider-btn button:hover, .testimonial-section15.same-tyle-btn .slider-btn button.active {
+  border-color: var(--p10) !important;
+  background: var(--p10) !important;
+  color: var(--black-clr) !important;
+}
+.testimonial-section15.same-tyle-btn .testimonial-item6 p {
+  border-bottom: 1px solid rgba(0, 86, 81, 0.2) !important;
+}
+.testimonial-section15 .swiper-slide.swiper-slide-active .testimonial-items15 {
+  border: 1px solid var(--p10);
+  background: var(--p10);
+}
+.testimonial-section15 .swiper-slide.swiper-slide-active .testimonial-items15 .arrows {
+  border: 1px solid var(--p10);
+  transform: scale(1.07);
+  background: var(--n0);
+}
 
 .testimonial-items15 {
+  background: #EFF9F6;
+  transition: all 0.5s;
   border: 1px solid #EFF9F6;
+}
+.testimonial-items15 img {
+  width: 65px;
+  height: 65px;
 }
 .testimonial-items15 p {
   color: #4A5551;
@@ -5413,10 +5459,19 @@ iframe {
 }
 .testimonial-items15 .arrows {
   border: 1px solid var(--black-clr);
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background: var(--p10);
   color: var(--black-clr);
+}
+.testimonial-items15:hover {
+  border: 1px solid var(--p10);
+  background: var(--p10);
+}
+.testimonial-items15:hover .arrows {
+  border: 1px solid var(--p10);
+  transform: scale(1.07);
+  background: var(--n0);
 }
 
 .section-badge8 {
@@ -5606,6 +5661,21 @@ iframe {
   }
 }
 
+.faq-newsletter .box {
+  max-width: 580px;
+  margin: 0 auto;
+}
+.faq-newsletter .footer-form12 input {
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--black-clr) !important;
+}
+.faq-newsletter .footer-form12 input::-moz-placeholder {
+  color: var(--black-clr);
+}
+.faq-newsletter .footer-form12 input::placeholder {
+  color: var(--black-clr);
+}
+
 .callto-become {
   background: url(../../assets/images/callto-become.jpg) no-repeat center center;
   background-size: cover;
@@ -5629,6 +5699,10 @@ iframe {
   content: "";
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: -1;
+}
+.callto-become.callto-become3 {
+  background: url(../../assets/images/become15.jpg) no-repeat center center;
+  background-size: cover;
 }
 @media (max-width: 1399px) {
   .callto-become {
@@ -6801,6 +6875,15 @@ iframe {
     transform: translateY(-10px);
   }
 }
+.choose-items15 {
+  border: 1px solid var(--bg11);
+  transition: all 0.5s;
+}
+.choose-items15:hover {
+  background: var(--p10);
+  border-color: var(--black-clr);
+}
+
 .know-us-section::before {
   position: absolute;
   bottom: 0;
@@ -6889,6 +6972,19 @@ iframe {
     top: 30px;
     left: 30px;
   }
+}
+.faq-section.faq-style15 .accordion-single {
+  background: transparent;
+  border-bottom: 1px solid rgba(28, 30, 48, 0.1);
+}
+.faq-section.faq-style15 .accordion-single .header-area button {
+  color: var(--black-clr) !important;
+}
+.faq-section.faq-style15 .accordion-single .content-area .content-body p {
+  color: #4A5551;
+}
+.faq-section.faq-style15 .accordion-single.active {
+  background: #EFF9F6;
 }
 
 @keyframes rots {

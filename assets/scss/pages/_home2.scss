@@ -2590,9 +2590,49 @@ width: fit-content !important;
             }
         }
     }
+    &.same-tyle-btn{
+        .slider-btn{
+            button{
+                border-color: rgb(0, 86, 81, 20%) !important;
+                i{
+                    color: var(--black-clr);
+                }
+                &:hover,
+                    &.active{
+                    border-color: var(--p10) !important;
+                    background: var(--p10) !important;
+                    color: var(--black-clr) !important;
+                }
+            }
+        }
+        .testimonial-item6{
+            p{
+                border-bottom: 1px solid rgb(0, 86, 81, 20%) !important;
+            }
+        }
+    }
+    .swiper-slide{
+        &.swiper-slide-active{
+            .testimonial-items15{
+                .arrows{
+                    border: 1px solid var(--p10);
+                    transform: scale(1.07);
+                    background: var(--n0);
+                }
+                border: 1px solid var(--p10);
+                background: var(--p10);
+            }
+        }
+    }
 }
 .testimonial-items15{
+    background: #EFF9F6;
+    transition: all 0.5s;
     border: 1px solid #EFF9F6;
+    img{
+        width: 65px;
+        height: 65px;
+    }
     p{
         color: #4A5551;
     }
@@ -2603,10 +2643,19 @@ width: fit-content !important;
     }
     .arrows{
         border: 1px solid var(--black-clr);
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         background: var(--p10);
         color: var(--black-clr);
+    }
+    &:hover{
+        .arrows{
+            border: 1px solid var(--p10);
+            transform: scale(1.07);
+            background: var(--n0);
+        }
+        border: 1px solid var(--p10);
+        background: var(--p10);
     }
 }
 
@@ -2824,6 +2873,23 @@ width: fit-content !important;
     }
 }
 
+//Faq Section15
+.faq-newsletter{
+    .box{
+        max-width: 580px;
+        margin: 0 auto;
+    }
+    .footer-form12{
+        input{
+            background: rgb(255, 255, 255, 50%);
+            color: var(--black-clr) !important;
+            &::placeholder{
+                color: var(--black-clr);
+            }
+        }
+    }
+}
+
 //Callto Become
 .callto-become{
     background: url(../../assets/images/callto-become.jpg) no-repeat center center;
@@ -2846,6 +2912,10 @@ width: fit-content !important;
         content: "";
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
         z-index: -1;
+    }
+    &.callto-become3{
+        background: url(../../assets/images/become15.jpg) no-repeat center center;
+        background-size: cover;
     }
     padding: 230px 0;
     @include maxQuery(1399){
@@ -4105,6 +4175,16 @@ width: fit-content !important;
     }
 }
 
+//Choose 15
+.choose-items15{
+    border: 1px solid var(--bg11);
+    transition: all 0.5s;
+    &:hover{
+        background: var(--p10);
+        border-color: var(--black-clr);
+    }
+}
+
 //Know Us
 .know-us-section{
     &::before{
@@ -4203,6 +4283,27 @@ width: fit-content !important;
      }
     }
    } 
+   &.faq-style15{
+        .accordion-single{
+            background: transparent;
+            .header-area{
+                button{
+                    color: var(--black-clr) !important;
+                }
+            }
+            .content-area{
+                .content-body{
+                    p{
+                        color: #4A5551;
+                    }
+                }
+            }
+            border-bottom: 1px solid rgb(28, 30, 48, 10%);
+            &.active{
+                background: #EFF9F6;
+            }
+        }
+   }
 }
 @keyframes rots {
     50%{
