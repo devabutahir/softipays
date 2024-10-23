@@ -618,3 +618,119 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+
+(function () {
+  // Function to handle multiple sliders
+  function RangeSlider(sliderOneId, sliderTwoId, minValId, maxValId, totalOutputId, sliderTrackSelector) {
+      // Get DOM elements
+      let sliderOne = document.getElementById(sliderOneId);
+      let sliderTwo = document.getElementById(sliderTwoId);
+      let displayValOne = document.getElementById(minValId);
+      let displayValTwo = document.getElementById(maxValId);
+      let totalOutput = document.getElementById(totalOutputId);
+      let sliderTrack = document.querySelector(sliderTrackSelector);
+      let minGap = 0;
+      let sliderMaxValue = sliderOne.max;
+
+      // Update first slider value
+      function slideOne() {
+          if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+              sliderOne.value = parseInt(sliderTwo.value) - minGap;
+          }
+          displayValOne.textContent = sliderOne.value;
+          updateTotal();  // Update the total range after slider change
+          fillColor();  // Update slider track color
+      }
+
+      // Update second slider value
+      function slideTwo() {
+          if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+              sliderTwo.value = parseInt(sliderOne.value) + minGap;
+          }
+          displayValTwo.textContent = sliderTwo.value;
+          updateTotal();  // Update the total range after slider change
+          fillColor();  // Update slider track color
+      }
+
+      // Update the total price range and display it
+      function updateTotal() {
+          let total = sliderTwo.value - sliderOne.value;
+          totalOutput.textContent = `Years: ${total}`;
+      }
+
+      // Update slider track background color
+      function fillColor() {
+          let percent1 = (sliderOne.value / sliderMaxValue) * 100;
+          let percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+          sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #074C3E ${percent1}% , #074C3E ${percent2}%, #dadae5 ${percent2}%)`;
+      }
+
+      // Attach event listeners for the sliders
+      sliderOne.addEventListener('input', slideOne);
+      sliderTwo.addEventListener('input', slideTwo);
+
+      // Initialize the slider on load
+      slideOne();
+      slideTwo();
+  }
+
+  // Initialize all sliders on the page
+  window.addEventListener('DOMContentLoaded', function () {
+      // Initialize sliders only if elements exist
+      if (document.getElementById('range-slider-1') && document.getElementById('range-slider-2')) {
+          new RangeSlider('range-slider-1', 'range-slider-2', 'min-value', 'max-value', 'range-output', '.slider-track');
+      }
+
+      if (document.getElementById('range-slider-3') && document.getElementById('range-slider-4')) {
+          new RangeSlider('range-slider-3', 'range-slider-4', 'min-value-2', 'max-value-2', 'range-output-2', '.slider-track-2');
+      }
+  });
+
+  // Calculator logic, checking if elements exist
+  const amount = document.getElementById('amount'),
+      interest = document.getElementById('interest'),
+      year = document.getElementById('year'),
+      monthly_cost = document.getElementById('monthly_cost'),
+      calculate = document.getElementById('calc_submit'),
+      total_value = document.getElementById('total_value');
+
+  const amount2 = document.getElementById('amount2'),
+      interest2 = document.getElementById('interest2'),
+      year2 = document.getElementById('year2'),
+      monthly_cost2 = document.getElementById('monthly_cost2'),
+      calculate2 = document.getElementById('calc_submit2'),
+      total_value2 = document.getElementById('total_value2');
+
+  if (calculate) {
+      calculate.addEventListener('click', function (e) {
+          e.preventDefault();
+          // Loan 1 calculations
+          if (amount && interest && year) {
+              let total = (amount.value / 100 * interest.value) + parseInt(amount.value);
+              total_value.innerHTML = total.toFixed(2);
+              monthly_cost.innerHTML = (total / (year.value * 12)).toFixed(2);
+          }
+
+          // Loan 2 calculations
+          if (amount2 && interest2 && year2) {
+              let total2 = (amount2.value / 100 * interest2.value) + parseInt(amount2.value);
+              total_value2.innerHTML = total2.toFixed(2);
+              monthly_cost2.innerHTML = (total2 / (year2.value * 12)).toFixed(2);
+          }
+      });
+  }
+
+  // Additional event listener for second calculator (if applicable)
+  if (calculate2) {
+      calculate2.addEventListener('click', function (e) {
+          e.preventDefault();
+          // Loan 2 calculations
+          if (amount2 && interest2 && year2) {
+              let total2 = (amount2.value / 100 * interest2.value) + parseInt(amount2.value);
+              total_value2.innerHTML = total2.toFixed(2);
+              monthly_cost2.innerHTML = (total2 / (year2.value * 12)).toFixed(2);
+          }
+      });
+  }
+})();
