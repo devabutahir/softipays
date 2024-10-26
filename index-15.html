@@ -337,51 +337,42 @@
             </div>
             <div class="row g-6">
                 <div class="col-lg-6">
-                    <div class="about-calculation n0-bg">
+                    <div class="about-calculation n0-bg h-100">
                         <h4 class="black-clr text-center p10-bg py-lg-12 py-8 px-3">How Much You Need</h4>
                         <div class="loan-amount-head p-xxl-12 p-xl-9 p-lg-7 p-6">
                             <div class="sidebar-filter__part mb-xl-9 mb-7">
                                 <div class="sidebar-cat__price-range">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <h5 class="sidebar-filter__part-title">Loan Amount</h5>
-                                        <h6 id="range-output">$9000</h6>
+                                    <div class="price-values d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            $<span id="min-value">0</span>
+                                        </div>
+                                        <span id="range-output">$9000</span>
+                                        <div class="d-flex">
+                                            $<span id="max-value">9000</span>
+                                        </div>
                                     </div>
-                                
                                     <div class="range-slider">
                                         <div class="slider-track"></div>
                                         <input type="range" min="0" max="10000" value="0" id="range-slider-1">
                                         <input type="range" min="0" max="10000" value="9000" id="range-slider-2">
                                     </div>
-                                
-                                    <div class="price-values d-flex justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            $<span id="min-value">0</span>
-                                        </div>
-                                        <span id="max-value">9000</span>
-                                    </div>
                                 </div>
                             </div>
                             <div class="sidebar-cat__price-range mb-xl-9 mb-7">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h5 class="sidebar-filter__part-title">Repayment period
-                                    </h5>
-                                    <h6 id="range-output-2">25</h6>
-                                </div>
-                            
-                                <div class="range-slider">
-                                    <div class="slider-track slider-track-2"></div>
-                                    <input type="range" min="1" max="5000" value="0" id="range-slider-3" class="d-none">
-                                    <input type="range" min="0" max="5000" value="25" id="range-slider-4">
-                                </div>
-                            
                                 <div class="price-values d-flex justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <span id="min-value-2">0</span> Year
+                                        $<span id="min-value-2">0</span>
                                     </div>
+                                    <span class="d-none" id="range-output-2">12</span>
                                     <div class="d-flex align-items-center gap-2">
-                                        <span id="max-value-2">25</span>
-                                        Years
+                                        <span id="max-value-2">12</span>
+                                        Months
                                     </div>
+                                </div>
+                                <div class="range-slider">
+                                    <div class="slider-track slider-track-2"></div>
+                                    <input type="range" min="0" max="12" value="0" id="range-slider-3" class="d-none">
+                                    <input type="range" min="0" max="12" value="12" id="range-slider-4">
                                 </div>
                             </div>
                             <div class="d-flex mb-xl-9 mb-7 pay-border align-items-center justify-content-between pb-xl-7 pb-lg-5 pb-4">

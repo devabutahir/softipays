@@ -1527,11 +1527,11 @@
             -webkit-appearance: none;
             width: 28px;
             height: 28px;
-            background-color: red;
+            background-color: var(--n0);
             border-radius: 50%;
-            border: 1.5px solid green;
+            border: 1.5px solid var(--p10);
             cursor: pointer;
-            margin-top: -6px;
+            margin-top: -9px;
             pointer-events: auto;
         }  
     }  

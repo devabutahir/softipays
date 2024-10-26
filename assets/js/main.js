@@ -656,14 +656,14 @@ document.addEventListener("DOMContentLoaded", function () {
       // Update the total price range and display it
       function updateTotal() {
           let total = sliderTwo.value - sliderOne.value;
-          totalOutput.textContent = `Years: ${total}`;
+          totalOutput.textContent = `$${total}`;
       }
 
       // Update slider track background color
       function fillColor() {
           let percent1 = (sliderOne.value / sliderMaxValue) * 100;
           let percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-          sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #074C3E ${percent1}% , #074C3E ${percent2}%, #dadae5 ${percent2}%)`;
+          sliderTrack.style.background = `linear-gradient(to right, #03FFB7 ${percent1}% , #03FFB7 ${percent1}% , #03FFB7 ${percent2}%, #EFF9F6 ${percent2}%)`;
       }
 
       // Attach event listeners for the sliders
