@@ -9,18 +9,8 @@
             display: flex;
             align-items: center;
             transition: var(--transition);
-            &::before {
-                content: "\f318";
-                font-family: 'Phosphor';
-                z-index: 1;
-                position: absolute;
-                color: rgba(var(--n5), 1);
-                left: -30px;
-                font-size: 18px;
-                transition: var(--transition);
-            }
             &:hover{
-                padding-left: 20px;
+                padding-left: 8px;
                 color: rgba(var(--p1), 1);
                 &::before {
                     color: rgba(var(--p1), 1);

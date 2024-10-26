@@ -2646,6 +2646,36 @@ width: fit-content !important;
         background: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%) !important;
         transition: all 0.4s;
     }
+    &.testimonial-item16{
+        background: #1D263F;
+        &::before{
+            border-radius: 276px !important;
+            background: rgba(22, 73, 255, 0.60) !important;
+            filter: blur(150px) !important;
+            width: 200px;
+            height: 200px;
+            top: initial;
+            bottom: 0;
+            left: initial;
+            right: 0;
+        }
+        &:hover{
+            .line{
+                border-color: rgb(255, 255, 255, 0.1) !important;
+            }
+            h6,p,span{
+                color: var(--n0) !important;
+            }
+            .dev-tag,
+            .dev-social{
+                background: var(--p11);
+            }
+            &::before{
+                bottom: -50px;
+                right: -50px;
+            }
+        }
+    }
     &:hover{
         background: transparent !important;
         &::before{
@@ -2791,6 +2821,34 @@ width: fit-content !important;
         }
         border: 1px solid var(--p10);
         background: var(--p10);
+    }
+}
+
+//Testimonial 16
+.testimonial-style16{
+    .slider-btn{
+        position: absolute;
+        top: 65%;
+        left: -6%;
+        display: flex;
+        justify-content: space-between;
+        width: 112%;
+    }
+    @include maxQuery(1490){
+        .slider-btn{
+            position: initial;
+            top: initial;
+            left: initial;
+            display: flex;
+            justify-content: center;
+            width: initial;
+            margin-top: 40px;
+        }
+    }
+    @include maxQuery(1199){
+        .slider-btn{
+            margin-top: 20px;
+        }
     }
 }
 
@@ -4757,6 +4815,38 @@ width: fit-content !important;
     }
 }
 
+//Faq Version 16
+.global-roadmap{
+    position: absolute;
+    left: -50px;
+    top: 0;
+    z-index: -1;
+}
+
+//RoadMap Style
+.roadmap-section{
+    z-index: 1;
+    .roadmap-ele{
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 704px;
+        height: 705px;
+    }
+}
+.roadmap-inner1{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.roadmap-inner2{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.roadmap-bar{
+    animation: leftright 2s linear infinite;
+}
+
 //Country access 
 .country-access-wrap{
     display: grid;
@@ -5430,6 +5520,37 @@ width: fit-content !important;
     }
 }
 
+//Defi Newsletter
+.defi-newsletter{
+    border-radius: 32px;
+    border: 1px solid #424F76;
+    background: #1D263F;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    form{
+        max-width: 490px;
+        margin: 0 auto;
+        input{
+            color: var(--black-clr);
+            &::placeholder{
+                color: var(--black-clr);
+            }
+        }
+    }
+    &::before{
+        position: absolute;
+        left: -60px;
+        bottom: -60px;
+        width: 276px;  
+        height: 276px;
+        content: "";
+        border-radius: 276px;
+        background: rgba(22, 73, 255, 0.60);
+        filter: blur(150px);
+    }
+}
+
 //Footer Section
 .footer-section3{
     background: #1C1E30;
@@ -5963,6 +6084,30 @@ width: fit-content !important;
     }
 }
 
+//Footer 16
+.social-style16{
+    li{
+        a{
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.10);
+            transition: all 0.4s;
+            i{
+                color: var(--n0);
+            }
+            &:hover{
+                background: var(--p11);
+            }
+        }
+    }
+}
+.border-10{
+    border: 1px solid rgb(255, 255, 255, 10%);
+}
+
+.border-11{
+    border: 1px solid var(--n12);
+}
+
 //Badge 14
 .badge-14{
     background: var(--p8);
@@ -6006,6 +6151,20 @@ width: fit-content !important;
             border-color: var(--p2) !important;
             background: var(--p2) !important;
             color: var(--black-clr) !important;
+        }
+    }
+}
+.slider-btn{
+    &.style16{
+        button{
+            border: 1px solid var(--p11) !important;
+            background: transparent;
+            i{
+                color: var(--n0);
+            }
+            &:hover{
+                background: var(--p11);
+            }
         }
     }
 }
