@@ -1313,6 +1313,89 @@
     }
 }
 
+//Hero 16
+.banner-section16{
+    .banner-wrapper16{
+        padding: 90px 0 90px;
+    }
+    .hero16-thumb{
+        position: relative;
+        .sponsor-ele{
+            position: absolute;
+            top: 39%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: customcir 16s linear infinite;
+        }
+    }
+    &::before{
+        position: absolute;
+        bottom: 200px; 
+        right: 200px;
+        content: "";
+        border-radius: 562px;
+        background: #1649FF;
+        filter: blur(250px);
+        width: 562px;
+        height: 162px;
+        z-index: -1;
+    }
+    @include maxQuery(1399){
+        .banner-wrapper16{
+            .banner-content{
+                h1{
+                    font-size: 48px;
+                }
+            }
+        }
+        .hero16-thumb{
+            .sponsor-ele{
+                top: 39%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 380px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .banner-wrapper16{
+            padding: 65px 0 80px;
+            .banner-content{
+                h1{
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+    @include maxQuery(767){
+        .banner-wrapper16{
+            padding: 60px 0 70px;
+            .banner-content{
+                h1{
+                    font-size: 32px;
+                }
+            }
+        }
+        .hero16-thumb{
+            .sponsor-ele{
+                width: 260px;
+            }
+        }
+    }
+    @include maxQuery(480){
+        .hero16-thumb{
+            .sponsor-ele{
+                width: 180px;
+            }
+        }
+    }
+    @keyframes customcir {
+        100%{
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+}
+
 //Sponsor Unique
 .unique-sponsor-wrap{
     display: flex;
@@ -1395,6 +1478,18 @@
                 width: 104px;
                 height: 20px;
             }
+        }
+    }
+}
+
+//Sponsor 16
+.partnered-style16{
+    p{
+        color: #445686;
+    }
+    .partnered-item{
+        img{
+            max-width: 110px;
         }
     }
 }

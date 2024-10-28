@@ -1189,6 +1189,15 @@ iframe {
             color: rgba(var(--n5), 1);
         }
 	}
+	&.style2{
+		.breadcrumb{
+			.breadcrumb-item{
+				&::before{
+					color: #fff;
+				}
+			}
+		}	
+	}
 }
 
 // checkbox-single
