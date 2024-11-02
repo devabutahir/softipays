@@ -734,3 +734,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 })();
+
+const eggPrice = 60;
+const soltPrice = 40;
+
+const totalPrice = eggPrice + soltPrice;
+console.log(totalPrice);

@@ -4591,6 +4591,71 @@ iframe {
   }
 }
 
+.about-sectionv3 {
+  background: url(../../assets/images/about-bread3.jpg) no-repeat center center;
+  background-size: cover;
+}
+.about-sectionv3::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.403);
+}
+.about-sectionv3 .about-breadcrumnd-content3 {
+  padding: 110px 0 140px;
+}
+.about-sectionv3 .about-breadcrumnd-content3 p {
+  max-width: 527px;
+  margin: 0 auto;
+}
+@media (max-width: 1399px) {
+  .about-sectionv3 .about-breadcrumnd-content3 {
+    padding: 80px 0 100px;
+  }
+  .about-sectionv3 .about-breadcrumnd-content3 p {
+    max-width: 527px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .about-sectionv3 .about-breadcrumnd-content3 {
+    padding: 70px 0 100px;
+  }
+}
+@media (max-width: 575px) {
+  .about-sectionv3 .about-breadcrumnd-content3 {
+    padding: 70px 0 90px;
+  }
+}
+
+.financial-about-content .crafting .icon {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+}
+
+.financial-wrapper-about .line {
+  height: 67px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 991px) {
+  .financial-wrapper-about .financial-count-item .counters span {
+    line-height: 42px !important;
+  }
+}
+
+.financial-dirve-item .icon {
+  width: 70px;
+  min-width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+
 .value-dirve-item {
   background: var(--bg3);
   transition: all 0.5s;
@@ -7867,10 +7932,39 @@ iframe {
 .pride-satisfied-item {
   transition: all 0.5s;
 }
+.pride-satisfied-item .plus-icon {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: all 0.5s;
+}
+.pride-satisfied-item .social-area li a {
+  background-color: #E6F7F1;
+  border: unset;
+}
+.pride-satisfied-item .social-area li a i {
+  color: var(--n3);
+}
+.pride-satisfied-item .social-area li a:hover {
+  background-color: #fff;
+  border: unset;
+}
+.pride-satisfied-item .social-area li a:hover i {
+  color: var(--black-clr);
+}
 .pride-satisfied-item:hover {
   background: var(--bg1) !important;
 }
-.pride-satisfied-item:hover h5, .pride-satisfied-item:hover a, .pride-satisfied-item:hover p, .pride-satisfied-item:hover span {
+.pride-satisfied-item:hover .plus-icon {
+  background: var(--n0) !important;
+}
+.pride-satisfied-item:hover .plus-icon i {
+  color: var(--black-clr);
+}
+.pride-satisfied-item:hover .cont h5, .pride-satisfied-item:hover .cont a, .pride-satisfied-item:hover .cont p, .pride-satisfied-item:hover .cont span {
   color: var(--n0) !important;
 }
 
