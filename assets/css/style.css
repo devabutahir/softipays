@@ -59,6 +59,7 @@
   --bg14: #141A2A;
   --bg15: #1D263F;
   --bg16: #E6F7F1;
+  --bg17: #F9F9F9;
   --s1: 0, 86, 81;
   --n0: #fff;
   --n1: 236, 255, 252;
@@ -814,6 +815,10 @@ select {
 
 .bg16 {
   background: var(--bg16) !important;
+}
+
+.bg17 {
+  background: var(--bg17) !important;
 }
 
 .black-clr {
@@ -4656,6 +4661,107 @@ iframe {
   margin: 0 auto;
 }
 
+.about-sectionv4 {
+  background: url(../../assets/images/about-4.jpg) no-repeat center center;
+  background-size: cover;
+}
+.about-sectionv4::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.403);
+}
+.about-sectionv4 .about-breadcrumnd-content4 {
+  padding: 190px 0 215px;
+}
+.about-sectionv4 .about-breadcrumnd-content4 .badge {
+  border-radius: 100px;
+  background: linear-gradient(90deg, #01A66B 0%, rgba(1, 166, 107, 0) 100%);
+  padding: 12px 12px;
+  display: inline-block;
+}
+.about-sectionv4 .about-breadcrumnd-content4 p {
+  max-width: 527px;
+}
+@media (max-width: 1399px) {
+  .about-sectionv4 .about-breadcrumnd-content4 {
+    padding: 120px 0 120px;
+  }
+}
+@media (max-width: 991px) {
+  .about-sectionv4 .about-breadcrumnd-content4 {
+    padding: 80px 0 90px;
+  }
+}
+
+.community-satisfied-item {
+  transition: all 0.5s;
+}
+.community-satisfied-item .social-area li a i {
+  color: var(--bg1);
+}
+.community-satisfied-item.style2 {
+  position: relative;
+  z-index: 1;
+}
+.community-satisfied-item.style2::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(180deg, rgba(1, 166, 107, 0) 41.05%, #01A66B 100%);
+}
+.community-satisfied-item.style2 .cont {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+.community-satisfied-item.active, .community-satisfied-item:hover {
+  background: var(--bg1);
+}
+.community-satisfied-item.active .cont, .community-satisfied-item:hover .cont {
+  bottom: 4px;
+}
+.community-satisfied-item.active .cont h5, .community-satisfied-item:hover .cont h5 {
+  color: var(--n0);
+}
+.community-satisfied-item.active .cont h5 a, .community-satisfied-item:hover .cont h5 a {
+  color: var(--n0) !important;
+}
+.community-satisfied-item.active .cont span, .community-satisfied-item:hover .cont span {
+  color: var(--n0);
+}
+
+.value-items-version16 {
+  transition: all 0.5s;
+}
+.value-items-version16 .box {
+  max-width: 240px;
+  margin: 0 auto;
+}
+.value-items-version16 .icon-area {
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .value-items-version16 .icon-area img {
+    width: 28px;
+  }
+}
+.value-items-version16:hover {
+  background: var(--bg1) !important;
+}
+.value-items-version16:hover h5 {
+  color: var(--n0) !important;
+}
+
 .value-dirve-item {
   background: var(--bg3);
   transition: all 0.5s;
@@ -4683,6 +4789,49 @@ iframe {
 }
 .value-dirve-item:hover h5, .value-dirve-item:hover a, .value-dirve-item:hover p {
   color: var(--n0) !important;
+}
+
+.recognitions-item .badge-style {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  border: 1px solid rgba(28, 30, 48, 0.1);
+}
+.recognitions-item .badge-style::before {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background: var(--s2);
+  border-radius: 50%;
+}
+
+.milestone-wrapper {
+  z-index: 1;
+}
+.milestone-wrapper::before {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+@media (max-width: 1399px) {
+  .milestone-wrapper::before {
+    top: 74px;
+    left: 0;
+  }
+}
+@media (max-width: 991px) {
+  .milestone-wrapper::before {
+    display: none;
+  }
+  .milestone-wrapper .recognitions-item .badge-style {
+    margin: 0 auto;
+  }
 }
 
 .get-common {
@@ -7876,6 +8025,22 @@ iframe {
 
 .workign-thumb16 {
   animation: updown 2s linear infinite;
+}
+
+.reliability-faq .accordion-single .header-area .accordion-btn::after {
+  background: var(--black-clr);
+}
+.reliability-faq .accordion-single.active {
+  background: var(--s2) !important;
+}
+.reliability-faq .accordion-single.active .header-area .accordion-btn {
+  color: var(--n0) !important;
+}
+.reliability-faq .accordion-single.active .header-area .accordion-btn::after {
+  background: var(--n0);
+}
+.reliability-faq .accordion-single.active p {
+  color: var(--n0) !important;
 }
 
 .roadmap-section {
