@@ -1396,6 +1396,15 @@
     }
 }
 
+//Service Breadcrumnd
+.service-breadcrumnd-content1{
+    @include maxQuery(575){
+        br{
+            display: none;
+        }
+    }
+}
+
 //Sponsor Unique
 .unique-sponsor-wrap{
     display: flex;

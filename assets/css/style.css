@@ -1582,7 +1582,7 @@ iframe {
   z-index: 1;
   position: absolute;
   left: 0;
-  font-size: 24px;
+  font-size: 17px;
   color: rgba(var(--n5), 1);
 }
 .breadcrumb-area.style2 .breadcrumb .breadcrumb-item::before {
@@ -4345,6 +4345,12 @@ iframe {
 @keyframes customcir {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 575px) {
+  .service-breadcrumnd-content1 br {
+    display: none;
   }
 }
 
