@@ -735,3 +735,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 })();
 
+
+let fName = "Abu";
+let lName = "Tahir";
+let proFession = "Developer";
+
+let fullName = fName + ' ' + lName + ' ' + proFession;
+
+console.log(fullName);

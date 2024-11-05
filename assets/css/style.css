@@ -5484,6 +5484,80 @@ iframe {
   }
 }
 
+.blog-common-wrapper .item-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(28, 30, 48, 0.1);
+}
+
+.blog-common-items .published-box {
+  border: 1px solid var(--black-clr);
+  min-width: 140px;
+}
+.blog-common-items .line {
+  width: 96px;
+  height: 2px;
+  display: block;
+  background: var(--black-clr);
+}
+.blog-common-items .blog-big-thumb {
+  overflow: hidden;
+}
+.blog-common-items .blog-big-thumb img {
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.blog-common-items .blog-big-thumb:hover img {
+  transform: scale(1.1);
+}
+
+.pagination-common li a {
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  transition: all 0.4s;
+}
+.pagination-common li a:hover {
+  background: var(--bg1);
+  color: var(--n0);
+}
+
+.common-right-bararea {
+  position: sticky;
+  top: 100px;
+}
+.common-right-bararea .tags li a {
+  transition: all 0.4s;
+  font-size: 16px;
+  background: #F8F8F8;
+  display: inline-block;
+}
+.common-right-bararea .tags li a:hover {
+  background: var(--bg1);
+  color: var(--n0);
+}
+.common-right-bararea .categorys li i {
+  font-size: 5px;
+}
+.common-right-bararea .searchs i {
+  color: var(--n10);
+}
+.common-right-bararea .searchs input {
+  padding: 10px 0;
+  color: var(--n10);
+  border: unset;
+  outline: none;
+}
+.common-right-bararea .searchs input::-moz-placeholder {
+  color: var(--n10);
+}
+.common-right-bararea .searchs input::placeholder {
+  color: var(--n10);
+}
+.common-right-bararea .recent-post .thumb-recent {
+  min-width: 80px;
+}
+
 .paystep-items .icon-area {
   border: 1.6px dashed #01A66B;
   padding: 8px;
@@ -8597,9 +8671,12 @@ iframe {
 }
 .blog-items10 .thumb {
   width: 100%;
+  overflow: hidden;
 }
 .blog-items10 .thumb img {
   width: 100%;
+  overflow: hidden;
+  transition: all 0.4s;
 }
 .blog-items10 .content .admins {
   background: rgba(0, 86, 81, 0.1);
@@ -8609,6 +8686,9 @@ iframe {
 }
 .blog-items10 .content .box-style:hover::before {
   display: none;
+}
+.blog-items10:hover .thumb img {
+  transform: scale(1.1);
 }
 .blog-items10:hover .content .box-style {
   background: var(--bg1) !important;

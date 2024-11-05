@@ -2631,6 +2631,99 @@
     }
 }
 
+//----Blog All 
+.blog-common-wrapper{
+    .item-line{
+        width: 100%;
+        height: 1px;
+        background: rgb(28, 30, 48, 0.1);
+    }
+}
+.blog-common-items{
+    .published-box{
+        border: 1px solid var(--black-clr);
+        min-width: 140px;
+    }
+    .line{
+        width: 96px;
+        height: 2px;
+        display: block;
+        background: var(--black-clr);
+    }
+    .blog-big-thumb{
+        overflow: hidden;
+        img{
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+        &:hover{
+            img{
+                transform: scale(1.1); 
+            }
+        }
+    }
+}
+.pagination-common{
+    li{
+        a{
+            @include box(36);
+            transition: all 0.4s;
+            &:hover{
+                background: var(--bg1);
+                color: var(--n0);
+            }
+        }
+    }
+}
+//----Blog All 
+
+//----Common Right SideBar
+.common-right-bararea{
+    position: sticky;
+    top: 100px;
+    .tags{
+        li{
+            a{
+                transition: all 0.4s;
+                font-size: 16px;
+                background: #F8F8F8;
+                display: inline-block;
+                &:hover{
+                    background: var(--bg1);
+                    color: var(--n0);
+                }
+            }
+        }
+    }
+    .categorys{
+        li{
+            i{
+                font-size: 5px;
+            }
+        }
+    }
+    .searchs{
+        i{
+            color: var(--n10);
+        }
+        input{
+            padding: 10px 0;
+            color: var(--n10);
+            border: unset;
+            outline: none;
+            &::placeholder{
+                color: var(--n10);
+            }
+        }
+    }
+    .recent-post{
+        .thumb-recent{
+            min-width: 80px;
+        }
+    }
+}
+//----Common Right SideBar
+
 //PayStem
 .paystep-items{
     .icon-area{
@@ -6085,8 +6178,11 @@ width: fit-content !important;
     border: 1px solid rgb(0, 0, 0, 10%);
     .thumb{
         width: 100%;
+        overflow: hidden;
         img{
             width: 100%;
+            overflow: hidden;
+            transition: all 0.4s;
         }
     }
     .content{
@@ -6105,6 +6201,11 @@ width: fit-content !important;
         }
     }
     &:hover{
+        .thumb{
+            img{
+                transform: scale(1.1);
+            }
+        }
         .content{
             .box-style{
                 background: var(--bg1) !important;
