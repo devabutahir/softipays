@@ -60,6 +60,7 @@
   --bg15: #1D263F;
   --bg16: #E6F7F1;
   --bg17: #F9F9F9;
+  --bg18: #E6E5E5;
   --s1: 0, 86, 81;
   --n0: #fff;
   --n1: 236, 255, 252;
@@ -819,6 +820,10 @@ select {
 
 .bg17 {
   background: var(--bg17) !important;
+}
+
+.bg18 {
+  background: var(--bg18) !important;
 }
 
 .black-clr {
@@ -5522,6 +5527,15 @@ iframe {
   color: var(--n0);
 }
 
+.blog-items-list .thumb {
+  max-width: 399px;
+}
+@media (max-width: 575px) {
+  .blog-items-list .thumb {
+    max-width: 100%;
+  }
+}
+
 .common-right-bararea {
   position: sticky;
   top: 100px;
@@ -8734,6 +8748,42 @@ iframe {
 }
 .blog-items11:hover h5 a {
   color: var(--bg1) !important;
+}
+
+.blog-grid-item4 .content {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 10px;
+  padding: 24px 20px;
+  transition: all 0.5s;
+}
+.blog-grid-item4 .content .box {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.blog-grid-item4 .content .box h5 a {
+  color: var(--n0) !important;
+}
+.blog-grid-item4::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(180deg, rgba(9, 9, 8, 0) 55%, #090908 100%);
+}
+.blog-grid-item4:hover .content {
+  background: var(--n0);
+  bottom: 30px;
+}
+.blog-grid-item4:hover .content h5 a {
+  color: var(--black-clr) !important;
 }
 
 .newsletter-place .newsletter11-ele1 {
