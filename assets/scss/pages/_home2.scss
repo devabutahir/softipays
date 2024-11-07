@@ -2631,6 +2631,59 @@
     }
 }
 
+//BLog Details 2 
+.blog-details-2{
+    &::before{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 882px;
+        content: "";
+        background: var(--bg4);
+        z-index: -1;
+    }
+    .blog-details-wrapper2{
+        .social-area{
+            li{
+                a{
+                    border: unset;
+                    background: #F2F2F2;
+                    i{
+                        color: var(--black-clr);
+                    }
+                    &:hover{
+                        background: var(--bg1);
+                        i{
+                            color: var(--n0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .blog-details-content{
+        .circle{
+            font-size: 5px;
+            color: var(--black-clr);
+        }
+    }
+    .social-area-sticky{
+        position: sticky;
+        top: 120px;
+    }
+    .single-quote{
+        background: #F8F8F8;
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        p{
+            max-width: 728px;
+        }
+    }
+}
+
 //----Blog All 
 .blog-common-wrapper{
     .item-line{
