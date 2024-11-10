@@ -248,6 +248,44 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     }
     //---- Shop Grid&List View -----//
+
+    //---- Range Slide -----//
+    const minInput = document.querySelector('.min');
+    const maxInput = document.querySelector('.max');
+    const minLabel = document.querySelector('.min-label');
+    const maxLabel = document.querySelector('.max-label');
+    const sliderRange = document.querySelector('.slider-range');
+
+    function updateSlider() {
+        let minVal = parseInt(minInput.value);
+        let maxVal = parseInt(maxInput.value);
+
+        if (minVal > maxVal) {
+            if (this === minInput) {
+                maxVal = minVal;
+                maxInput.value = maxVal;
+            } else {
+                minVal = maxVal;
+                minInput.value = minVal;
+            }
+        }
+
+        minLabel.textContent = minVal;
+        maxLabel.textContent = maxVal;
+
+        const minPercent = ((minVal - minInput.min) / (minInput.max - minInput.min)) * 100;
+        const maxPercent = ((maxVal - minInput.min) / (minInput.max - minInput.min)) * 100;
+
+        sliderRange.style.left = `${minPercent}%`;
+        sliderRange.style.width = `${maxPercent - minPercent}%`;
+    }
+    if (minInput && maxInput) {
+        minInput.addEventListener('input', updateSlider);
+        maxInput.addEventListener('input', updateSlider);
+
+        updateSlider(); // Initial call to set up the slider
+    }
+    //---- Range Slide -----//
     
     // window on scroll function
     $(window).on("scroll", function () {

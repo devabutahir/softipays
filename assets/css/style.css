@@ -2002,6 +2002,64 @@ iframe {
   letter-spacing: 3px;
 }
 
+.range-form {
+  /* range slider */
+}
+.range-form form {
+  max-width: 600px;
+}
+.range-form .range-track {
+  height: 5px;
+  position: relative;
+  background: #F8F8F8;
+  border-radius: 2px;
+}
+.range-form .slider-range {
+  height: 100%;
+  left: 0%;
+  right: 0%;
+  position: absolute;
+  border-radius: 5px;
+  background: var(--s2);
+  transition: initial;
+}
+.range-form .range-input {
+  position: relative;
+  border: unset;
+}
+.range-form .range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  padding: 0;
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+.range-form .range-input input::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: var(--s2);
+  pointer-events: auto;
+  -webkit-appearance: none;
+  z-index: 1;
+}
+.range-form .range-input input::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: var(--s2);
+  pointer-events: auto;
+  -moz-appearance: none;
+  z-index: 1;
+  position: relative;
+}
+
 .header-section {
   position: fixed;
   top: 0;
