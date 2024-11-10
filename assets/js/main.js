@@ -207,6 +207,47 @@ document.addEventListener("DOMContentLoaded", function () {
     else {
       fixed_top.removeClass("animated fadeInDown header-fixed");
     }
+
+    //---- Shop Grid&List View -----//
+    const listViewButton = document.querySelector('.list-view-button');
+    const gridViewButton = document.querySelector('.grid-view-button');
+    // Select the product items
+    const productItems = document.querySelectorAll('.product-item-ins');
+
+    // Check if the buttons exist on the page
+    if (listViewButton && gridViewButton) {
+        // Default active class on grid view button
+        gridViewButton.classList.add('active');
+ 
+        // Handle list view button click
+        listViewButton.onclick = function () {
+            if (productItems.length > 0) {
+                productItems.forEach(item => {
+                    item.classList.add('grid-view-filter');
+                    item.classList.remove('list-view-filter');
+                });
+            }
+
+            // Update active class on buttons
+            gridViewButton.classList.remove('active');
+            listViewButton.classList.add('active');
+        };
+
+        // Handle grid view button click
+        gridViewButton.onclick = function () {
+            if (productItems.length > 0) {
+                productItems.forEach(item => {
+                    item.classList.add('list-view-filter');
+                    item.classList.remove('grid-view-filter');
+                });
+            }
+
+            // Update active class on buttons
+            listViewButton.classList.remove('active');
+            gridViewButton.classList.add('active');
+        };
+    }
+    //---- Shop Grid&List View -----//
     
     // window on scroll function
     $(window).on("scroll", function () {

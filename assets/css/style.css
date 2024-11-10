@@ -9771,4 +9771,150 @@ iframe {
   .global-portfolio .single-masonry.random-size .item-width-3 {
     grid-column: span 3/auto;
   }
+}
+
+.shop-section .shop-headbar .nice-select::after {
+  width: 8px;
+  height: 8px;
+  border-bottom: 1px solid var(--black-clr);
+  border-right: 1px solid var(--black-clr);
+}
+.shop-section .shop-headbar .filter-buttons button {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+}
+.shop-section .shop-headbar .filter-buttons button i {
+  font-size: 20px;
+}
+.shop-section .shop-headbar .filter-buttons button.active {
+  background: var(--bg1);
+}
+.shop-section .shop-headbar .filter-buttons button.active i {
+  color: var(--n0);
+}
+
+.product-items .thumb {
+  position: relative;
+}
+.product-items .thumb::before {
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  transition: all 0.4s;
+}
+.product-items .thumb .sale-badge {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+}
+.product-items .thumb .cart-social {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg);
+  transition: all 0.5s;
+}
+.product-items .thumb .cart-social a,
+.product-items .thumb .cart-social button {
+  width: 44px;
+  height: 44px;
+  transition: all 0.4s;
+}
+.product-items .thumb .cart-social a:hover,
+.product-items .thumb .cart-social button:hover {
+  background: var(--s2) !important;
+}
+.product-items .thumb .cart-social a:hover i,
+.product-items .thumb .cart-social button:hover i {
+  color: var(--n0) !important;
+}
+.product-items:hover .thumb {
+  position: relative;
+}
+.product-items:hover .thumb .cart-social {
+  transform: translate(-50%, -50%) rotateX(0deg);
+}
+.product-items:hover .thumb::before {
+  left: 0%;
+}
+
+.shop-grid-body .two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.shop-grid-body .two-columns .product-item-ins {
+  width: 50%;
+  padding: 12px;
+}
+.shop-grid-body .two-columns .product-item-ins .product-items .contnet {
+  padding: 38px 38px;
+}
+.shop-grid-body .two-columns .product-item-ins .blend-pra {
+  display: none;
+}
+.shop-grid-body .two-columns .product-item-ins.grid-view-filter {
+  width: 100%;
+}
+.shop-grid-body .two-columns .product-item-ins.grid-view-filter .blend-pra {
+  display: block;
+}
+.shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items {
+  display: flex;
+  align-items: center;
+}
+.shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items .thumb {
+  max-width: 400px;
+}
+.shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items .thumb img {
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .shop-grid-body .two-columns .product-item-ins {
+    padding: 9px;
+  }
+  .shop-grid-body .two-columns .product-item-ins .product-items .contnet {
+    padding: 30px 24px;
+  }
+  .shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items {
+    display: flex;
+    align-items: center;
+  }
+  .shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items .thumb {
+    max-width: 300px;
+  }
+  .shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items .contnet {
+    padding: 16px 16px;
+  }
+  .shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 500px) {
+  .shop-grid-body .two-columns .product-item-ins {
+    padding: 9px;
+    width: 100%;
+  }
+  .shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items {
+    flex-wrap: wrap;
+    display: grid;
+    align-items: center;
+  }
+  .shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items .thumb {
+    max-width: 100%;
+  }
+  .shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items .contnet {
+    padding: 20px 16px;
+  }
+  .shop-grid-body .two-columns .product-item-ins.grid-view-filter .product-items p {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }/*# sourceMappingURL=style.css.map */
