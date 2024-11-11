@@ -7710,6 +7710,85 @@ background-position: center;
                 }
             }
         }
+        &.adjust-columns5{
+            .product-item-ins{
+                width: 20%;
+                .product-items{
+                    .contnet{
+                        padding: 24px 22px;
+                        h5{
+                            a{
+                                font-size: 20px;
+                            }
+                        }
+                        h6{
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                &.grid-view-filter{
+                    width: 50%;
+                    .product-items{
+                        .thumb{
+                            @include minQuery(1199){
+                                max-width: 260px;
+                            }
+                            @include maxQuery(1199){
+                                max-width: 200px;
+                            }
+                            @include maxQuery(500){
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                    @include maxQuery(991){
+                        width: 100%;
+                    }
+                }
+                @include maxQuery(1199){
+                    .product-items{
+                        .contnet{
+                            padding: 20px 16px;
+                            h5{
+                                a{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                @include maxQuery(991){
+                    width: 33.33%;
+                    .product-items{
+                        .contnet{
+                            padding: 20px 16px;
+                            h5{
+                                a{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                @include maxQuery(767){
+                    width: 50%;
+                    .product-items{
+                        .contnet{
+                            padding: 20px 16px;
+                        }
+                    }
+                }
+                @include maxQuery(500){
+                    width: 100%;
+                    .product-items{
+                        .contnet{
+                            padding: 20px 16px;
+                        }
+                    }
+                }
+            }
+        }
         @include maxQuery(1199){
             .product-item-ins{
                 padding: 9px;
