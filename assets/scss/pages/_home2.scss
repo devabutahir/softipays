@@ -7544,7 +7544,221 @@ background-position: center;
                         display: flex;
                         align-items: center;
                         .thumb{
-                            max-width: 300px;
+                            max-width: 250px;
+                        }
+                        .contnet{
+                            padding: 16px 16px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+        @include maxQuery(500){
+            .product-item-ins{
+                padding: 9px;
+                width: 100%;
+                &.grid-view-filter{
+                    .product-items{
+                        flex-wrap: wrap;
+                        display: grid;
+                        align-items: center;
+                        .thumb{
+                            max-width: 100%;
+                        }
+                        .contnet{
+                            padding: 20px 16px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .three-columns{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+        .product-item-ins{
+            .product-items{
+                .contnet{
+                    padding: 32px 32px;
+                }
+            }
+            width: 33.33%;
+            padding: 12px;
+            .blend-pra{
+                display: none;
+            }
+            &.grid-view-filter{
+                width: 100%;
+                .blend-pra{
+                    display: block;
+                }
+                .product-items{
+                    display: flex;
+                    align-items: center;
+                    .thumb{
+                        max-width: 400px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &.columns-space3{
+            .product-item-ins{
+                .product-items{
+                    .contnet{
+                        padding: 24px 24px;
+                        h5{
+                           a{
+                            font-size: 20px;
+                           }
+                        }
+                        h6{
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        &.adjust-columns4{
+            .product-item-ins{
+                width: 25%;
+                .product-items{
+                    .contnet{
+                        padding: 24px 24px;
+                        h5{
+                            a{
+                                font-size: 20px;
+                            }
+                        }
+                        h6{
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                &.grid-view-filter{
+                    width: 50%;
+                    .product-items{
+                        .thumb{
+                            @include minQuery(1199){
+                                max-width: 260px;
+                            }
+                            @include maxQuery(1199){
+                                max-width: 200px;
+                            }
+                            @include maxQuery(500){
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                    @include maxQuery(991){
+                        width: 100%;
+                    }
+                }
+                @include maxQuery(1199){
+                    .product-items{
+                        .contnet{
+                            padding: 20px 16px;
+                            h5{
+                                a{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                @include maxQuery(991){
+                    width: 33.33%;
+                    .product-items{
+                        .contnet{
+                            padding: 20px 16px;
+                            h5{
+                                a{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                @include maxQuery(767){
+                    width: 50%;
+                    .product-items{
+                        .contnet{
+                            padding: 20px 16px;
+                        }
+                    }
+                }
+                @include maxQuery(500){
+                    width: 100%;
+                    .product-items{
+                        .contnet{
+                            padding: 20px 16px;
+                        }
+                    }
+                }
+            }
+        }
+        @include maxQuery(1199){
+            .product-item-ins{
+                padding: 9px;
+                .product-items{
+                    .contnet{
+                        padding: 30px 20px;
+                    }
+                }
+                &.grid-view-filter{
+                    .product-items{
+                        display: flex;
+                        align-items: center;
+                        .thumb{
+                            max-width: 250px;
+                        }
+                        .contnet{
+                            padding: 16px 16px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+        @include maxQuery(991){
+            .product-item-ins{
+                .product-items{
+                    .contnet{
+                        padding: 24px 16px;
+                    }
+                }
+            }
+        }
+        @include maxQuery(767){
+            .product-item-ins{
+                .product-items{
+                    .contnet{
+                        padding: 24px 16px;
+                    }
+                }
+                width: 50%;
+                &.grid-view-filter{
+                    .product-items{
+                        display: flex;
+                        align-items: center;
+                        .thumb{
+                            max-width: 250px;
                         }
                         .contnet{
                             padding: 16px 16px;

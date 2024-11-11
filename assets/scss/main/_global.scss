@@ -1636,7 +1636,11 @@ iframe {
 }
 //tracking-spacing
 
-
+.range-container, .range-track{
+	input{
+		border: unset;
+	}
+}
 //------ Range Slide
 .range-form{
 	form{
@@ -1680,9 +1684,10 @@ iframe {
 	  	}
 	  
 	  .range-input input::-webkit-slider-thumb {
-		height: 16px;
-		width: 16px;
+		height: 14px;
+		width: 14px;
 		border-radius: 50%;
+		border: 2px solid #C3EDDF;
 		  background-color: var(--s2);
 		  pointer-events: auto;
 		  -webkit-appearance: none;
@@ -1690,8 +1695,8 @@ iframe {
 		}
 	  
 	  .range-input input::-moz-range-thumb {
-		  height: 16px;
-		  width: 16px;
+		  height: 14px;
+		  width: 14px;
 		  border-radius: 50%;
 		  background-color: var(--s2);
 		  pointer-events: auto;

@@ -308,8 +308,96 @@
             </div>
             <div class="shop-grid-body">
                 <div class="row g-6">
-                    <div class="col-lg-8">
-                        <div class="list two-columns">
+                    <div class="col-lg-3">
+                        <div class="common-right-bararea d-grid gap-lg-8 gap-7 rounded-4 border cus-border b-fifth p-xxl-8 p-xl-5 p-lg-5 p-4">
+                            <div class="car-product-info">
+                                <h6 class="fw-semibold black-clr mb-2">Cart</h6>
+                                <span class="n10-color">No products in the cart.</span>
+                            </div>
+                            <div class="search-area">
+                                <span class="fs-six fw-semibold black-clr d-block mb-xl-4 mb-3 wow fadeInRight" data-wow-delay=".8s">Search</span>
+                                <form action="#" class="searchs b-fifth border cus-border rounded-2 px-4 py-2 d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-magnifying-glass"></i> <input type="text" placeholder="Search for porducts...">
+                                </form>
+                            </div>
+                            <div class="category-area">
+                                <span class="fs-six fw-semibold black-clr d-block mb-xl-4 mb-3 wow fadeInRight" data-wow-delay=".8s">Categories</span>
+                                <ul class="categorys d-grid gap-lg-3 gap-2">
+                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".3s">
+                                        <i class="fa-solid fa-circle"></i> Tax Planning 
+                                    </li>
+                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".4s">
+                                        <i class="fa-solid fa-circle"></i> Financial Planning 
+                                    </li>
+                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".5s">
+                                        <i class="fa-solid fa-circle"></i> Wealth Management 
+                                    </li>
+                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".6s">
+                                        <i class="fa-solid fa-circle"></i> Loans & Interest 
+                                    </li>
+                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".7s">
+                                        <i class="fa-solid fa-circle"></i> Financial Education 
+                                    </li>
+                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".8s">
+                                        <i class="fa-solid fa-circle"></i> Stock Market & Trading 
+                                    </li>
+                                </ul>
+                            </div>
+                            <form action="#" class="range-form d-grid gap-3">
+                                <h6 class="black-clr mb-2">Filter</h6>
+                                <div class="range-container">
+                                    <div class="range-track">
+                                        <span class="slider-range"></span>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="min" min="0" max="500" value="30" step="10">
+                                        <input type="range" class="max" min="0" max="500" value="70" step="10">
+                                    </div>
+                                </div>
+                                <div class="d-grid align-items-center justify-content-between mt-1 mb-2">
+                                    <span class="price-value n10-color">Price: $
+                                        <span class="min-label">10</span>
+                                        - $
+                                        <span class="max-label">75</span>
+                                    </span>
+                                </div>
+                                <div class="filter-btn">
+                                    <button type="button" class="box-style cmn-btn d-inline-flex align-items-center gap-2 justify-content-center rounded-2 alt bg1 py-3 px-6 rounded-3 n0-color">
+                                        <span class="n0-color fw-500">Filter</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="tag-area">
+                                <span class="fs-six fw-semibold black-clr d-block mb-xl-4 mb-3 wow fadeInRight" data-wow-delay=".8s">Tags</span>
+                                <ul class="tags d-flex flex-wrap gap-2">
+                                    <li>
+                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Brand</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Clothing</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Cloths</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Shirt</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Shoes</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Store</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="list three-columns columns-space3">
                             <div class="product-item-ins wow fadeInUp" data-wow-delay=".3s">
                                 <div class="product-items h-100 overflow-hidden position-relative rounded-3 border">
                                     <div class="thumb w-100 position-relative">
@@ -412,8 +500,6 @@
                                                 <i class="fa-solid fa-arrow-right-long"></i>
                                             </a>
                                         </div>
-                                        <!-- Ele -->
-                                        <span class="sale-badge p2-bg rounded-5 py-1 px-4">Sale!</span>
                                     </div>
                                     <div class="contnet">
                                         <h5 class="mb-2">
@@ -456,6 +542,8 @@
                                                 <i class="fa-solid fa-arrow-right-long"></i>
                                             </a>
                                         </div>
+                                        <!-- Ele -->
+                                        <span class="sale-badge p2-bg rounded-5 py-1 px-4">Sale!</span>
                                     </div>
                                     <div class="contnet">
                                         <h5 class="mb-2">
@@ -654,6 +742,50 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="product-item-ins wow fadeInUp" data-wow-delay=".7s">
+                                <div class="product-items h-100 overflow-hidden position-relative rounded-3 border">
+                                    <div class="thumb w-100">
+                                        <img src="assets/images/shop/shop-grid7.png" alt="img" class="w-100">
+                                        <!-- Social- Cart -->
+                                        <div class="cart-social d-flex align-items-center gap-2">
+                                            <button type="button" class="cart-fell rounded-circle n0-bg d-center">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                            <button type="button" class="cart-fell rounded-circle n0-bg d-center">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                            <a href="#" class="cart-fell rounded-circle n0-bg d-center">
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </a>
+                                        </div>
+                                        <!-- Ele -->
+                                        <span class="sale-badge p2-bg rounded-5 py-1 px-4">Sale!</span>
+                                    </div>
+                                    <div class="contnet">
+                                        <h5 class="mb-2">
+                                            <a href="#" class="black-clr">
+                                                Real Estate Riches
+                                            </a>
+                                        </h5>
+                                        <h6 class="n10-color d-block mb-xxl-5 mb-xl-4 mb-lg-3 mb-3">S165.00</h6>
+                                        <div class="d-flex align-items-center gap-1">
+                                            <i class="fa-solid fa-star p2-color fs-six"></i>
+                                            <i class="fa-solid fa-star p2-color fs-six"></i>
+                                            <i class="fa-solid fa-star p2-color fs-six"></i>
+                                            <i class="fa-solid fa-star p2-color fs-six"></i>
+                                            <i class="fa-solid fa-star n10-color fs-six"></i>
+                                        </div>
+                                        <div class="mt-3 blend-pra">
+                                            <a href="#" class="rounded-3 d-inline-block py-2 px-8 n10-color fw-mid bg3 mb-2">
+                                                Quick View
+                                            </a>
+                                            <button type="button" class="n10-color d-block py-2 px-8 rounded-3 bg1 n0-color">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <ul class="pagination-common d-flex justify-content-center align-items-center gap-2 mt-lg-10 mt-7">
                             <li>
@@ -672,94 +804,6 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="common-right-bararea d-grid gap-lg-8 gap-7 rounded-4 border cus-border b-fifth p-xxl-8 p-xl-6 p-lg-5 p-4">
-                            <div class="car-product-info">
-                                <h6 class="fw-semibold black-clr mb-2">Cart</h6>
-                                <span class="n10-color">No products in the cart.</span>
-                            </div>
-                            <div class="search-area">
-                                <span class="fs-six fw-semibold black-clr d-block mb-xl-4 mb-3 wow fadeInRight" data-wow-delay=".8s">Search</span>
-                                <form action="#" class="searchs b-fifth border cus-border rounded-2 px-4 py-2 d-flex align-items-center gap-2">
-                                    <i class="fa-solid fa-magnifying-glass"></i> <input type="text" placeholder="Search for porducts...">
-                                </form>
-                            </div>
-                            <div class="category-area">
-                                <span class="fs-six fw-semibold black-clr d-block mb-xl-4 mb-3 wow fadeInRight" data-wow-delay=".8s">Categories</span>
-                                <ul class="categorys d-grid gap-lg-3 gap-2">
-                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".3s">
-                                        <i class="fa-solid fa-circle"></i> Tax Planning 
-                                    </li>
-                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".4s">
-                                        <i class="fa-solid fa-circle"></i> Financial Planning 
-                                    </li>
-                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".5s">
-                                        <i class="fa-solid fa-circle"></i> Wealth Management 
-                                    </li>
-                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".6s">
-                                        <i class="fa-solid fa-circle"></i> Loans & Interest 
-                                    </li>
-                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".7s">
-                                        <i class="fa-solid fa-circle"></i> Financial Education 
-                                    </li>
-                                    <li class="d-flex align-items-center gap-xxl-3 gap-2 n10-color wow fadeInUp" data-wow-delay=".8s">
-                                        <i class="fa-solid fa-circle"></i> Stock Market & Trading 
-                                    </li>
-                                </ul>
-                            </div>
-                            <form action="#" class="range-form d-grid gap-3">
-                                <h6 class="black-clr mb-2">Filter</h6>
-                                <div class="range-container">
-                                    <div class="range-track">
-                                        <span class="slider-range"></span>
-                                    </div>
-                                    <div class="range-input">
-                                        <input type="range" class="min" min="0" max="500" value="30" step="10">
-                                        <input type="range" class="max" min="0" max="500" value="70" step="10">
-                                    </div>
-                                </div>
-                                <div class="d-grid align-items-center justify-content-between mt-1 mb-2">
-                                    <span class="price-value n10-color">Price: $
-                                        <span class="min-label">10</span>
-                                        - $
-                                        <span class="max-label">75</span>
-                                    </span>
-                                </div>
-                                <div class="filter-btn">
-                                    <button type="button" class="box-style cmn-btn d-inline-flex align-items-center gap-2 justify-content-center rounded-2 alt bg1 py-3 px-6 rounded-3 n0-color">
-                                        <span class="n0-color fw-500">Filter</span>
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                            </form>
-                            <div class="tag-area">
-                                <span class="fs-six fw-semibold black-clr d-block mb-xl-4 mb-3 wow fadeInRight" data-wow-delay=".8s">Tags</span>
-                                <ul class="tags d-flex flex-wrap gap-2">
-                                    <li>
-                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Brand</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Clothing</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Cloths</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Shirt</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Shoes</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:boid(0)" class="rounded-2 py-2 px-4">Store</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
