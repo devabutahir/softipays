@@ -810,6 +810,40 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
+       //Shop Details
+       var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          991: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1199: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          }
+        },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+          loop: true,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+
       //--Global SideBar--
       $('.toggleMain-controls .bar-toggles, .cmn-overlay').on('click', function () {
         $('.toggleMain-controls .sidebar-wrapper, .cmn-overlay').toggleClass('active');

@@ -7877,4 +7877,155 @@ background-position: center;
 }
 //Global Shop
 
+//Description 
+.description-review{
+    .nav-tabs{
+        border-bottom: 2px solid rgb(0, 0, 0, 20%);
+        display: flex;
+        gap: 88px;
+        .nav-item{
+            .nav-link{
+                background: transparent;
+                padding: 0;
+                border: unset;
+                padding-bottom: 11px;
+                position: relative;
+                transition: all 0.4s;
+                &::before{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transition: all 0.4s;
+                    width: 100%;
+                    height: 2px;
+                    content: "";
+                }
+                &.active{
+                    &::before{
+                        background: var(--bg1);
+                    }
+                }
+            }
+        }
+        @include maxQuery(500){
+            gap: 18px;
+        }
+    }
+}
+.review-content-wrap{
+    .admin{
+        width: 60px;
+        height: 60px;
+    }
+    form{
+        .review-form{
+            textarea,
+            input{
+                width: 100%;
+                border: unset;
+                padding: 12px 14px;
+                border-radius: 0;
+                color: var(--n10);
+                background: var(--n0);
+                &::placeholder{
+                    color: var(--n10);
+                }
+            }
+        }
+        .form-check{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .form-check-input{
+                padding: 4px;
+                border: 1px solid var(--black-clr);
+                border-radius: 4px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
+//Description
+
+//Shop Details
+.shop-details-content{
+    .social-area{
+        li{
+            a{
+                background: #ECFFFC;
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                &:hover{
+                    background: var(--bg1);
+                    border: 1px solid var(--bg1);
+                    i{
+                        color: var(--n0);
+                    }
+                }
+            }
+        }
+    }
+    .react{
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        background: var(--bg16);
+        transition: all 0.4s;
+        &:hover{
+            background: var(--bg1);
+            i{
+                color: var(--n0);
+            }
+        }
+    }
+    .quantity {
+        display: flex;
+        border: 1px solid rgb(0, 31, 29, 20%);
+        overflow: hidden;
+        padding: 4px 24px;
+        border-radius: 100px;
+        button {
+            border: none;
+            cursor: pointer;
+            font-size: 28px;
+            width: 30px;
+            height: auto;
+            text-align: center;
+        }
+      .input-box {
+        width: 40px;
+        text-align: center;
+        border: none;
+        padding: 8px 10px;
+        font-size: 16px;
+        outline: none;
+        font-weight: 600;
+        color: var(--n900);
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+      .input-box[type="number"] {
+        -moz-appearance: textfield;
+      }
+      @include maxQuery(1399){
+        padding: 0px 16px;
+      }
+    }
+}
+.shop-details-wrap{
+    .swiper-button-next,
+    .swiper-button-prev{
+        color: #01A66B;
+    }
+}
+//Shop Details
+
 //--------+ Update Style +---------//
