@@ -8167,4 +8167,82 @@ background-position: center;
 }
 //Cart Shoping
 
+//Billing Details
+.billing-form{
+    textarea,
+    input{
+        width: 100%;
+        border: 1px solid rgb(0, 0, 0, 10%);
+    }
+    .nice-select{
+        width: 100%;
+        padding: 6px 16px;
+        height: initial;
+        .current{
+            font-size: 14px;
+        }
+        &::after{
+            width: 12px;
+            height: 12px;
+        }
+        .list{
+            width: 100%;
+        }
+    }
+}
+//Billing Details
+
+//Account Create
+.create-account-info{
+    form{
+        .account-form{
+            input{
+                background: var(--n0);
+                border: unset;
+            }
+        }
+        .social-area{
+            li{
+                a{
+                    background: var(--bg1);
+                    i{
+                        color: var(--n0);
+                    }
+                    &:hover{
+                        background: var(--p2);
+                        i{
+                            color: var(--black-clr);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Account Create
+
+//Portfoli Single
+.single-project-info{
+    .single-project-item{
+        .social-area{
+            li{
+                a{
+                    background: #F2F2F2;
+                    border: unset;
+                    i{
+                        color: var(--black-clr);
+                    }
+                    &:hover{
+                        background: var(--bg1);
+                        i{
+                            color: var(--n0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Portfoli Single
+
 //--------+ Update Style +---------//

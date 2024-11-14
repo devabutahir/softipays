@@ -268,12 +268,14 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="service-breadcrumnd-content1 py-lg-20 py-16 mb-xl-10 mt-xl-8 text-center">
-                        <h2 class="n0-color mb-lg-5 mb-4 wow fadeInUp" data-wow-delay="0.4s">Checkout</h2>
+                        <h2 class="n0-color mb-lg-5 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+                            My Account </h2>
                         <div class="breadcrumb-area style2 wow fadeInUp" data-wow-delay="0.7s">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb position-relative m-0 d-center justify-content-center">
                                     <li class="breadcrumb-item d-center text-white fs-six"> <a class="d-flex gap-1 text-white" href="index.html"> <i class="ph ph-house-simple fs-five text-white"></i> <span class="n0-color">Home</span></a></li>
-                                    <li class="breadcrumb-item d-center text-white ms-2 ps-7 fs-six active" aria-current="page"><span class="n0-color">Checkout</span></li>
+                                    <li class="breadcrumb-item d-center text-white ms-2 ps-7 fs-six active" aria-current="page"><span class="n0-color">
+                                        My Account </span></li>
                                 </ol>
                             </nav>
                         </div>
@@ -284,149 +286,102 @@
     </section>
     <!-- Breadcrumnd end -->
 
-    <!-- Shop Details start-->
-    <section class="shop-details-section pt-120 pb-120">
+    <!-- Account start-->
+    <section class="account-section pt-120 pb-120">
         <div class="container">
-            <div class="row g-6">
-                <div class="col-lg-8">
-                    <div class="d-flex bg3 align-items-center gap-2 py-4 px-4 mb-lg-6 mb-sm-5 mb-4">
-                        <i class="fa-solid fa-circle-exclamation mt-1"></i>
-                       <p class="black-clr">Have a coupon? <a href="#" class="black-clr text-decoration-underline">Click here to enter your code</a></p>
-                    </div>
-                    <div class="table-dual-box border rounded-3 p-xxl-8 p-xl-6 p-lg-4 p-4 mb-xxl-8 mb-xl-6 mb-6">
-                        <p class="black-clr mb-lg-4 mb-3">If you have a coupon code, please apply it below.</p>
-                        <form action="#" class="promo-coupon d-flex justify-content-start gap-2 align-items-center">
-                            <input type="text" placeholder="Coupon Code" class="border">
-                            <button type="button" class="apply-coupon box-style box-second second-alt border-0 bg1 n0-color rounded-3 text-nowrap">
-                                Apply Coupon
-                            </button>
+            <div class="row g-6 justify-content-center">
+                <div class="col-lg-5">
+                    <div class="account-member">
+                        <h4 class="visible-slowly-right pb-4 pb-md-6">Member login</h4>
+                        <form action="#" class="row g-6">
+                            <div class="col-sm-12">
+                                <label for="names" class="black-clr fs-seven mb-sm-3 mb-2">Name</label>
+                                <div class="input-area rounded-3 bg-transparent">
+                                    <input id="names" type="text" class="px-3 px-md-6 my-3 my-md-4" placeholder="Email Your Name">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-sm-3 mb-2">
+                                    <label for="names" class="black-clr fs-seven">Enter Password</label>
+                                    <a href="#" class="p2-color">Forget Password?</a>
+                                </div>
+                                <div class="input-area rounded-3 bg-transparent">
+                                    <input type="password" class="px-3 px-md-6 my-3 my-md-4" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <a href="sign-in.html" class="box-style border-0 rounded-1 w-100 box-second d-center p2-bg">
+                                    <span class="fs-six black-clr">Login</span>
+                                </a>
+                            </div>
+                            <p class="black-clr text-center">Don’t have an account?  <a href="sign-up.html" class="p2-color">Register</a></p>
                         </form>
-                    </div>
-                    <form action="#" class="billing-details">
-                        <h4 class="black-clr mb-lg-4 mb-3">
-                            Billing Details
-                        </h4>
-                        <div class="row g-xxl-6 g-xl-5 g-4">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="billing-form">
-                                    <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="fname">First Name</label>
-                                    <input id="fname" type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="billing-form">
-                                    <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="lname">Last Name</label>
-                                    <input id="lname" type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="billing-form">
-                                    <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="company">Company Name (Optional)</label>
-                                    <input id="company" type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="billing-form">
-                                    <label class="black-clr d-block mb-xxl-3 mb-2 fs-seven" for="country">Country / Region</label>
-                                    <select name="reson" id="country">
-                                        <option value="1">United Status (US)</option>
-                                        <option value="2">UK</option>
-                                        <option value="3">UK</option>
-                                        <option value="4">UK</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="billing-form">
-                                    <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="address">Street address</label>
-                                    <input type="text" id="address" placeholder="House number and street name" class="mb-xxl-3 mb-2">
-                                    <input type="text" placeholder="Apartment, suit, unit, unit, etc, (optional)">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="billing-form">
-                                    <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="town">Town / City </label>
-                                    <input type="text" id="town" placeholder="United Status (US)">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="billing-form">
-                                    <label class="black-clr d-block mb-xxl-3 mb-2 fs-seven" for="states">State</label>
-                                    <select name="reson" id="states">
-                                        <option value="1">California</option>
-                                        <option value="2">United State</option>
-                                        <option value="3">Ornifol</option>
-                                        <option value="4">UK</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="billing-form">
-                                    <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="code">ZIP Code </label>
-                                    <input type="text" id="code" placeholder="United Status (US)">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="billing-form">
-                                    <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="phone">Phone </label>
-                                    <input type="text" id="phone">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="billing-form">
-                                    <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="emails">Email address  </label>
-                                    <input type="text" id="emails">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="billing-form">
-                                    <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="message">Order notes (optional)</label>
-                                    <textarea name="order" rows="5" id="message" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
-                                </div>
-                            </div>
+                        <div class="log-in-with mt-6">
+                            <a href="javascript:void(0)" class="py-3 d-center py-lg-3 px-4 px-lg-7 cus-border border b-fifth rounded-3">
+                                <span class="icon-area">
+                                    <img src="assets/images/icon/google.png" alt="images">
+                                </span>
+                                <span class="icon-area fw-mid">Sign in with Google</span>
+                            </a>
                         </div>
-                    </form>
+                    </div>
                 </div>
-                <div class="col-lg-4 d-flex flex-column gap-lg-6 gap-4">
-                    <div class="order-box bg16 rounded-3 p-lg-6 p-5">
-                        <h5 class="black-clr mb-xl-6 mb-4">Your Order</h5>
-                        <ul class="order-list">
-                            <li class="d-flex n10-clr rounded-top align-items-center justify-content-between py-3 px-sm-5 px-4 n0-bg">
-                                <span class="fs-seven n10-clr">Product</span> Subtotal
-                            </li>
-                            <li class="line"></li>
-                            <li class="d-flex n10-clr align-items-center justify-content-between py-3 px-sm-5 px-4 n0-bg">
-                                <span class="fs-seven n10-clr">The Ethical Investor</span> £89.00
-                            </li>
-                            <li class="line"></li>
-                            <li class="d-flex fw-mid align-items-center justify-content-between py-3 px-sm-5 px-4 n0-bg">
-                                <span class="fs-seven black-clr fw-mid">Subtotal</span> £89.00
-                            </li>
-                            <li class="line"></li>
-                            <li class="d-flex fw-mid rounded-bottom align-items-center justify-content-between py-3 px-sm-5 px-4 n0-bg">
-                                <span class="fs-seven black-clr fw-mid">Total</span> £89.00
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="order-summery bg16 rounded-3 p-lg-6 p-5">
-                        <div class="d-flex gap-2 n0-bg p-xxl-6 p-xl-4 p-3 rounded-3 mb-lg-6 mb-4">
-                            <i class="fa-solid fa-circle-exclamation mt-1"></i>
-                            <p class="n10-clr fs-seven">
-                                Sorry. it seems that three are no avilable payment tethods for your state. please contact us f you rewuire assistance or wish to make alternate arrangments.
-                            </p>
-                        </div>
-                        <p class="fs-seven n10-clr mb-lg-6 mb-5">
-                            Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
-                        </p>
-                        <button type="button" class="process-check box-style box-second second-alt black-clr rounded-3 border-0 text-capitalize fs-seven d-center overflow-hidden pt-3 pb-3 px-xxl-8 px-lg-6 px-5 p2-bg">
-                            Place Order
-                        </button>
+                <div class="col-lg-7">
+                    <div class="create-account-info ms-lg-8 border rounded-3 bg16 p-xxl-15 p-xl-10 p-lg-8 p-5">
+                        <h4 class="black-clr mb-xl-6 mb-5">Create an Account</h4>
+                        <form action="#" class="d-grid gap-6">
+                            <div class="account-form">
+                                <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="fname">Name</label>
+                                <input id="fname" type="text" placeholder="Enter Your Name">
+                            </div>
+                            <div class="account-form">
+                                <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="email">Email</label>
+                                <input id="email" type="email" placeholder="Your Email">
+                            </div>
+                            <div class="account-form">
+                                <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="fpassword">Enter Password</label>
+                                <input id="fpassword" type="text" placeholder="Your Password">
+                            </div>
+                            <div class="account-form">
+                                <label class="black-clr mb-xxl-3 mb-2 fs-seven" for="cpassword">Confirm Password</label>
+                                <input id="cpassword" type="text" placeholder="Confirm Password">
+                            </div>
+                            <div class="account-form">
+                                <button class="box-style border-0 rounded-1 w-100 box-second d-center p2-bg">
+                                    <span class="fs-six black-clr">Register</span>
+                                </button>
+                            </div>
+                            <p class="black-clr text-center">Already have an a account? <a href="#" class="p2-color">Login</a></p>
+                            <span class="black-clr text-center">Or Sign in with</span>
+                            <ul class="d-center justify-content-center gap-3 social-area mt-2">
+                                <li>
+                                    <a href="https://www.facebook.com" aria-label="Facebook" class="d-center">
+                                        <i class="fab fa-facebook-f fs-six"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com" aria-label="Twitter" class="d-center">
+                                        <i class="fab fa-twitter fs-six"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com" aria-label="Instagram" class="d-center">
+                                        <i class="fab fa-instagram fs-six"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.dribbble.com" aria-label="dribbble" class="d-center">
+                                        <i class="fa-brands fa-dribbble fs-six"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Shop Details end-->
+    <!-- Account end-->
 
     <!-- Footer Area Start -->
     <footer class="footer-section footer-section3 style8 pt-120 bg1">
