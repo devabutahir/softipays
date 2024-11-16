@@ -10655,4 +10655,31 @@ iframe {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.403);
+}
+
+.portfolio-slide-item {
+  z-index: 2;
+  overflow: hidden;
+}
+.portfolio-slide-item .fitness-metallic {
+  position: absolute;
+  bottom: 36px;
+  left: -100%;
+  transition: all 0.4s;
+}
+.portfolio-slide-item::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 100%;
+  content: "";
+  transition: all 0.4s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+.portfolio-slide-item:hover .fitness-metallic {
+  left: 36px;
+}
+.portfolio-slide-item:hover::before {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

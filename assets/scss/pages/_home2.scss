@@ -8349,4 +8349,35 @@ background-position: center;
 }
 //Portfoli Single
 
+//Portfoli Single 02
+.portfolio-slide-item{
+    z-index: 2;
+    overflow: hidden;
+    .fitness-metallic{
+        position: absolute;
+        bottom: 36px;
+        left: -100%;
+        transition: all 0.4s;
+    }
+    &::before{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 100%;
+        content: "";
+        transition: all 0.4s;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    }
+    &:hover{
+        .fitness-metallic{
+            left: 36px;
+        }
+        &::before{
+            width: 100%;
+        }
+    }
+}
+//Portfoli Single 02
+
 //--------+ Update Style +---------//
