@@ -8242,6 +8242,14 @@ background-position: center;
             }
         }
     }
+    .line{
+        height: 88px;
+        width: 1px;
+        background: rgb(0, 0, 0, 10%);
+        @include maxQuery(767){
+            display: none;
+        }
+    }
 }
 .portfolio-diversifed{
     .portfolio-video{
@@ -8323,6 +8331,21 @@ background-position: center;
         transform: scale(1.3);
         opacity: 0;
     }   
+}
+.portfolio-breadcrumd-single{
+    background: url(../../assets/images/portfolio-single-hero3.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.403);
+    }
 }
 //Portfoli Single
 

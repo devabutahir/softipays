@@ -10549,6 +10549,16 @@ iframe {
 .single-project-info .single-project-item .social-area li a:hover i {
   color: var(--n0);
 }
+.single-project-info .line {
+  height: 88px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  .single-project-info .line {
+    display: none;
+  }
+}
 
 .portfolio-diversifed .portfolio-video {
   position: absolute;
@@ -10630,4 +10640,19 @@ iframe {
     transform: scale(1.3);
     opacity: 0;
   }
+}
+.portfolio-breadcrumd-single {
+  background: url(../../assets/images/portfolio-single-hero3.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+.portfolio-breadcrumd-single::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.403);
 }/*# sourceMappingURL=style.css.map */
