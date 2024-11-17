@@ -673,7 +673,7 @@ document.addEventListener("DOMContentLoaded", function () {
           prevEl: ".ara-prev",
         },
         pagination: {
-          el: "custom-pagination",
+          el: ".swiper-pagination-custom",
         },
         breakpoints: {
           1650: {
