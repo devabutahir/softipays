@@ -7322,6 +7322,12 @@ background-position: center;
 
 //Global Portfolio
 .global-portfolio{
+    &.style5-colums-section{
+        .container{
+            max-width: 1720px;
+            margin: 0 auto;
+        }
+    }
     .mixitup-button-area{
         display: flex;
         align-items: center;
@@ -7351,6 +7357,25 @@ background-position: center;
             position: relative;
             margin: 0 4px 24px;
             z-index: 1;
+            .arrows{
+                font-size: 36px;
+                color: var(--n0);
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                transform: rotate(-30deg);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s;
+            }
+            .fitness-metallic{
+                position: absolute;
+                bottom: 30px;
+                text-align: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s;
+            }
             .popup-icon{
                 width: 60px;
                 height: 60px;
@@ -7380,11 +7405,29 @@ background-position: center;
                 height: 100%;
             }
             &:hover{
+                .arrows{
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .fitness-metallic{
+                    opacity: 1;
+                    visibility: visible;
+                }
                 .popup-icon{
                     transform: rotateX(0deg);
                 }
                 &::before{
                     height: 100%;
+                }
+            }
+            @include maxQuery(991){
+                .arrows{
+                    font-size: 24px;
+                    top: 20px;
+                    right: 20px;
+                }
+                .fitness-metallic{
+                    bottom: 20px;
                 }
             }
         }
@@ -7413,6 +7456,41 @@ background-position: center;
             }
             @include maxQuery(575){
                 column-count: 1;
+            }
+        }
+        &.gird-colums4{
+            column-count: 4;
+            @include maxQuery(991){
+                column-count: 3;
+            }
+            @include maxQuery(767){
+                column-count: 2;
+            }
+            @include maxQuery(450){
+                column-count: 1;
+            }
+        }
+        &.style-grid1{
+            column-count: 1;
+        }
+        &.grid-colums5{
+            column-count: 5;
+            @include maxQuery(1199){
+                column-count: 4;
+            }
+            @include maxQuery(767){
+                column-count: 3;
+            }
+            @include maxQuery(575){
+                column-count: 2;
+            }
+            @include maxQuery(420){
+                column-count: 1;
+            }
+        }
+        &.custom-space0{
+            .portfolio3-grid-item{
+                margin: 0 -8px;
             }
         }
         @include maxQuery(1199){
