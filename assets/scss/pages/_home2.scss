@@ -7,21 +7,6 @@
     margin: 0 auto;
 }
 //Custom Contaienr
-
-//Header 2
-.header-section.header-section2{
-    background: #ECFFFC !important;
-    &.header-fixed{
-        background: #ECFFFC !important;
-    }
-}
-.header-style5{
-    &.header-fixed{
-        background: var(--n0) !important;
-    }
-}
-//Header 2
-
 //hero--2
 .banner-section2{
     padding: 120px 0;
@@ -684,6 +669,8 @@
         }
     }
 }
+
+
 
 //Hero--9
 .banner-section9{

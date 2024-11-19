@@ -112,8 +112,12 @@ document.addEventListener("DOMContentLoaded", function () {
     //---- Shop Grid&List View -----//
 
    //MixiTup 3.3.2
+    // var containerEl = document.querySelector('.mixitup-filter');
+    // var mixer = mixitup(containerEl);
     var containerEl = document.querySelector('.mixitup-filter');
-    var mixer = mixitup(containerEl);
+    if (containerEl) {
+        const mixitupInstance = mixitup(containerEl);
+    }
 
     //---- Range Slide -----//
     const minInput = document.querySelector('.min');
@@ -261,6 +265,8 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     });    
 
+ 
+
     // Box Style 
     const targetBtn = document.querySelectorAll('.box-style')
     if (targetBtn) {
@@ -332,9 +338,6 @@ document.addEventListener("DOMContentLoaded", function () {
             enabled: true
         }
     });
-
-
-    
     
     // Navbar Auto Active Class 
     var curUrl = $(location).attr('href');

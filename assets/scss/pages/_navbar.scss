@@ -3,7 +3,17 @@
     top: 0;
     width: 100%;
     z-index: 100;
-    background: rgba(var(--n6), 1);
+    transition: all 0.4s;
+    &.header-fixed{
+        background: #ECFFFC !important;
+    }
+    .container{
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+    @include maxQuery(991){
+        background: var(--n0);
+    }
     .nav-brand {
         max-width: 265px;
         object-fit: contain;
@@ -12,6 +22,38 @@
         }
         @include maxQuery(991) {
             max-width: 150px;
+        }
+    }
+    .header-btn{
+        border: 1px solid rgba(0, 0, 0, 0.1) !important;
+        &:hover{
+            border-color: var(--p2) !important;
+        }
+    }
+    .right-area{
+        gap: 20px;
+        .search-btn{
+            padding: 0;
+            outline: none;
+            border: unset;
+            i{
+                font-size: 22px;
+            }
+        }
+        .cart-count{
+            .count-span{
+                width: 16px;
+                height: 16px;
+                min-width: 16px;
+                border-radius: 50%;
+                font-size: 12px;
+                position: absolute;
+                top: -7px;
+                right: -6px;
+            }
+            i{
+                font-size: 22px;
+            }
         }
     }
     // Navbar Start
@@ -229,6 +271,9 @@
         border: 1px solid rgb(0, 0, 0, 10%);
         @include box(50);
         transition: all 0.4s ease;
+        i{
+            font-size: 24px;
+        }
         &:hover{
             transform: rotate(180deg);
         }
@@ -236,4 +281,11 @@
             @include box(40);
         }
     }
+}
+
+.cus-bg1{
+    background: rgba(255, 255, 255, .1);
+}
+.cus-bg2{
+    background: rgba(255, 255, 255, .5);
 }

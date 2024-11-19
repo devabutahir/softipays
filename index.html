@@ -64,7 +64,7 @@
     <!-- End Custom Cursor -->
 
     <!-- header-section start -->
-    <header class="header-section header-section4 bg8">
+    <header class="header-section header-section4 cus-bg1">
         <div class="container">
             <div class="main-navbar py-4 py-lg-5">
                 <nav class="navbar-custom">
@@ -92,11 +92,11 @@
                                 <img class="logo d-none d-xl-block" src="assets/images/logo-text.png" alt="logo">
                             </a>
                             <ul class="custom-nav d-lg-flex d-grid gap-3 gap-lg-4 gap-xl-6 gap-xxl-8 gap-xl-6 gap-xxl-8">
-                                <li class="menu-item position-relative">
+                                <li class="menu-item">
                                     <button class="position-relative pe-5 cus-z1 slide-vertical" data-splitting>
                                         Demos
                                     </button>
-                                    <ul class="sub-menu custom-scroll p-lg-5">
+                                    <ul class="sub-menu mega-custom p-lg-5">
                                         <li class="menu-link py-1">
                                             <a href="index.html" class="n2-color slide-horizontal" data-splitting>Home Version 1</a>
                                         </li>
@@ -246,12 +246,19 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <div class="right-area d-flex align-items-center gap-3 gap-md-4">
+                            <div class="right-area d-flex align-items-center">
+                                <button type="button" class="cart-count position-relative">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="count-span p2-bg d-center">0</span>
+                                </button>
+                                <button type="button" class="btn search-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
                                 <button type="button" class="bars-button bar-toggles d-lg-flex d-none align-items-center justify-content-center rounded-circle">
                                     <img src="assets/images/bars-dot.png" alt="icon">
                                 </button>
-                                <a href="contact.html" class="box-style box-second second-alt border-0 rounded-5 p5-bg d-center">
-                                    <span class="fs-six n0-color">Contact Us</span>
+                                <a href="contact.html" class="box-style box-second header-btn second-alt bg-transparent rounded-5 d-center">
+                                    <span class="fs-six black-clr">Contact Us</span>
                                 </a>
                             </div>
                         </div>
@@ -1143,10 +1150,30 @@
     <!-- Common Overlay -->
     <div class="cmn-overlay"></div>
     <!-- Common Overlay -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!-- ==== js dependencies start ==== -->
     <script src="assets/js/plugins/plugins.js"></script>
     <script src="assets/js/plugins/plugin-custom.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="assets/js/plugins/charts.js"></script> -->
     <!-- <script src="assets/js/plugins/animated.js"></script> -->
     <script src="assets/js/plugins/core.js"></script>
