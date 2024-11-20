@@ -12,7 +12,7 @@
         margin: 0 auto;
     }
     @include maxQuery(991){
-        background: var(--n0);
+        background: var(--n0) !important;
     }
     .nav-brand {
         max-width: 265px;
@@ -70,6 +70,64 @@
         }
         .custom-nav {
             .menu-item {
+                .mega-custom{
+                    width: 730px;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    li{
+                        ul{
+                            column-count: 3;
+                        }
+                    }
+                    @include maxQuery(991){
+                        width: 630px;
+                        li{
+                            ul{
+                                column-count: 3;
+                            }
+                        } 
+                    }
+                    @include maxQuery(767){
+                        width: 450px;
+                        li{
+                            ul{
+                                column-count: 2;
+                            }
+                        } 
+                    }
+                    @include maxQuery(500){
+                        width: 280px;
+                        li{
+                            ul{
+                                column-count: 1;
+                            }
+                        } 
+                    }
+                }
+                .mega-custom-pages{
+                    width: 480px;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    li{
+                        ul{
+                            column-count: 2;
+                        }
+                    }
+                    @include maxQuery(767){
+                        width: 450px;
+                        li{
+                            ul{
+                                column-count: 2;
+                            }
+                        } 
+                    }
+                    @include maxQuery(500){
+                        width: 280px;
+                        li{
+                            ul{
+                                column-count: 1;
+                            }
+                        } 
+                    }
+                }
                 button {
                     &::after {
                         position: absolute;
@@ -169,6 +227,9 @@
                     background: rgba(var(--n1), 1);
                     z-index: 10;
                     pointer-events: none;
+                    li,a,span{
+                        font-size: 16px !important;
+                    }
                     &::after {
                         content: "";
                         position: absolute;
