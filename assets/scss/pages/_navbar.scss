@@ -38,6 +38,10 @@
             border: unset;
             i{
                 font-size: 22px;
+                transition: all 0.4s;
+                &:hover{
+                    color: var(--p2);
+                }
             }
         }
         .cart-count{
@@ -54,6 +58,9 @@
             i{
                 font-size: 22px;
             }
+        }
+        @include maxQuery(1199){
+            gap: 16px;
         }
     }
     // Navbar Start
@@ -337,8 +344,9 @@
         }
         &:hover{
             transform: rotate(180deg);
+            border-color: var(--p2);
         }
-        @include maxQuery(991){
+        @include maxQuery(1199){
             @include box(40);
         }
     }

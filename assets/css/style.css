@@ -2114,6 +2114,10 @@ iframe {
 }
 .header-section .right-area .search-btn i {
   font-size: 22px;
+  transition: all 0.4s;
+}
+.header-section .right-area .search-btn i:hover {
+  color: var(--p2);
 }
 .header-section .right-area .cart-count .count-span {
   width: 16px;
@@ -2127,6 +2131,11 @@ iframe {
 }
 .header-section .right-area .cart-count i {
   font-size: 22px;
+}
+@media (max-width: 1199px) {
+  .header-section .right-area {
+    gap: 16px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .main-navbar .navbar-toggle-item {
@@ -2402,8 +2411,9 @@ iframe {
 }
 .header-section .bars-button:hover {
   transform: rotate(180deg);
+  border-color: var(--p2);
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .header-section .bars-button {
     width: 40px;
     min-width: 40px;
