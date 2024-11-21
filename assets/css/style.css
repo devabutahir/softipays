@@ -2208,6 +2208,9 @@ iframe {
          column-count: 1;
   }
 }
+.header-section .main-navbar .custom-nav .menu-item button {
+  transition: all 0.4s;
+}
 .header-section .main-navbar .custom-nav .menu-item button::after {
   position: absolute;
   content: "\f078";
@@ -2223,15 +2226,16 @@ iframe {
 .header-section .main-navbar .custom-nav .menu-link a {
   color: rgba(var(--n5), 1);
   border-bottom: 1px solid transparent;
-  transition: var(--transition);
   font-size: 18px;
   font-weight: 500;
+  transition: all 0.4s;
 }
 .header-section .main-navbar .custom-nav .menu-item button span, .header-section .main-navbar .custom-nav .menu-item a span,
 .header-section .main-navbar .custom-nav .menu-link button span,
 .header-section .main-navbar .custom-nav .menu-link a span {
   font-size: 18px;
   font-weight: 500;
+  transition: all 0.4s;
 }
 .header-section .main-navbar .custom-nav .menu-item button:hover span::after, .header-section .main-navbar .custom-nav .menu-item button:hover span::before, .header-section .main-navbar .custom-nav .menu-item button.active span::after, .header-section .main-navbar .custom-nav .menu-item button.active span::before, .header-section .main-navbar .custom-nav .menu-item a:hover span::after, .header-section .main-navbar .custom-nav .menu-item a:hover span::before, .header-section .main-navbar .custom-nav .menu-item a.active span::after, .header-section .main-navbar .custom-nav .menu-item a.active span::before,
 .header-section .main-navbar .custom-nav .menu-link button:hover span::after,
@@ -2242,14 +2246,14 @@ iframe {
 .header-section .main-navbar .custom-nav .menu-link a:hover span::before,
 .header-section .main-navbar .custom-nav .menu-link a.active span::after,
 .header-section .main-navbar .custom-nav .menu-link a.active span::before {
-  color: rgba(var(--p1), 1);
+  color: var(--p2);
 }
 .header-section .main-navbar .custom-nav .menu-item button:hover::after, .header-section .main-navbar .custom-nav .menu-item button.active::after, .header-section .main-navbar .custom-nav .menu-item a:hover::after, .header-section .main-navbar .custom-nav .menu-item a.active::after,
 .header-section .main-navbar .custom-nav .menu-link button:hover::after,
 .header-section .main-navbar .custom-nav .menu-link button.active::after,
 .header-section .main-navbar .custom-nav .menu-link a:hover::after,
 .header-section .main-navbar .custom-nav .menu-link a.active::after {
-  color: rgba(var(--p1), 1);
+  color: var(--p2);
 }
 @media (max-width: 1399px) {
   .header-section .main-navbar .custom-nav .menu-item button, .header-section .main-navbar .custom-nav .menu-item a,
@@ -2472,6 +2476,9 @@ iframe {
 }
 .header-light.header-fixed .navbar-custom .custom-nav .menu-item button span::after, .header-light.header-fixed .navbar-custom .custom-nav .menu-item button span::before {
   color: #000;
+}
+.header-light.header-fixed .navbar-custom .custom-nav .menu-item button.active span::after, .header-light.header-fixed .navbar-custom .custom-nav .menu-item button.active span::before {
+  color: var(--p2);
 }
 .header-light.header-fixed .navbar-custom .custom-nav .menu-item .sub-menu button {
   color: #000 !important;

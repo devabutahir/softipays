@@ -136,6 +136,7 @@
                     }
                 }
                 button {
+                    transition: all 0.4s;
                     &::after {
                         position: absolute;
                         content: "\f078";
@@ -153,21 +154,22 @@
                 button, a {
                     color: rgba(var(--n5), 1);
                     border-bottom: 1px solid transparent;
-                    transition: var(--transition);
                     font-size: 18px;
                     font-weight: 500;
+                    transition: all 0.4s;
                     span{
                         font-size: 18px;
                         font-weight: 500;
+                        transition: all 0.4s;
                     }
                     &:hover, &.active{
                         span{
                             &::after, &::before{
-                                color: rgba(var(--p1), 1);
+                                color: var(--p2);
                             }
                         }
                         &::after{
-                            color: rgba(var(--p1), 1);
+                            color: var(--p2);
                         }
                     }
                 }
@@ -432,6 +434,14 @@
                              &::before{
                                  color: #000;
                              }
+                         }
+                         &.active{
+                            span{
+                                &::after,
+                                &::before{
+                                    color: var(--p2);
+                                }
+                            }
                          }
                      }
                      .sub-menu{
