@@ -2216,7 +2216,7 @@ iframe {
   font-size: 14px;
   right: 0;
   z-index: -1;
-  transition: all 1s ease;
+  transition: all 0.4s ease;
 }
 .header-section .main-navbar .custom-nav .menu-item button, .header-section .main-navbar .custom-nav .menu-item a,
 .header-section .main-navbar .custom-nav .menu-link button,
@@ -2419,6 +2419,86 @@ iframe {
     min-width: 40px;
     height: 40px;
   }
+}
+
+.header-light .navbar-custom .logo-texts {
+  color: #fff !important;
+}
+@media (max-width: 991px) {
+  .header-light .navbar-custom .logo-texts {
+    color: #000 !important;
+  }
+}
+@media (min-width: 991px) {
+  .header-light .navbar-custom .right-area button, .header-light .navbar-custom .right-area a, .header-light .navbar-custom .right-area i {
+    color: var(--n0);
+  }
+  .header-light .navbar-custom .right-area .bars-button {
+    border-color: var(--n0);
+  }
+  .header-light .navbar-custom .right-area .bars-button img {
+    filter: brightness(25);
+  }
+  .header-light .navbar-custom .right-area .header-btn {
+    border-color: var(--n0) !important;
+  }
+  .header-light .navbar-custom .right-area .header-btn span {
+    color: var(--n0) !important;
+  }
+  .header-light .navbar-custom .right-area .header-btn:hover {
+    border-color: var(--p2) !important;
+  }
+  .header-light .navbar-custom .right-area .header-btn:hover span {
+    color: var(--n9) !important;
+  }
+  .header-light .navbar-custom .custom-nav .menu-item button {
+    color: #fff !important;
+  }
+  .header-light .navbar-custom .custom-nav .menu-item button span::after, .header-light .navbar-custom .custom-nav .menu-item button span::before {
+    color: #fff;
+  }
+  .header-light .navbar-custom .custom-nav .menu-item .sub-menu button {
+    color: #000 !important;
+  }
+  .header-light .navbar-custom .custom-nav .menu-item .sub-menu button span::after, .header-light .navbar-custom .custom-nav .menu-item .sub-menu button span::before {
+    color: #000;
+  }
+}
+.header-light.header-fixed .navbar-custom .logo-texts {
+  color: #000 !important;
+}
+.header-light.header-fixed .navbar-custom .custom-nav .menu-item button {
+  color: #000 !important;
+}
+.header-light.header-fixed .navbar-custom .custom-nav .menu-item button span::after, .header-light.header-fixed .navbar-custom .custom-nav .menu-item button span::before {
+  color: #000;
+}
+.header-light.header-fixed .navbar-custom .custom-nav .menu-item .sub-menu button {
+  color: #000 !important;
+}
+.header-light.header-fixed .navbar-custom .custom-nav .menu-item .sub-menu button span::after, .header-light.header-fixed .navbar-custom .custom-nav .menu-item .sub-menu button span::before {
+  color: #000;
+}
+.header-light.header-fixed .navbar-custom .right-area button, .header-light.header-fixed .navbar-custom .right-area a, .header-light.header-fixed .navbar-custom .right-area i {
+  color: var(--n9);
+}
+.header-light.header-fixed .navbar-custom .right-area .bars-button {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.header-light.header-fixed .navbar-custom .right-area .bars-button img {
+  filter: brightness(0);
+}
+.header-light.header-fixed .navbar-custom .right-area .header-btn {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+.header-light.header-fixed .navbar-custom .right-area .header-btn span {
+  color: var(--n9) !important;
+}
+.header-light.header-fixed .navbar-custom .right-area .header-btn:hover {
+  border-color: var(--p2) !important;
+}
+.header-light.header-fixed .navbar-custom .right-area .header-btn:hover span {
+  color: var(--n9) !important;
 }
 
 .cus-bg1 {

@@ -144,7 +144,7 @@
                         font-size: 14px;
                         right: 0;
                         z-index: -1;
-                        transition: all 1s ease;
+                        transition: all 0.4s ease;
                     }
                 }
             }
@@ -351,6 +351,130 @@
         }
     }
 }
+
+//Header Light 
+.header-light{
+    .navbar-custom{
+        .logo-texts{
+            color: #fff !important;
+        }
+    }
+    @include maxQuery(991){
+        .navbar-custom{
+            .logo-texts{
+                color: #000 !important;
+            }
+        }
+    }
+    @include minQuery(991){
+        .navbar-custom{
+            .right-area{
+                button,a,i{
+                    color: var(--n0);
+                }
+                .bars-button{
+                    border-color: var(--n0);
+                    img{
+                        filter: brightness(25);
+                    }
+                }
+                .header-btn{
+                    border-color: var(--n0) !important;
+                    span{
+                        color: var(--n0) !important;
+                    }
+                    &:hover{
+                        border-color: var(--p2) !important;
+                        span{
+                            color: var(--n9) !important;
+                        }
+                        
+                    }
+                }
+            }
+            .custom-nav{
+                .menu-item{
+                     button {
+                         color: #fff !important;
+                         span{
+                             &::after,
+                             &::before{
+                                 color: #fff;
+                             }
+                         }
+                     }
+                     .sub-menu{
+                         button {
+                             color: #000 !important;
+                             span{
+                                 &::after,
+                                 &::before{
+                                     color: #000;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    &.header-fixed{
+        .navbar-custom{
+            .logo-texts{
+                color: #000 !important;
+            }
+            .custom-nav{
+                .menu-item{
+                     button {
+                         color: #000 !important;
+                         span{
+                             &::after,
+                             &::before{
+                                 color: #000;
+                             }
+                         }
+                     }
+                     .sub-menu{
+                         button {
+                             color: #000 !important;
+                             span{
+                                 &::after,
+                                 &::before{
+                                     color: #000;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+            .right-area{
+                button,a,i{
+                    color: var(--n9);
+                }
+                .bars-button{
+                    border-color: rgba(0, 0, 0, .1);
+                    img{
+                        filter: brightness(0);
+                    }
+                }
+                .header-btn{
+                    border-color: rgba(0, 0, 0, .1) !important;
+                    span{
+                        color: var(--n9) !important;
+                    }
+                    &:hover{
+                        border-color: var(--p2) !important;
+                        span{
+                            color: var(--n9) !important;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+//Header Light 
 
 .cus-bg1{
     background: rgba(255, 255, 255, .1);
