@@ -1565,6 +1565,16 @@
     }
 }
 
+//Partner Section Custom
+.partnered-style-custom{
+    .partnered-item{
+        img{
+            opacity: 0.5 !important;
+            filter: brightness(25);
+        }
+    }
+}
+
 //Tax Section
 .tax-wrapper{
     border-radius: 16px;
@@ -2003,7 +2013,8 @@
 //Get Problems
 .get-common{
     border-radius: 32px;
-    background: linear-gradient(270deg, #121212 0%, #1E1E1E 100%), #FFF;
+    background: #006963;
+    border: 1px solid rgba(255, 255, 255, 0.15);
     overflow: hidden;
     p{
         color: rgb(255, 255, 255, 0.6);
@@ -3326,8 +3337,8 @@ width: fit-content !important;
 //Testimonial 13
 .testimonial-items13{
     border-radius: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    background: linear-gradient(180deg, #121212 0%, #1E1E1E 100%);
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: #006963;
     padding: 40px 40px;
     position: relative;
     overflow: hidden;
@@ -4543,6 +4554,7 @@ width: fit-content !important;
     }
 }
 
+
 //Choose 16
 .choose-items16{
     &.style1{
@@ -5594,8 +5606,9 @@ width: fit-content !important;
 .accordion-style13{
     .accordion-single{
         padding: 24px 24px;
-        border-radius: 32px;
-        background: linear-gradient(270deg, #12121270 0%, #1e1e1e6d 100%);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: #006963;
         .header-area{
             color: var(--n0) !important;
             .accordion-btn{
@@ -5624,13 +5637,18 @@ width: fit-content !important;
         }
         &.active{
             border-radius: 32px;
-            background: linear-gradient(270deg, #121212 0%, #1E1E1E 100%);
+            background: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%);
             .header-area{
                 .accordion-btn{
+                    color: #000 !important;
                     &::after{
                         transform: rotate(60deg);
+                        color: #000;
                     }
                 }
+            }
+            p{
+                color: #000 !important;
             }
         }
         .content-area{
@@ -6057,8 +6075,13 @@ width: fit-content !important;
     &.opening-account-wrapper10{
         .opening-account-item{
             .serial-badge{
-                border: 1px dashed var(--n0);
-                background: var(--bg1);
+                border-radius: 16px;
+                border: 1px dashed #fff;
+                background: linear-gradient(0deg, #006963 0%, #006963 100%), #FFF !important;
+                &.active{
+                    background: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%) !important;
+                    color: #000 !important;
+                }
             }
             .icon{
                 &.style2{
@@ -6075,8 +6098,8 @@ width: fit-content !important;
             .icon{
                 &::after{
                     border-radius: 16px;
-                    border: 1px solid rgba(255, 255, 255, 0.10);
-                    background: linear-gradient(180deg, #1E1E1E 0%, #121212 100%), #FFF;
+                    border: 1px solid rgba(255, 255, 255, 0.15);
+                    background: linear-gradient(0deg, #006963 0%, #006963 100%), #FFF;
                 }
                 
             }

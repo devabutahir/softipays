@@ -1,7 +1,7 @@
 /*============================================ 
 # Template Name: Softipay
 # Version: 1.0
-# Date: 01-07-2024
+# Date: 01-11-2024
 # Author: pixelaxis
 # Author URI: https://themeforest.net/user/pixelaxis/portfolio
 # Description: Softipay - HTML Template
@@ -4789,6 +4789,11 @@ iframe {
   max-width: 110px;
 }
 
+.partnered-style-custom .partnered-item img {
+  opacity: 0.5 !important;
+  filter: brightness(25);
+}
+
 .tax-wrapper {
   border-radius: 16px;
   background: var(--n0);
@@ -5184,7 +5189,8 @@ iframe {
 
 .get-common {
   border-radius: 32px;
-  background: linear-gradient(270deg, #121212 0%, #1E1E1E 100%), #FFF;
+  background: #006963;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   overflow: hidden;
 }
 .get-common p {
@@ -6369,8 +6375,8 @@ iframe {
 
 .testimonial-items13 {
   border-radius: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(180deg, #121212 0%, #1E1E1E 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #006963;
   padding: 40px 40px;
   position: relative;
   overflow: hidden;
@@ -8418,8 +8424,9 @@ iframe {
 
 .accordion-style13 .accordion-single {
   padding: 24px 24px;
-  border-radius: 32px;
-  background: linear-gradient(270deg, rgba(18, 18, 18, 0.4392156863) 0%, rgba(30, 30, 30, 0.4274509804) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #006963;
 }
 .accordion-style13 .accordion-single .header-area {
   color: var(--n0) !important;
@@ -8447,10 +8454,17 @@ iframe {
 }
 .accordion-style13 .accordion-single.active {
   border-radius: 32px;
-  background: linear-gradient(270deg, #121212 0%, #1E1E1E 100%);
+  background: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%);
+}
+.accordion-style13 .accordion-single.active .header-area .accordion-btn {
+  color: #000 !important;
 }
 .accordion-style13 .accordion-single.active .header-area .accordion-btn::after {
   transform: rotate(60deg);
+  color: #000;
+}
+.accordion-style13 .accordion-single.active p {
+  color: #000 !important;
 }
 .accordion-style13 .accordion-single .content-area .content-body p {
   color: rgba(255, 255, 255, 0.6);
@@ -8853,8 +8867,13 @@ iframe {
   }
 }
 .opening-account-wrapper.opening-account-wrapper10 .opening-account-item .serial-badge {
-  border: 1px dashed var(--n0);
-  background: var(--bg1);
+  border-radius: 16px;
+  border: 1px dashed #fff;
+  background: linear-gradient(0deg, #006963 0%, #006963 100%), #FFF !important;
+}
+.opening-account-wrapper.opening-account-wrapper10 .opening-account-item .serial-badge.active {
+  background: linear-gradient(274deg, #3FFF08 4.65%, #03FFB7 91.31%) !important;
+  color: #000 !important;
 }
 .opening-account-wrapper.opening-account-wrapper10 .opening-account-item .icon.style2::before {
   animation: rots1 2s linear infinite;
@@ -8864,8 +8883,8 @@ iframe {
 }
 .opening-account-wrapper.opening-account-wrapper10 .opening-items13 .icon::after {
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(180deg, #1E1E1E 0%, #121212 100%), #FFF;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(0deg, #006963 0%, #006963 100%), #FFF;
 }
 .opening-account-wrapper.opening-account-wrapper10 .opening-items13 p {
   color: rgba(255, 255, 255, 0.6);
