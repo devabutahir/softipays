@@ -869,29 +869,8 @@
         width: 100%;
     }
     .hero10-thumb{
-        margin-bottom: -320px;
         z-index: 1;
         position: relative;
-    }
-    @include maxQuery(1550){
-        .hero10-thumb{
-            margin-bottom: -220px;
-        }
-    }
-    @include maxQuery(991){
-        .hero10-thumb{
-            margin-bottom: -120px;
-        }
-    }
-    @include maxQuery(767){
-        .hero10-thumb{
-            margin-bottom: -80px;
-        }
-    }
-    @include maxQuery(500){
-        .hero10-thumb{
-            margin-bottom: -30px;
-        }
     }
 }
 .hero10-badge{
@@ -2387,11 +2366,20 @@
 
 //Feature Section
 .feature-item16{
+    border: unset;
     .feature-app{
         position: absolute;
         bottom: -20px;
         right: -20px;
         z-index: -1;
+    }
+    a{
+        transition: all 0.4s;
+    }
+    &:hover{
+        a{
+            color: var(--p2); 
+        } 
     }
     &.style1{
         .box{
@@ -2405,19 +2393,21 @@
             border-radius: 276px;
             background: rgba(22, 73, 255, 0.60);
             filter: blur(150px);
-            width: 276px;
-            height: 276px;
+            width: 176px;
+            height: 176px;
             z-index: -1;
         }
     }
     .icon{
-        background: #2B3655;
+        background: var(--bg20);
         width: 80px;
         height: 80px;
         border-radius: 16px;
-        border: 1px solid #424F76;
-        background: #2B3655;
         margin-bottom: 24px;
+        img{
+            filter: brightness(0);
+            opacity: 0.7;
+        }
     }
     &.style2{
         &::before{
@@ -2428,8 +2418,8 @@
             border-radius: 276px;
             background: rgba(22, 73, 255, 0.60);
             filter: blur(150px);
-            width: 276px;
-            height: 276px;
+            width: 176px;
+            height: 176px;
             z-index: -1;
         }
         .box{
@@ -2449,6 +2439,13 @@
 }
 
 //blog Section
+.blog-section{
+    &.style16{
+        .blog-items10{
+            
+        }
+    }
+}
 .blog-section4{
     margin-bottom: -30px;
     &.blog-style12{
@@ -3387,27 +3384,39 @@ background: #006963;
     }
     &.testimonial-item16{
         background: #1D263F;
+        .line{
+            border-color: 1px dashed rgb(255, 255, 255, 0.1) !important;
+        }
         &::before{
             border-radius: 276px !important;
             background: rgba(22, 73, 255, 0.60) !important;
             filter: blur(150px) !important;
-            width: 200px;
-            height: 200px;
+            width: 120px;
+            height: 120px;
             top: initial;
             bottom: 0;
             left: initial;
             right: 0;
         }
+        .dev-tag,
+        .dev-social{
+            background: var(--n0);
+        }
         &:hover{
             .line{
-                border-color: rgb(255, 255, 255, 0.1) !important;
+                border-color: 1px dashed rgb(255, 255, 255, 0.1) !important;
             }
             h6,p,span{
                 color: var(--n0) !important;
             }
             .dev-tag,
             .dev-social{
-                background: var(--p11);
+                background: var(--p2) !important;
+                svg{
+                    path{
+                        stroke: #fff;
+                    }
+                }
             }
             &::before{
                 bottom: -50px;
@@ -3436,15 +3445,6 @@ background: #006963;
             text-align: center;
             padding: 8px 12px;
             transition: all 0.4s;
-            &:hover{
-                background: linear-gradient(180deg, #121212 0%, #1E1E1E 100%) !important;
-                svg{
-                    path{
-                        stroke: #fff;
-                    }
-                }
-                color: #fff;
-            }
         }
     }
     @include maxQuery(1399){
@@ -3565,6 +3565,40 @@ background: #006963;
 
 //Testimonial 16
 .testimonial-style16{
+    .line{
+        border: 1px dashed rgb(28, 30, 48, 0.1);
+    }
+    .testimonial-item16{
+        p{
+            color: #4A5551 !important;
+        }
+        .dev-social,
+        .dev-tag{
+            color: #4A5551 !important;
+            svg{
+                path{
+                    stroke: #00170F;
+                }
+            }
+        }
+        &:hover{
+            .line{
+                border: 1px dashed rgb(28, 30, 48, 0.1);
+            }
+            h6,p,span{
+                color: var(--n9) !important;
+            }
+            .dev-social,
+            .dev-tag{
+                color: #fff !important;
+                svg{
+                    path{
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
     .slider-btn{
         position: absolute;
         top: 65%;
@@ -3572,6 +3606,14 @@ background: #006963;
         display: flex;
         justify-content: space-between;
         width: 112%;
+        button{
+            &:hover{
+                background: var(--p2) !important;
+                i{
+                    color: var(--n0);
+                }
+            }
+        }
     }
     @include maxQuery(1490){
         .slider-btn{
@@ -3594,12 +3636,16 @@ background: #006963;
 //tokenomics-item
 .tokenomics-item{
     .icon-area{
-        background: #2B3655;
+        background: var(--bg20);
         width: 70px;
         height: 70px;
+        img{
+            filter: brightness(0);
+            opacity: 0.5;
+        }
     }
     .line{
-        background: var(--n12);
+        background: var(--bg20);
         width: 100%;
         height: 1px;
         display: block;
@@ -3612,8 +3658,8 @@ background: #006963;
         border-radius: 258px;
         background: rgba(22, 73, 255, 0.60);
         filter: blur(150px);
-        width: 258px;
-        height: 258px;
+        width: 158px;
+        height: 158px;
         transition: all 0.5s;
     }
     &:hover{
@@ -4580,8 +4626,8 @@ background: #006963;
             right: 0;
             bottom: 0;
             content: "";
-            width: 276px;
-            height: 276px;
+            width: 176px;
+            height: 176px;
             border-radius: 276px;
             background: rgba(22, 73, 255, 0.60);
             filter: blur(150px);
@@ -4608,8 +4654,8 @@ background: #006963;
             right: 0;
             bottom: 0;
             content: "";
-            width: 276px;
-            height: 276px;
+            width: 176px;
+            height: 176px;
             border-radius: 276px;
             background: rgba(22, 73, 255, 0.60);
             filter: blur(150px);
@@ -5715,8 +5761,7 @@ background: #006963;
         .accordion-btn{
             .icon{
                 border-radius: 100px;
-                border: 1px solid #424F76;
-                background: #2B3655;
+                background: var(--bg20);
                 width: 70px;
                 height: 70px;
                 min-width: 70px;
@@ -5724,6 +5769,8 @@ background: #006963;
                     width: 26px;
                     height: 26px;
                     object-fit: contain;
+                    filter: brightness(0);
+                    opacity: 0.8;
                 }
                 @include maxQuery(991){
                     width: 50px;
@@ -5758,7 +5805,8 @@ background: #006963;
     .line{
         height: 1px;
         width: 100%;
-        background: rgb(255, 255, 255, 0.1);
+        opacity: 0.1;
+        background: #1C1E30;
     }
 }
 .workign-thumb16{
@@ -7230,10 +7278,11 @@ background: #006963;
 .slider-btn{
     &.style16{
         button{
-            border: 1px solid var(--p11) !important;
-            background: transparent;
+            border: unset;
+            background: var(--n0);
+            box-shadow: none;
             i{
-                color: var(--n0);
+                color: var(--n90);
             }
             &:hover{
                 background: var(--p11);
