@@ -2442,7 +2442,7 @@
 .blog-section{
     &.style16{
         .blog-items10{
-            
+
         }
     }
 }
@@ -5733,6 +5733,9 @@ background: #006963;
                             transform: rotate(60deg);
                         }
                     }
+                }
+                p{
+                    color: var(--n0) !important;
                 }
             }
             .content-area{

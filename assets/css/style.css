@@ -8541,6 +8541,9 @@ iframe {
   color: var(--n0);
   transform: rotate(60deg);
 }
+.accordion-style13.accordionstyle-14 .accordion-single.active p {
+  color: var(--n0) !important;
+}
 .accordion-style13.accordionstyle-14 .accordion-single .content-area .content-body p {
   color: var(--n0);
 }
